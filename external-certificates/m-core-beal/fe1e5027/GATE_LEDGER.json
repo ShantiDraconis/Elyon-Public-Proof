@@ -1,0 +1,21 @@
+{
+  "schema": "ATK_GATE_LEDGER_V2",
+  "repo": "m-core-beal",
+  "queue": "BEAL",
+  "hard_composite_remaining": 2,
+  "hard_atomic_remaining": 2,
+  "current_gate": "B01",
+  "current_head": "b6667e63a2c28c32cee0ab17714f9d772a0b4768",
+  "canonical_hard_base": {
+    "state": "GREEN_FROZEN_REUSED",
+    "branch": "frozen/b01-conductor-level-interface-green-b6667e63",
+    "sha": "b6667e63a2c28c32cee0ab17714f9d772a0b4768",
+    "certified_scope": "conductor/level bookkeeping interface on top of the genuine multiplicative-reduction prefix"
+  },
+  "state_ci": "GREEN_PREFIX_REUSED",
+  "state_math": "OPEN_MATH",
+  "next": "define/prove exact local conductor exponent and exact lowered level, then discharge the residual universal CommonPrime families",
+  "progress_metric": "FROZEN_HARD/TOTAL_HARD",
+  "tests_are_progress_metric": false,
+  "frozen_prefix_decrements_hard": false
+}
