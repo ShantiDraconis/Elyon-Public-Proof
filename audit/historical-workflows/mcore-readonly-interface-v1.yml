@@ -1,0 +1,61 @@
+name: M-Core Read-Only Interface v1
+
+on:
+  push:
+    branches:
+      - interface/mcore-readonly-export-v1-20260921
+  pull_request:
+    paths:
+      - 'EXPORTS/MCORE_READONLY_INTERFACE_V1.json'
+      - 'EXPORTS/README.md'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  readonly-interface:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate minimal export
+        run: |
+          python - <<'PY'
+          import json, re
+          p = "EXPORTS/MCORE_READONLY_INTERFACE_V1.json"
+          with open(p, encoding="utf-8") as f:
+              d = json.load(f)
+
+          assert d["schema"] == "MCORE_READONLY_INTERFACE_V1"
+          assert d["mode"] == "READ_ONLY_SYMBOLIC_CONTRACT"
+          assert re.fullmatch(r"[0-9a-f]{64}", d["certificate_sha256"])
+          assert len(d["exports"]) <= 20
+          assert len(d["exports"]) == len(set(d["exports"]))
+
+          forbidden = (
+              "MCore.FinalFail.Attack",
+              "MCore.FinalFail.ExactGapLedger",
+              "MCore.FinalFail.DeltaIsolation",
+              "MCore.FinalFail.ArtifactAttachment",
+              "MCore.FinalFail.Master",
+          )
+          for symbol in d["exports"]:
+              assert not symbol.startswith(forbidden), symbol
+
+          scope = d["scope"]
+          assert scope["contains_executable_agent"] is False
+          assert scope["contains_external_action_capability"] is False
+          assert scope["contains_millennium_attack_payloads"] is False
+          assert scope["open_problem_endpoint_promotion"] is False
+
+          required_denials = {
+              "mutate_mcore_repository",
+              "dispatch_mcore_workflows",
+              "merge_mcore_branches",
+              "create_mcore_proof_claims",
+              "read_unexported_problem_attack_modules",
+              "promote_open_problem_endpoints",
+          }
+          assert required_denials.issubset(set(d["forbidden_consumer_capabilities"]))
+          print("MCORE_READONLY_INTERFACE=GREEN")
+          PY
