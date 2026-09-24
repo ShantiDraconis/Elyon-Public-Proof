@@ -27,5 +27,18 @@
   ],
   "audit_entrypoint": "AUDIT_INDEX.md",
   "verification_command": "bash scripts/verify_public_release.sh",
-  "disclosure": "This manifest documents provenance and reproducibility. It is not a statement of independent mathematical validation."
+  "disclosure": "This manifest documents provenance and reproducibility. It is not a statement of independent mathematical validation.",
+  "identifiers": {
+    "doi": "10.6084/m9.figshare.33990856",
+    "orcid": "0009-0006-6874-3910"
+  },
+  "license": "MIT",
+  "discovery_metadata": [
+    "CITATION.cff",
+    "codemeta.json",
+    "DISCOVERY_METADATA.json",
+    "FINDABILITY_AND_MEDIA.md",
+    "AUTHORS.md"
+  ],
+  "public_reproduction": "PUBLIC_REPRODUCIBILITY.md"
 }
