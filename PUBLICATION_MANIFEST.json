@@ -32,7 +32,6 @@
     "doi": "10.6084/m9.figshare.33990856",
     "orcid": "0009-0006-6874-3910"
   },
-  "license": "MIT",
   "discovery_metadata": [
     "CITATION.cff",
     "codemeta.json",
@@ -40,5 +39,11 @@
     "FINDABILITY_AND_MEDIA.md",
     "AUTHORS.md"
   ],
-  "public_reproduction": "PUBLIC_REPRODUCIBILITY.md"
+  "public_reproduction": "PUBLIC_REPRODUCIBILITY.md",
+  "licensing": {
+    "software": "MIT",
+    "scientific_documentary_content": "CC BY 4.0",
+    "content_license_file": "LICENSE-CONTENT.md"
+  },
+  "external_certificate_archive": "external-certificates/MANIFEST.json"
 }
