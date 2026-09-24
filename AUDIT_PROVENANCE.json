@@ -1,0 +1,41 @@
+{
+  "schema": "elyon.public-audit-provenance.v1",
+  "public_repository": "ShantiDraconis/Elyon-Public-Proof",
+  "publication_date": "2026-09-24",
+  "publication_source": {
+    "repository": "ShantiDraconis/M-Core",
+    "branch": "release/elyon-claim1-7-public-ready",
+    "commit": "d7298c44b8efc7202819f8095cef977e8929d4dc"
+  },
+  "historical_verification": [
+    {
+      "role": "proof_baseline",
+      "commit": "6634422c8004966b97c9c96b0f878852dbbd9175",
+      "run": 36048534795,
+      "result": "SUCCESS"
+    },
+    {
+      "role": "audit_package",
+      "commit": "d95cbb72b0ea671a1e70b6aa773a8f8647944de4",
+      "run": 36049892790,
+      "result": "SUCCESS"
+    },
+    {
+      "role": "audited_release",
+      "commit": "fed4f79b1b646be824904aa32bd05a5f481791b3",
+      "run": 36050478168,
+      "result": "SUCCESS"
+    }
+  ],
+  "environment": {
+    "lean": "leanprover/lean4:v4.19.0",
+    "mathlib": "v4.19.0"
+  },
+  "public_endpoints": [
+    "MCore.Real.Claim1To7Only.canonicalClaim1To7",
+    "MCore.Real.Claim1To7Only.canonicalExternalCertificate",
+    "MCore.Real.Claim1To7Only.canonicalFinalRoot",
+    "MCore.Real.Claim1To7Only.canonicalFinalProof"
+  ],
+  "disclosure": "Historical source SHAs are provenance anchors from the source repository. Independent mathematical validation remains separate from repository CI/kernel verification."
+}
