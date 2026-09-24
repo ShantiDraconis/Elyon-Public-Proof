@@ -1,0 +1,10 @@
+{
+  "schema": "mcore.final-external-research.v1",
+  "branch": "research/seven-certs-final-20260924",
+  "mode": "SEVEN_CERTIFICATES",
+  "source_anchor": "SEVEN_CERTIFICATES",
+  "endpoint": "FinalExternalGap",
+  "required_producers": 7,
+  "final_root": null,
+  "issued": false
+}

@@ -1,0 +1,18 @@
+{
+  "state": "SOURCE",
+  "build": "BUILD_PENDING",
+  "producers": {
+    "present": 0,
+    "required": 7
+  },
+  "endpoint": "PRESENT",
+  "final_root": null,
+  "proof_claim": "NONE",
+  "promotion": [
+    "7/7 GREEN",
+    "FROZEN",
+    "CERTIFIED",
+    "FinalExternal",
+    "FINAL_ROOT"
+  ]
+}
