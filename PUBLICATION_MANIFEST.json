@@ -1,0 +1,31 @@
+{
+  "schema": "elyon.publication-manifest.v1",
+  "publication_date": "2026-09-24",
+  "source": {
+    "repository": "ShantiDraconis/M-Core",
+    "branch": "release/elyon-claim1-7-public-ready",
+    "commit": "d7298c44b8efc7202819f8095cef977e8929d4dc",
+    "tree": "0f3c0656a55ebf41116a8be229a03f6f02889a03",
+    "source_blob_count": 234
+  },
+  "public_snapshot": {
+    "repository": "ShantiDraconis/Elyon-Public-Proof",
+    "source_files_commit": "31c16b6fb785beef47153deb8519b3626cab1c0e",
+    "byte_preserved_source_blobs": 233,
+    "replaced_source_paths": [
+      "README.md"
+    ],
+    "replacement_reason": "Public-facing audit entry point; the frozen source README is intentionally not used as the public landing page."
+  },
+  "excluded_from_publication": [
+    ".lake/",
+    ".env",
+    "credentials",
+    "private keys",
+    "local build outputs",
+    "private Git history"
+  ],
+  "audit_entrypoint": "AUDIT_INDEX.md",
+  "verification_command": "bash scripts/verify_public_release.sh",
+  "disclosure": "This manifest documents provenance and reproducibility. It is not a statement of independent mathematical validation."
+}
