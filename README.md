@@ -88,7 +88,7 @@ The repository intentionally excludes `.lake/`, `.env`, credentials, private key
 **Author:** Tiago Paschoalatto Fagliari  
 **ORCID:** https://orcid.org/0009-0006-6874-3910  
 **DOI:** https://doi.org/10.6084/m9.figshare.33990856  
-**License:** MIT
+**Licensing:** scientific/documentary content — CC BY 4.0; software/formal source code — MIT
 
 Recommended citation metadata is available in `CITATION.cff` and `codemeta.json`. Machine-readable discovery metadata is also provided in `DISCOVERY_METADATA.json`.
 
@@ -113,3 +113,8 @@ This repository is relevant to reviewers and researchers working in:
 `P versus NP`, `P vs NP`, `computational complexity`, `Lean 4`, `formal proof`, `formal verification`, `theorem proving`, `SAT`, `CNF`, `Cook-Levin`, `circuit complexity`, `proof audit`, `reproducible mathematics`, `machine-checked proof`, `formal methods`, `proof engineering`, `ELYON`, `M-Core`.
 
 For press, reviewers, and indexers, use the DOI and ORCID above as the stable discovery identifiers.
+
+
+## Cross-repository certificate archive
+
+Additional public-safe certificates and audit evidence from related research repositories are indexed in `external-certificates/README.md`. Every imported package is namespaced by source repository and source SHA so independent reviewers can distinguish provenance and scope.
