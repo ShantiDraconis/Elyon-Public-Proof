@@ -1,0 +1,9 @@
+{
+  "schema": "elyon.revocation.v1.0.0",
+  "revocations": [],
+  "policy": {
+    "states": ["REVOKED","SUPERSEDED","INVALIDATED"],
+    "location": "M-Core/certs/final_external/v1/revocation.json and status.json",
+    "immutability": "Old versions immutable. v2 SUPERSEDES v1 with explicit reason. Revocation record append-only."
+  }
+}

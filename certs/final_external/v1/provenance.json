@@ -1,0 +1,39 @@
+{
+  "schema": "elyon.provenance.v1.0.0",
+  "policy": "Every final component must record repo + branch + exact SHA + workflow run + job + artifact hashes + timestamp + toolchain for reproducibility",
+  "repositories": {
+    "M-Core": {
+      "repo": "ShantiDraconis/M-Core",
+      "branch": "main",
+      "sha": "UNSET_UNTIL_PACKAGE_COMMIT",
+      "workflow_run": "N/A_PREPARATORY_PACKAGE_FILE_FREEZE"
+    },
+    "Genesis_Elyon": {
+      "repo": "ShantiDraconis/Genesis_Elyon",
+      "branch": "UNSET_UNTIL_MIRROR_COMMIT",
+      "sha": "UNSET_UNTIL_MIRROR_COMMIT"
+    },
+    "zero-ai-00": {
+      "optional": true,
+      "repo": "ShantiDraconis/zero-ai-00"
+    }
+  },
+  "anchors_filled": {
+    "ELYON_base": "483f6bdc06b74a0239481085e25c9a9fdccb1a8f",
+    "ELYON_audit": "0f71ffea68ed52691201144140fb1a342d03b8d7",
+    "ELYON_run": "35378862267 SUCCESS"
+  },
+  "toolchain": {
+    "lean": "4.19 normative",
+    "lake": "UNSET - fill at freeze",
+    "python": "UNSET - fill only if used",
+    "runner": "UNSET - ubuntu 22.04 expected"
+  },
+  "timestamp_policy": "created_at = manifest creation, approved_at = human approval, published_at = Zenodo publication - three separate",
+  "hash_levels": {
+    "PACKAGE_SHA256SUMS": "calculable now",
+    "PREPARATORY_ROOT": "SEE_PREPARATORY_ROOT_FILE",
+    "FINAL_ROOT": "MUST REMAIN NULL while UNSET exists"
+  },
+  "package_revision": "v1.1-preparatory"
+}

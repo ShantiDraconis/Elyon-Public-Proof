@@ -1,0 +1,107 @@
+{
+  "schema": "mcore.pnp-reuse-chain.v1",
+  "source_repo": "ShantiDraconis/m-core-p-vs-np",
+  "policy": "Reuse exact historical artifacts. No reimplementation. Imported snapshots preserve source SHA provenance; CI-only commits are references, not mathematical promotion.",
+  "t1": {
+    "parser_simulation": {
+      "sha": "fa928b119edb8609ae86eaff755dad7abcbf76d2",
+      "role": "T1-A parser simulation product",
+      "kind": "CI_CERT_GATE",
+      "consumer": "P01ParserWitnessComposition"
+    },
+    "parser_witness": {
+      "sha": "d0353f8af06d50f6a1e66bf77f8056f7309e0fd9",
+      "role": "T1-B parser+witness composition",
+      "kind": "LEAN_SOURCE",
+      "import": "imports/pnp/d0353f8a/lean/MCore/Real/P01ParserWitnessComposition.lean"
+    },
+    "verifier_composition": {
+      "sha": "85d1031d0c78f2392f7deea083caf54b72c572cc",
+      "role": "T1-C verifier composition",
+      "kind": "LEAN_SOURCE",
+      "import": "imports/pnp/85d1031d/lean/MCore/Real/P01VerifierComposition.lean"
+    },
+    "physical_primitives": {
+      "sha": "9b66447c67d8a4db1e8f1599339c2ad4581d9f7e",
+      "role": "T1-D physical verifier primitives gate",
+      "kind": "CI_CERT_GATE"
+    },
+    "physical_control_shuttle": {
+      "sha": "2e2dc84b56d9db9e26105b895e618d13db7095d3",
+      "role": "T1-D physical verifier control/shuttle gate",
+      "kind": "CI_CERT_GATE"
+    },
+    "terminal_integration": {
+      "sha": "44e3327a893710060c34d7ad149c16c9d66d316d",
+      "role": "T1-D terminal integration snapshot",
+      "kind": "LEAN_SOURCE_SET",
+      "imports": [
+        "imports/pnp/44e3327a/lean/MCore/Real/P01FullVerifierPhysical.lean",
+        "imports/pnp/44e3327a/lean/MCore/Real/P01IntegratedMachine.lean",
+        "imports/pnp/44e3327a/lean/MCore/Real/P01ConstructionClose.lean"
+      ],
+      "important_boundary": "P01FullVerifierPhysical still defines PhysicalVerifierGap := Nonempty PhysicalVerifierRealization; P01ConstructionClose maps a genuine P01MachineConstruction to SATInNPGap."
+    },
+    "endpoint": "P01ConstructionGap"
+  },
+  "t5": {
+    "bounded_execution": {
+      "sha": "30707e68367460041a3106211f3150db38c236cd",
+      "role": "T5-A1 bounded execution",
+      "kind": "LEAN_SOURCE",
+      "import": "imports/pnp/30707e68/lean/MCore/Real/P02BoundedComputationClose.lean"
+    },
+    "strength_reduction": {
+      "sha": "3485380f801f261ed8f11f543685cf61687f4316",
+      "role": "T5-A2 strength reduction gate",
+      "kind": "CI_CERT_GATE"
+    },
+    "candidate_coding": {
+      "sha": "a5635895dee4d7736778ce0104dfbe7016f6487a",
+      "role": "candidate coding / decode round-trip frontier",
+      "kind": "LEAN_SOURCE",
+      "import": "imports/pnp/a5635895/lean/MCore/Real/P02CandidateCodingFrontier.lean",
+      "important_boundary": "CandidateCodingGap := Nonempty CandidateCodingInterface"
+    },
+    "semantic_mismatch": {
+      "sha": "f3dc5354a6f8a652fbcda941b4f0a0e6213ddd30",
+      "role": "semantic mismatch algebra",
+      "kind": "LEAN_SOURCE",
+      "import": "imports/pnp/f3dc5354/lean/MCore/Real/P02SemanticMismatchAlgebra.lean"
+    },
+    "endpoint": "G21Pointwise"
+  },
+  "terminal": {
+    "g21_wiring": {
+      "sha": "c102d9d482d708a7a865803e94f294c6da82ed9a",
+      "kind": "LEAN_SOURCE_SET",
+      "imports": [
+        "imports/pnp/c102d9d4/lean/MCore/Real/P02G21G22Attack.lean",
+        "imports/pnp/c102d9d4/lean/MCore/Real/FinalExternalCertificate.lean"
+      ],
+      "theorems": [
+        "g21_pointwise_iff_p02_target",
+        "g21_iff_g22",
+        "p01_g21_closes_internal",
+        "final_external_certificate",
+        "final_external_gap_closes"
+      ]
+    },
+    "two_gap": {
+      "sha": "b406b806da58ebe6bc1f85863ee44054ad42edb2",
+      "kind": "LEAN_SOURCE",
+      "import": "imports/pnp/b406b806/lean/MCore/Real/FinalExternalTwoGap.lean",
+      "theorems": [
+        "final_external_gap_of_two_gap",
+        "final_external_two_gap_closes"
+      ]
+    },
+    "chain": "P01ConstructionGap + G21Pointwise -> FinalExternalGap -> OfficialPneqNP -> FINAL_PROOF[P_VS_NP]"
+  },
+  "final_proof_slot": {
+    "slot": "P_VS_NP",
+    "current_state": "LINKED_REUSE_FAIL_CLOSED",
+    "credit": 0,
+    "blocker_rule": "Credit only after imported/referenced sources yield actual inhabitants of P01ConstructionGap and G21Pointwise under the current official types and pass kernel+axiom audit."
+  }
+}

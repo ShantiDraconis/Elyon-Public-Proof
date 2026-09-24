@@ -1,0 +1,242 @@
+{
+  "P01": {
+    "prefix": "fc20887e556091a4775080ab23ee1ff61917040e",
+    "state": "GREEN_FROZEN_CERTIFIED",
+    "runs": [
+      "35700922856 SUCCESS",
+      "35700922859 SUCCESS"
+    ],
+    "pending_ATK": [
+      "Compose certified parser phases into SlotParserMachineSimulationCertificate",
+      "Construct integrated fixed-control SAT NTM using certified parser TM→NTM prefix + finite witness generation/verifier relation",
+      "CanonicalSATMachineClosure",
+      "p01_final_certificate"
+    ],
+    "endpoint_status": "OPEN",
+    "prefix_status": "GREEN_FROZEN_CERTIFIED",
+    "parser_macro": {
+      "source_sha": "db716cec19ddbba552f5b91f865089abd4eea9e5",
+      "frozen_branch": "frozen/p01-parser-macro-green-db716cec",
+      "certificate_branch": "cert/p01-parser-macro-db716cec-run35709328356",
+      "certificate_commit": "b0ff13266c2615dd38e38b722a0485911a6f32a2",
+      "run": "35709328356 SUCCESS",
+      "state": "GREEN_FROZEN_CERTIFIED"
+    },
+    "binary_return_rewind": {
+      "source_sha": "f29f5984a92d7681887801e50ec2b6143d9f7ee4",
+      "frozen_branch": "frozen/p01-binary-return-rewind-green-f29f5984",
+      "certificate_branch": "cert/p01-binary-return-rewind-f29f5984-run35710913516",
+      "certificate_commit": "cab90e15d5347163b5bbc5536ec2bb28e9efff06",
+      "run": "35710913516 SUCCESS",
+      "state": "GREEN_FROZEN_CERTIFIED"
+    },
+    "leaf_pop": {
+      "source_sha": "eb49284311029102ae1e47d80091c0d15aed7352",
+      "frozen_branch": "frozen/p01-leaf-pop-green-eb492843",
+      "certificate_branch": "cert/p01-leaf-pop-eb492843-run35720014541",
+      "certificate_commit": "e2d24a050e5b1411fa4f604b5afe2bd7fe6d2954",
+      "run": "35720014541 SUCCESS",
+      "state": "GREEN_FROZEN_CERTIFIED"
+    },
+    "leaf_state14_15": {
+      "source_sha": "72aa7be339ddcde8ffd83527a3bf0b932879cd45",
+      "frozen_branch": "frozen/p01-leaf-state14-15-return-green-72aa7be3",
+      "certificate_branch": "cert/p01-leaf-state14-15-return-72aa7be3-run35714475319",
+      "certificate_commit": "8b6360e9f334e4a11084f6ddd833123975b02190",
+      "run": "35714475319 SUCCESS",
+      "state": "GREEN_FROZEN_CERTIFIED"
+    },
+    "leaf_source": {
+      "source_sha": "93f1321f53aa93e18c7dcbf8a8a04e2844a15cbe",
+      "frozen_branch": "frozen/p01-leaf-source-green-93f1321f",
+      "certificate_branch": "cert/p01-leaf-source-93f1321f-run35720074676",
+      "certificate_commit": "6f24ad42f651e1ef33a9ece7cbe8e867a2643c40",
+      "run": "35720074676 SUCCESS",
+      "state": "GREEN_FROZEN_CERTIFIED"
+    },
+    "integration_prefix": {
+      "source_sha": "ada18eeddb72490e44a9c6033d63690a416a7f0b",
+      "frozen_branch": "frozen/p01-integration-prefix-green-ada18eed",
+      "certificate_branch": "cert/p01-integration-prefix-ada18eed-run35699864579",
+      "certificate_commit": "d909103f75087f41711c697aca400e53df4a4b82",
+      "run": "35699864579 SUCCESS",
+      "state": "GREEN_FROZEN_CERTIFIED_PREFIX"
+    }
+  },
+  "P02": {
+    "frontier": "ef89f6a29c29223e5442b14a6e59304ac0b1c47d",
+    "frontier_status": "FORMALIZED",
+    "endpoint_status": "OPEN_MATH",
+    "required_proof_object": "forall M: PolyDTMCandidate, exists x_M, Valid x_M and |x_M| <= poly(|M|) and (SAT x_M <-> not acceptsWithinBound M x_M) with canonical encoding fidelity",
+    "G2.0": {
+      "status": "GREEN_FROZEN_CERTIFIED_FORMAL_INFRA",
+      "role": "normalization",
+      "description": "Normalizes explicit polynomial time bounds while preserving CorrectAt; does NOT establish effective enumerability and does NOT produce G2.1",
+      "produces_G2_1": false,
+      "source_sha": "d72e53bc7f667c75a432226a23adc59a255c5652",
+      "frozen_branch": "frozen/p02-g2-0-normalization-green-d72e53bc",
+      "certificate_branch": "cert/p02-g2-0-normalization-d72e53bc-run35707286302",
+      "certificate_commit": "3c244256a4cf46b9e43b0934495eb7298fdbfda8",
+      "atk_clean_run": "35707286302 SUCCESS",
+      "repository_certificate_run": "35707286255 SUCCESS"
+    },
+    "G2.1": {
+      "status": "OPEN_MATH",
+      "role": "terminal producer",
+      "description": "Contains essentially the heart of P vs NP. Constructing for every PolyDTMCandidate M a canonical SAT instance x_M is extraordinary mathematical advance. Not ordinary technical sequence.",
+      "blocks": [
+        "G2.2",
+        "G2.3"
+      ],
+      "route_status": {
+        "naive_literal_fixed_point": "DISPROVED_GREEN_FROZEN",
+        "genuine_self_reference_or_other_lower_bound_route": "OPEN"
+      }
+    },
+    "G2.2": {
+      "status": "BLOCKED_BY_G2.1",
+      "role": "contradiction",
+      "blocked_by": "G2.1"
+    },
+    "G2.3": {
+      "status": "BLOCKED_BY_G2.2",
+      "role": "FailureGenerator",
+      "blocked_by": "G2.2",
+      "note": "BLOCKED_BY_G2.1 transitively"
+    },
+    "route_policy": "G2.0 -> G2.1 -> G2.2 -> G2.3 must NOT be treated as ordinary technical sequence. G2.1 is terminal producer.",
+    "semantic_diagonal_transformer": {
+      "source_sha": "f29f5984a92d7681887801e50ec2b6143d9f7ee4",
+      "frozen_branch": "frozen/p02-semantic-diagonal-transformer-green-f29f5984",
+      "certificate_branch": "cert/p02-semantic-diagonal-transformer-f29f5984-run35710913464",
+      "run": "35710913464 SUCCESS",
+      "state": "GREEN_FROZEN_CERTIFIED",
+      "boundary": "does not prove self-reference/fixed-point existence"
+    },
+    "literal_fixed_point_firewall": {
+      "source_sha": "26e721ab25425d62312945200baa9c127910d320",
+      "frozen_branch": "frozen/p02-literal-fixed-point-firewall-green-26e721ab",
+      "certificate_branch": "cert/p02-literal-fixed-point-firewall-26e721ab-run35713976797",
+      "run": "35713976797 SUCCESS",
+      "state": "GREEN_FROZEN_CERTIFIED",
+      "conclusion": "naive two-constant literal fixed-point route cannot be universal G2.1 producer"
+    },
+    "supporting_certificates": {
+      "semantic_diagonal_transformer": {
+        "source_sha": "f29f5984a92d7681887801e50ec2b6143d9f7ee4",
+        "frozen_branch": "frozen/p02-semantic-diagonal-transformer-green-f29f5984",
+        "certificate_branch": "cert/p02-semantic-diagonal-transformer-f29f5984-run35710913464",
+        "certificate_commit": "321a1ad6f0205eb2795939655ed802a9114de480",
+        "run": "35710913464 SUCCESS",
+        "state": "GREEN_FROZEN_CERTIFIED"
+      },
+      "literal_fixed_point_firewall": {
+        "source_sha": "26e721ab25425d62312945200baa9c127910d320",
+        "frozen_branch": "frozen/p02-literal-fixed-point-firewall-green-26e721ab",
+        "certificate_branch": "cert/p02-literal-fixed-point-firewall-26e721ab-run35713976797",
+        "certificate_commit": "01de3cf83d79338db8b9d4740c37719d3b9cca4c",
+        "run": "35713976797 SUCCESS",
+        "state": "GREEN_FROZEN_CERTIFIED",
+        "effect": "naive literal fixed-point route is fail-closed; genuine G2.1 remains OPEN_MATH"
+      }
+    },
+    "literal_fixed_point_countermodel": {
+      "source_sha": "9d6dd9575a61782c70137abff348356f805bc654",
+      "frozen_branch": "frozen/p02-literal-fixed-point-countermodel-green-9d6dd957",
+      "certificate_branch": "cert/p02-literal-fixed-point-countermodel-9d6dd957-run35721311898",
+      "certificate_commit": "cb1e30ec759f6ccb6f9f813693164fb945a287cb",
+      "run": "35721311898 SUCCESS",
+      "state": "GREEN_FROZEN_CERTIFIED_DISPROVE_ROUTE",
+      "conclusion": "the naive two-constant literal fixed-point strategy is not a universal G2.1 producer"
+    }
+  },
+  "G3": {
+    "status": "OPEN_SOURCE_FIDELITY",
+    "endpoint": "OPEN",
+    "scaffold": {
+      "source_sha": "97a95327360c3d4fc29dae1453330974e5f30519",
+      "frozen_branch": "frozen/g3-external-contract-scaffold-green-97a95327",
+      "certificate_branch": "cert/g3-external-contract-scaffold-97a95327-run35707370601",
+      "certificate_commit": "8a0ecfcad1fd3806f16abb481010ce5631a5055d",
+      "run": "35707370601 SUCCESS",
+      "state": "GREEN_FROZEN_CERTIFIED_SCAFFOLD"
+    },
+    "cook_cmi_provenance": {
+      "frozen_branch": "frozen/g3-cook-cmi-provenance-green-f29f5984",
+      "certificate_commit": "81a8ce7ee18bce83a6f5048f5e5f0dc62edfd45f",
+      "run": "35710913408 SUCCESS",
+      "state": "GREEN_FROZEN_CERTIFIED"
+    },
+    "normalized_dtm_two_way": {
+      "frozen_branch": "frozen/g3-normalized-dtm-two-way-green-26e721ab",
+      "certificate_commit": "ffadd26536e73d9b58f63cba5e2d3b381693e595",
+      "run": "35713976730 SUCCESS",
+      "state": "GREEN_FROZEN_CERTIFIED"
+    },
+    "normalized_ntm_two_way": {
+      "frozen_branch": "frozen/g3-normalized-ntm-two-way-green-77070515",
+      "certificate_commit": "0320de1f6993adcc5a06e5d3ba1da2963ed9aed5",
+      "run": "35715054272 SUCCESS",
+      "state": "GREEN_FROZEN_CERTIFIED"
+    },
+    "normalized_four_way": {
+      "frozen_branch": "frozen/g3-normalized-four-way-green-3f04da00",
+      "certificate_commit": "0fda1584b6a2ed22610c6dbd7140f004423dbc30",
+      "run": "35715387641 SUCCESS",
+      "state": "GREEN_FROZEN_CERTIFIED"
+    },
+    "normalized_typed_contract": {
+      "source_sha": "f2cafea7a74f3ef8ad4140943515622545c9f1d8",
+      "frozen_branch": "frozen/g3-normalized-contract-green-f2cafea7",
+      "certificate_branch": "cert/g3-normalized-contract-f2cafea7-run35719428075",
+      "certificate_commit": "b1879a0342416b29d0f4890aa08ddfc45f1dda0c",
+      "run": "35719428075 SUCCESS",
+      "state": "GREEN_FROZEN_CERTIFIED_TYPED_CONTRACT"
+    },
+    "remaining": [
+      "External source-fidelity theorem tying the normalized Cook-style formal model to the exact selected Cook/CMI convention",
+      "Keep no stronger claim than the provenance and normalization theorem actually proves"
+    ]
+  },
+  "MCORE": {
+    "hub": "11adcd32...",
+    "state": "GREEN_FROZEN_SCAFFOLD"
+  },
+  "OS": {
+    "state": "GREEN_FROZEN",
+    "hardware_secure_boot_claimed": false
+  },
+  "HUB": {
+    "state": "GREEN_FROZEN_SCAFFOLD",
+    "production_crypto_verified": false
+  },
+  "BRAIN": {
+    "policy": "OBSERVE_REASON_ABSTAIN",
+    "state": "GREEN"
+  },
+  "APP": {
+    "state": "NOT_CONNECTED"
+  },
+  "ELYON": {
+    "base": "483f6bdc06b74a0239481085e25c9a9fdccb1a8f",
+    "state": "SEALED_CLOSED",
+    "review": "REVIEW_PENDING"
+  },
+  "FINAL_PROOF": "0/7",
+  "P03": {
+    "status": "OPEN_MATH"
+  },
+  "P04": {
+    "status": "OPEN_MATH"
+  },
+  "P05": {
+    "status": "OPEN_MATH"
+  },
+  "P06": {
+    "status": "OPEN_MATH"
+  },
+  "P07": {
+    "status": "OPEN_MATH"
+  },
+  "issuance_policy": "final_proof=0/7 must remain explicit, no language of solved problem"
+}

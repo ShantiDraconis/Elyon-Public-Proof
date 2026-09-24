@@ -1,0 +1,205 @@
+{
+  "schema": "elyon.final-external.v1.0.0",
+  "certificate_type": "INFRASTRUCTURE_CERTIFIED",
+  "name": "ELYON_FINAL_EXTERNAL",
+  "version": "v1.0.0",
+  "alias": "elyon",
+  "scope": [
+    "MCORE",
+    "AINUM",
+    "OS",
+    "HUB",
+    "BRAIN",
+    "APP",
+    "ELYON"
+  ],
+  "infra_state": "READY_FOR_FREEZE",
+  "math_state": "OPEN_MATH_TWO_EXACT_PRODUCERS",
+  "final_proof": {
+    "numerator": 0,
+    "denominator": 7,
+    "display": "0/7",
+    "terminal_status": {
+      "P01": "OPEN_IMPLEMENTATION - certified through parser/leaf, terminal branches and global-slotlog; exact open payload P01ConstructionGap / Nonempty P01MachineConstruction",
+      "P02": "OPEN_MATH - G2.1 literal route CLOSED_BY_FALSIFICATION; G2.2 wiring GREEN_FROZEN_CERTIFIED; exact open payload G21Pointwise ≃ P02Target ≃ SAT not in P",
+      "P03": "OPEN_MATH",
+      "P04": "OPEN_MATH",
+      "P05": "OPEN_MATH",
+      "P06": "OPEN_MATH",
+      "P07": "OPEN_MATH",
+      "G3": "CLOSED_GREEN_FROZEN_CERTIFIED"
+    },
+    "claim_policy": "NO_CLAIM_OF_P_NP_CLAY_BEAL_SOLVED",
+    "taxonomy": {
+      "FINAL_EXTERNAL_TWO_GAP": "0/2",
+      "P_VS_NP_ENDPOINT": "OPEN",
+      "P_VS_NP_EXTERNAL_MATH_CERTIFIED": false,
+      "FINAL_ROOT_MATH": null,
+      "GLOBAL_7_PROBLEMS": "0/7",
+      "rule": "Two internal P vs NP producers count as one global problem endpoint only after both close."
+    }
+  },
+  "release_state": "SEALED_CLOSED",
+  "max_machine_state": "REVIEW_PENDING",
+  "anchors": {
+    "ELYON": {
+      "base": "483f6bdc06b74a0239481085e25c9a9fdccb1a8f",
+      "audit": "0f71ffea68ed52691201144140fb1a342d03b8d7",
+      "run": "35378862267",
+      "run_status": "SUCCESS",
+      "state": "SEALED_CLOSED",
+      "role": "official_anchor_v1_until_explicit_revision"
+    },
+    "P01": {
+      "prefix": "614f88fe020fd05b9b251a6a2283301acf7ff733",
+      "state": "GREEN_FROZEN_CERTIFIED_ADVANCED_PREFIX",
+      "runs": [
+        "35722427864 SUCCESS integrated parser/leaf",
+        "35722846538 SUCCESS terminal branches",
+        "35723570545 SUCCESS phase/global-slotlog"
+      ],
+      "pending_ATK": [
+        "P01ConstructionGap",
+        "Nonempty P01MachineConstruction"
+      ]
+    },
+    "P02": {
+      "frontier": "38db71b416906e5b7138774842e91d3e367aad09",
+      "status": "G2_2_WIRING_GREEN_FROZEN_CERTIFIED__G21_POINTWISE_OPEN_MATH",
+      "runs": [
+        "35722282451 SUCCESS"
+      ],
+      "pending_ATK": "G21Pointwise / P02Target / Nonempty FailureGenerator(SATBits circuitBitEncoding), equivalent to SAT not in P"
+    },
+    "MCORE_HUB": {
+      "hub_anchor": "11adcd32...",
+      "state": "GREEN_FROZEN_SCAFFOLD"
+    }
+  },
+  "human_review": {
+    "authority": "UNSET",
+    "quorum": "UNSET",
+    "evidence_policy": "UNSET",
+    "status": "REVIEW_PENDING",
+    "notes": "Must be defined by human authority. Cannot be chosen by technical validator. Evidence must be GPG/Sigstore + PR comment + APPROVED_BY_HUMAN tag in review.json"
+  },
+  "production": {
+    "app": {
+      "app_repository": "UNSET",
+      "app_commit": "UNSET",
+      "app_pass_test": "UNSET",
+      "current_state": "NOT_CONNECTED"
+    },
+    "crypto": {
+      "crypto_provider": "UNSET",
+      "public_key_or_key_id": "UNSET",
+      "algorithm": "UNSET",
+      "attestation": "UNSET",
+      "current_state": "GREEN_FROZEN_SCAFFOLD production_crypto_verified=false"
+    },
+    "hardware_attestation": {
+      "status": "UNSET",
+      "allowed_values": [
+        "UNSET",
+        "OUT_OF_SCOPE_FOR_V1",
+        "TPM2_ATTESTED",
+        "SECURE_BOOT_ATTESTED"
+      ],
+      "current_claim": "hardware_secure_boot_claimed=false"
+    }
+  },
+  "G3": {
+    "statement": "G3ExternalContract for the normalized Cook-style external model",
+    "repository": "ShantiDraconis/m-core-p-vs-np",
+    "namespace": "MCore.Real.CookNormalizedG3Contract",
+    "source_file": "lean/MCore/Real/CookNormalizedG3Contract.lean",
+    "closure_condition": "cook_normalized_g3_contract_closed",
+    "source_sha": "f2cafea7a74f3ef8ad4140943515622545c9f1d8",
+    "run": 35719428075,
+    "status": "CLOSED_GREEN_FROZEN_CERTIFIED",
+    "notes": "Formal normalized external contract closed. Independent exhaustive fidelity to every Cook/CMI prose convention is a separate audit statement and is not endpoint proof credit."
+  },
+  "artifacts_required": [
+    "manifest.json",
+    "README.md",
+    "SHA256SUMS",
+    "provenance.json",
+    "gate_ledger.json",
+    "axiom_footprint.json",
+    "reproducibility.md",
+    "signature.bundle / .asc",
+    "MATH_TERMINAL_BOUNDARY_20260922.json",
+    "status.json",
+    "revocation.json"
+  ],
+  "toolchain": {
+    "normative": "Lean 4.19 + lake",
+    "policy": "Other tools (Python, OS runner, Coq/Agda/Isabelle) only included if effectively used in final package. Must be recorded in provenance.json with exact versions."
+  },
+  "axiom_policy": {
+    "allowed_when_present": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "forbidden": [
+      "sorryAx",
+      "sorry",
+      "admit",
+      "custom theorem-carrying axioms",
+      "hidden oracle",
+      "circularity"
+    ],
+    "audit_required": true
+  },
+  "brain_policy": {
+    "v1": "OBSERVE_REASON_ABSTAIN",
+    "change_requires": "explicit policy version bump"
+  },
+  "publication": {
+    "canonical": "Zenodo",
+    "mirror_optional": "Figshare",
+    "destination": "M-Core/certs/final_external/v1/",
+    "mirror": "Genesis_Elyon/certs/final_external/v1/",
+    "optional_mirror": "zero-ai-00/certs/",
+    "license_code": "MIT / Apache-2.0",
+    "license_docs": "CC-BY-4.0",
+    "prize_policy": "Technical certificate does not declare prize recognition. Clay/Beal claims separate."
+  },
+  "root": {
+    "derivation": "deterministic hash of SHAs/hashes of all layers and certs: hash(MCORE)+hash(AINUM)+hash(OS)+hash(HUB)+hash(BRAIN)+hash(APP)+hash(ELYON)+hashes(P01..P07 certs)",
+    "value": null,
+    "status": "PREPARATORY_ROOT_IN_SEPARATE_FILE; FINAL_ROOT_NULL_UNTIL_ISSUANCE_GATES",
+    "FINAL_ROOT": null,
+    "PREPARATORY_ROOT": null,
+    "derivation_final": "hash(MCORE)+hash(AINUM)+hash(OS)+hash(HUB)+hash(BRAIN)+hash(APP)+hash(ELYON)+hashes(P01..P07) + production crypto + hardware + human_review + final frozen anchors",
+    "derivation_preparatory": "SHA256 of canonical SHA256SUMS payload; payload includes MATH_TERMINAL_BOUNDARY_20260922.json and immutable preparatory package files, excluding SHA256SUMS/PREPARATORY_ROOT to avoid self-reference",
+    "preparatory_root_location": "PREPARATORY_ROOT",
+    "FINAL_ROOT_MATH": null,
+    "linked_preparatory_root": "4cdaf7b62ee2ff85676c7dcd98fb6dfe965fa8afd4abccf19ba6aedb42878f24"
+  },
+  "timestamps": {
+    "created_at": null,
+    "approved_at": null,
+    "published_at": null,
+    "policy": "three separate timestamps"
+  },
+  "versioning": {
+    "v1": "immutable after freeze",
+    "future": "SUPERSEDES previous with explicit reason",
+    "revocation": "status.json / revocation.json in same path, with REVOKED / SUPERSEDED / INVALIDATED"
+  },
+  "issuance_gate": {
+    "FINAL_EXTERNAL_ISSUED": false,
+    "condition": "P01ConstructionGap closed AND G21Pointwise closed AND G3 CLOSED AND human_review != UNSET AND production.app != UNSET AND production.crypto != UNSET AND hardware_attestation != UNSET AND all required infra GREEN+FROZEN",
+    "current": "BLOCKED fail-closed: P01ConstructionGap OPEN_IMPLEMENTATION; G21Pointwise OPEN_MATH; P_VS_NP_ENDPOINT OPEN; human_review UNSET; app UNSET; crypto UNSET; hardware UNSET",
+    "public_status": "PREPARATORY_NOT_ISSUED"
+  },
+  "package_state": "PREPARATORY",
+  "public_status": "PREPARATORY_NOT_ISSUED",
+  "public_label": "PREPARATORY / non-issued infrastructure record - NOT A CLAIM OF ISSUED CERTIFICATE",
+  "maximum_auto_state": "REVIEW_PENDING",
+  "package_state_policy": "PACKAGE_SHA256SUMS can be calculated now. FINAL_ROOT must remain null while any issuance prerequisite UNSET",
+  "package_revision": "v1.3.1-preparatory",
+  "freeze_state": "FROZEN_PREPARATORY"
+}

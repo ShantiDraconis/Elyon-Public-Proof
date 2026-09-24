@@ -1,0 +1,45 @@
+{
+  "schema": "mcore.pnp.prior-formalization-reuse.v1",
+  "source_repo": "ShantiDraconis/m-core-p-vs-np",
+  "source_snapshot": "7abed94530d6f3f7272a12a6deadb15ba988f90a",
+  "files": {
+    "three_tracks": {
+      "path": "imports/pnp/recovery/7abed945/audit/ThreeTracks.lean",
+      "blob": "63c9630d139cedc7807cf9213556c693fce5c809",
+      "role": "classical equality/separation endpoint wiring plus conditional ApproximationBridge route",
+      "closes_if": "PSubsetNP + (E0 or S0), or PSubsetNP + A0 + ApproximationBridge"
+    },
+    "endpoint_compression": {
+      "path": "imports/pnp/recovery/7abed945/audit/EndpointCompression.lean",
+      "blob": "41f18931c0d4f106067fc61200713903933164a7",
+      "role": "compress K7-K10 plumbing to OfficialModelMatch + FixedK10WitnessExistence",
+      "key_theorems": [
+        "fixed_witness_implies_final",
+        "endpoint_compression",
+        "endpoint_from_c12_open_bridge"
+      ],
+      "closes_if": "OfficialModelMatch + FixedK10WitnessExistence"
+    },
+    "final_endpoint": {
+      "path": "imports/pnp/recovery/7abed945/audit/FinalEndpoint.lean",
+      "blob": "92953adafe4433e33b44275339cf721ddb96cfa4",
+      "role": "official separation endpoint definition/compatibility"
+    },
+    "start_to_middle": {
+      "path": "imports/pnp/recovery/7abed945/lean/MCore/BackwardAudit/StartToMiddle.lean",
+      "blob": "acc837105be2a8131b4f29cc160be1800b02c9a2"
+    },
+    "final_to_middle": {
+      "path": "imports/pnp/recovery/7abed945/lean/MCore/BackwardAudit/FinalToMiddle.lean",
+      "blob": "5dd4a273792dad9b7d77617224ae759a4e71f79e"
+    }
+  },
+  "current_chain_map": {
+    "official_model_match": "reuse existing G3/ExternalModelMatch certified lane",
+    "fixed_witness": "candidate target for G21Pointwise/P02Target bridge",
+    "p01": "reuse T1 chain to SATInNPGap",
+    "final": "P01 + separation witness -> FinalExternalTwoGap -> FinalExternalCertificate"
+  },
+  "important_result": "This prior formalization eliminates the need to rebuild the classical endpoint plumbing. It does not by itself inhabit G21Pointwise or ApproximationBridge.",
+  "promotion_state": "LINKED_REUSE_FAIL_CLOSED"
+}

@@ -1,0 +1,41 @@
+{
+  "families": ["K","C","P","V","L","G","R","A","H","S","T"],
+  "endpoints": [
+    "P01MachineConstruction",
+    "p01_closed_no_hypothesis",
+    "P01ConstructionGap",
+    "diagonalCompilerV2",
+    "P02SelfCodeExistence",
+    "SameInputClosure",
+    "universal_witness_exists_no_hypothesis",
+    "G21Pointwise",
+    "P02Target",
+    "ExternalModelMatch",
+    "FinalExternalLiveTwoProducer",
+    "final_external_live_two_producer_closed",
+    "FinalExternalGap",
+    "OfficialPneqNP",
+    "FinalExternalCertificate",
+    "final_external_certificate",
+    "FINAL_ROOT",
+    "FINAL_EXTERNAL_ISSUED",
+    "FINAL_PROOF"
+  ],
+  "critical_chain": [
+    ["P01MachineConstruction","p01_closed_no_hypothesis"],
+    ["p01_closed_no_hypothesis","P01ConstructionGap"],
+    ["diagonalCompilerV2","SameInputClosure"],
+    ["SameInputClosure","universal_witness_exists_no_hypothesis"],
+    ["universal_witness_exists_no_hypothesis","G21Pointwise"],
+    ["G21Pointwise","P02Target"],
+    ["P01ConstructionGap","FinalExternalLiveTwoProducer"],
+    ["P02Target","FinalExternalLiveTwoProducer"],
+    ["ExternalModelMatch","FinalExternalLiveTwoProducer"],
+    ["FinalExternalLiveTwoProducer","FinalExternalGap"],
+    ["FinalExternalGap","OfficialPneqNP"],
+    ["OfficialPneqNP","FinalExternalCertificate"],
+    ["FinalExternalCertificate","FINAL_ROOT"],
+    ["FINAL_ROOT","FINAL_EXTERNAL_ISSUED"],
+    ["FINAL_EXTERNAL_ISSUED","FINAL_PROOF"]
+  ]
+}
