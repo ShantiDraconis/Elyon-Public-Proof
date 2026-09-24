@@ -1,0 +1,70 @@
+{
+  "schema": "elyon.discovery-metadata.v1",
+  "title": "ELYON Claim1-7: Lean-Verified Formal Certificate and Reproducible Audit Package",
+  "author": {
+    "name": "Tiago Paschoalatto Fagliari",
+    "orcid": "0009-0006-6874-3910",
+    "orcid_url": "https://orcid.org/0009-0006-6874-3910"
+  },
+  "doi": "10.6084/m9.figshare.33990856",
+  "doi_url": "https://doi.org/10.6084/m9.figshare.33990856",
+  "repository": "https://github.com/ShantiDraconis/Elyon-Public-Proof",
+  "license": "MIT",
+  "release_date": "2026-09-24",
+  "software_environment": {
+    "lean": "leanprover/lean4:v4.19.0",
+    "mathlib": "v4.19.0"
+  },
+  "fields": [
+    "theoretical computer science",
+    "computational complexity",
+    "P versus NP",
+    "formal methods",
+    "interactive theorem proving",
+    "Lean 4",
+    "mathematical logic",
+    "computability",
+    "SAT and CNF encodings",
+    "circuit complexity",
+    "proof engineering",
+    "reproducible mathematics",
+    "software verification",
+    "trustworthy computing",
+    "automated reasoning",
+    "scientific software preservation",
+    "external proof auditing",
+    "AI-assisted formal mathematics"
+  ],
+  "keywords": [
+    "P versus NP",
+    "P vs NP",
+    "computational complexity",
+    "Lean 4",
+    "formal proof",
+    "formal verification",
+    "theorem proving",
+    "SAT",
+    "CNF",
+    "Cook-Levin",
+    "circuit complexity",
+    "proof audit",
+    "reproducible mathematics",
+    "machine-checked proof",
+    "formal methods",
+    "proof engineering",
+    "mathematical logic",
+    "computability",
+    "ELYON",
+    "M-Core"
+  ],
+  "identifiers": {
+    "publication_source_sha": "d7298c44b8efc7202819f8095cef977e8929d4dc",
+    "audited_release_sha": "fed4f79b1b646be824904aa32bd05a5f481791b3",
+    "audited_release_run": 36050478168,
+    "audit_sha": "d95cbb72b0ea671a1e70b6aa773a8f8647944de4",
+    "audit_run": 36049892790,
+    "proof_baseline_sha": "6634422c8004966b97c9c96b0f878852dbbd9175",
+    "proof_baseline_run": 36048534795
+  },
+  "scope_note": "Repository-scoped Lean/CI certificate chain. Independent mathematical correspondence review remains required for broader claims."
+}
