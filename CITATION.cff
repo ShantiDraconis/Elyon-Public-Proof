@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this verification package, please cite the archived scientific record."
+title: "ELYON Claim1-7: Lean-Verified Formal Certificate and Reproducible Audit Package"
+type: software
+authors:
+  - family-names: "Fagliari"
+    given-names: "Tiago Paschoalatto"
+    orcid: "https://orcid.org/0009-0006-6874-3910"
+identifiers:
+  - type: doi
+    value: "10.6084/m9.figshare.33990856"
+    description: "Figshare scientific record"
+date-released: "2026-09-24"
+repository-code: "https://github.com/ShantiDraconis/Elyon-Public-Proof"
+url: "https://doi.org/10.6084/m9.figshare.33990856"
