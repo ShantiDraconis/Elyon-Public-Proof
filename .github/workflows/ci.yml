@@ -1,0 +1,92 @@
+name: Public Independent Audit
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  scoped-proof-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Record public commit
+        run: |
+          set -euo pipefail
+          git rev-parse HEAD
+          git status --short
+          cat lean-toolchain
+
+      - name: Install pinned Lean toolchain
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fsSL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+          export PATH="$HOME/.elan/bin:$PATH"
+          elan toolchain install "$(cat lean-toolchain)"
+          elan default "$(cat lean-toolchain)"
+
+      - name: Resolve pinned dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          export PATH="$HOME/.elan/bin:$PATH"
+          lake update
+
+      - name: Verify frozen audit checksums
+        shell: bash
+        run: |
+          set -euo pipefail
+          sha256sum -c certs/elyon_claim1_7_only/SHA256SUMS
+
+      - name: Fail closed on placeholders in public endpoint and bridge
+        shell: bash
+        run: |
+          set -euo pipefail
+          files=(
+            lean/MCore/Real/Claim1To7Only.lean
+            lean/MCore/Real/BridgeSeven.lean
+          )
+          if grep -nE '(^|[^[:alnum:]_])(sorry|admit)([^[:alnum:]_]|$)' "${files[@]}"; then
+            echo "placeholder proof term found"
+            exit 1
+          fi
+          if grep -nE '^[[:space:]]*(axiom|constant|constants)[[:space:]]' "${files[@]}"; then
+            echo "custom axiom/constant declaration found in public endpoint/bridge"
+            exit 1
+          fi
+
+      - name: Kernel build scoped endpoint
+        shell: bash
+        run: |
+          set -euo pipefail
+          export PATH="$HOME/.elan/bin:$PATH"
+          lake build MCore.Real.Claim1To7Only
+
+      - name: Print endpoint axiom dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          export PATH="$HOME/.elan/bin:$PATH"
+          lake env lean lean/MCore/Real/Claim1To7Only.lean
+
+      - name: Verify public audit package
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f AUDIT_INDEX.md
+          test -f AUDIT_PROVENANCE.json
+          test -f EXTERNAL_AUDIT_CHECKLIST.md
+          test -f SCOPE_AND_LIMITATIONS.md
+          test -f public/EXTERNAL_CERTIFICATE_COMPLETE.json
+          test -f public/PUBLIC_EXTERNAL_CERTIFICATE.md
+          test -f public/INDEPENDENT_VERIFICATION.md
+          test -f certs/elyon_claim1_7_only/AUDIT_MANIFEST.json
+          test -f certs/elyon_claim1_7_only/FINAL_ISSUANCE.json
