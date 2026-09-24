@@ -1,0 +1,5 @@
+frontier:
+  - id: PNP-SIGNATURE-ADAPTER
+    status: OPEN_BRIDGE
+  - id: PNP-ASYMPTOTIC-BOUNDARY
+    status: OPEN_BRIDGE

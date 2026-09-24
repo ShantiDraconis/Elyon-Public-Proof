@@ -1,0 +1,22 @@
+{
+  "schema": "ATK_GATE_LEDGER_V2",
+  "repo": "m-core-p-vs-np",
+  "queue": "PNP",
+  "hard_composite_remaining": 2,
+  "hard_atomic_remaining": 2,
+  "current_gate": "P01",
+  "current_head": "969408f2d84121667319da04680893dd2978e9a6",
+  "canonical_hard_base": {
+    "state": "GREEN_FROZEN_REUSED",
+    "branch": "frozen/material-orientation-green-969408f2",
+    "sha": "969408f2d84121667319da04680893dd2978e9a6",
+    "certificate_commit": "f14c2e1854d6b62dc3e5b567a6769a04075f76d5",
+    "certified_scope": "material orientation kernel: genuine PolySAT route or LowerBoundWitness required"
+  },
+  "state_ci": "GREEN_PREFIX_REUSED",
+  "state_math": "OPEN_MATH",
+  "next": "construct MaterialOrientation: operational polynomial SAT certificate plus transfer, or genuine NP-not-P lower-bound witness",
+  "progress_metric": "FROZEN_HARD/TOTAL_HARD",
+  "tests_are_progress_metric": false,
+  "frozen_prefix_decrements_hard": false
+}
