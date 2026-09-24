@@ -1,0 +1,64 @@
+name: FINAL_FAIL Fundamental Indeterminacy Core v1
+
+on:
+  push:
+    branches:
+      - attack/final-fail-indeterminacy-core-v1-20260921
+  pull_request:
+    paths:
+      - 'lean/MCore/FinalFail/FundamentalIndeterminacy.lean'
+      - 'lean/MCore/FinalFail/RelationalHardAtom.lean'
+      - 'lean/MCore/FinalFail/CoreIndeterminacyTests.lean'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  indeterminacy-core:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Lean 4.19.0
+        run: |
+          set -euo pipefail
+          curl https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -sSf | sh -s -- -y --default-toolchain leanprover/lean4:v4.19.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      - name: Fail-closed source hygiene
+        run: |
+          set -euo pipefail
+          files=(
+            lean/MCore/FinalFail/TriadicObstructionCalculus.lean
+            lean/MCore/FinalFail/MinimalOpenBridge.lean
+            lean/MCore/FinalFail/ClosedCenterHard.lean
+            lean/MCore/FinalFail/FundamentalIndeterminacy.lean
+            lean/MCore/FinalFail/RelationalHardAtom.lean
+            lean/MCore/FinalFail/CoreIndeterminacyTests.lean
+          )
+          if grep -nE '(^|[^[:alnum:]_])(sorry|admit)([^[:alnum:]_]|$)' "${files[@]}"; then
+            exit 1
+          fi
+          if grep -nE '^[[:space:]]*(axiom|constant|constants)[[:space:]]' "${files[@]}"; then
+            exit 1
+          fi
+
+      - name: Kernel compile indeterminacy core
+        run: |
+          set -euo pipefail
+          cd lean
+          export LEAN_PATH="$PWD"
+          lean -o MCore/FinalFail/TriadicObstructionCalculus.olean MCore/FinalFail/TriadicObstructionCalculus.lean
+          lean -o MCore/FinalFail/MinimalOpenBridge.olean MCore/FinalFail/MinimalOpenBridge.lean
+          lean -o MCore/FinalFail/ClosedCenterHard.olean MCore/FinalFail/ClosedCenterHard.lean
+          lean -o MCore/FinalFail/FundamentalIndeterminacy.olean MCore/FinalFail/FundamentalIndeterminacy.lean
+          lean -o MCore/FinalFail/RelationalHardAtom.olean MCore/FinalFail/RelationalHardAtom.lean
+          lean MCore/FinalFail/CoreIndeterminacyTests.lean 2>&1 | tee /tmp/indeterminacy-core.log
+
+      - name: Axiom footprint
+        run: |
+          set -euo pipefail
+          if grep -q 'sorryAx' /tmp/indeterminacy-core.log; then exit 1; fi
+          test "$(grep -c 'does not depend on any axioms' /tmp/indeterminacy-core.log || true)" -ge 4
+          echo "FUNDAMENTAL_INDETERMINACY_CORE=GREEN"
