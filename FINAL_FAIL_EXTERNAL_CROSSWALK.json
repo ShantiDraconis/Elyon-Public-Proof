@@ -1,0 +1,185 @@
+{
+  "schema": "elyon.final-fail-external-crosswalk.v1",
+  "generated": "2026-09-24",
+  "public_repository": "ShantiDraconis/Elyon-Public-Proof",
+  "author": {
+    "name": "Tiago Paschoalatto Fagliari",
+    "orcid": "0009-0006-6874-3910"
+  },
+  "archive_doi": "10.6084/m9.figshare.33990856",
+  "archive_doi_url": "https://doi.org/10.6084/m9.figshare.33990856",
+  "licensing": {
+    "software": "MIT",
+    "scientific_content": "CC BY 4.0"
+  },
+  "doi_policy": "The confirmed DOI for the public Elyon archive is applied as the archive DOI for all linked problem records. No distinct per-problem DOI is asserted unless separately verified.",
+  "problems": [
+    {
+      "problem": "Beal",
+      "key": "BEAL",
+      "source_repo": "ShantiDraconis/m-core-beal",
+      "source_frozen_commit": "73f1fd7b2a692ea857acaea70e18745f08878c2a",
+      "certificate_package_commit": "0a0819ea3800d1a9cf40c2888eb971ad35dda188",
+      "runs": [
+        35641414716,
+        35641414763,
+        35641897480
+      ],
+      "final_fail": "BEAL",
+      "external_status": "OPEN_MATH",
+      "scope": "EXACT_TERMINAL_REDUCTION",
+      "archive_doi": "10.6084/m9.figshare.33990856",
+      "individual_problem_doi": null,
+      "individual_problem_doi_status": "DOI_PENDING_NOT_VERIFIED",
+      "source_commit_url": "https://github.com/ShantiDraconis/m-core-beal/commit/73f1fd7b2a692ea857acaea70e18745f08878c2a",
+      "certificate_commit_url": "https://github.com/ShantiDraconis/m-core-beal/commit/0a0819ea3800d1a9cf40c2888eb971ad35dda188",
+      "public_archive_root": "external-certificates/m-core-beal/",
+      "final_proof_credit": 0
+    },
+    {
+      "problem": "Navier–Stokes",
+      "key": "NAVIER_STOKES",
+      "source_repo": "ShantiDraconis/navier-stokes-critical-barrier-audit",
+      "source_frozen_commit": "04aa4c0450bba417e83c643de1eb54eb189b7c53",
+      "certificate_package_commit": "99117aaa64280acf8c889b28eade26a8a51f5714",
+      "runs": [
+        35587202636
+      ],
+      "final_fail": "NAVIER_STOKES",
+      "external_status": "OPEN_MATH",
+      "scope": "N01_HARDENED_GEOMETRY_FRONTIER",
+      "archive_doi": "10.6084/m9.figshare.33990856",
+      "individual_problem_doi": null,
+      "individual_problem_doi_status": "DOI_PENDING_NOT_VERIFIED",
+      "source_commit_url": "https://github.com/ShantiDraconis/navier-stokes-critical-barrier-audit/commit/04aa4c0450bba417e83c643de1eb54eb189b7c53",
+      "certificate_commit_url": "https://github.com/ShantiDraconis/navier-stokes-critical-barrier-audit/commit/99117aaa64280acf8c889b28eade26a8a51f5714",
+      "public_archive_root": "external-certificates/navier-stokes-critical-barrier-audit/",
+      "final_proof_credit": 0
+    },
+    {
+      "problem": "Riemann Hypothesis",
+      "key": "RIEMANN",
+      "source_repo": "ShantiDraconis/m-core-riemann",
+      "source_frozen_commit": "d6a291b4563f9021f74ab63cc983d44f079472da",
+      "certificate_package_commit": "8a179aee88ba3c7e794169e4e4e4100f5b5e8b32",
+      "runs": [
+        35641657140
+      ],
+      "final_fail": "RIEMANN",
+      "external_status": "OPEN_MATH",
+      "scope": "NB_ZERO_LIMIT_DENSITY_EQUIVALENCE",
+      "archive_doi": "10.6084/m9.figshare.33990856",
+      "individual_problem_doi": null,
+      "individual_problem_doi_status": "DOI_PENDING_NOT_VERIFIED",
+      "source_commit_url": "https://github.com/ShantiDraconis/m-core-riemann/commit/d6a291b4563f9021f74ab63cc983d44f079472da",
+      "certificate_commit_url": "https://github.com/ShantiDraconis/m-core-riemann/commit/8a179aee88ba3c7e794169e4e4e4100f5b5e8b32",
+      "public_archive_root": "external-certificates/m-core-riemann/",
+      "final_proof_credit": 0
+    },
+    {
+      "problem": "Hodge Conjecture",
+      "key": "HODGE",
+      "source_repo": "ShantiDraconis/m-core-hodge",
+      "source_frozen_commit": "f4918c01d970658e303033c1caf7c2ee0899b342",
+      "certificate_package_commit": "a4d9172f8795030dba07beff06109b20fa5fea30",
+      "runs": [
+        35632216335,
+        35624030040
+      ],
+      "final_fail": "HODGE",
+      "external_status": "OPEN_MATH",
+      "scope": "TERMINAL_FRONTIER_MINIMAL_CUT",
+      "archive_doi": "10.6084/m9.figshare.33990856",
+      "individual_problem_doi": null,
+      "individual_problem_doi_status": "DOI_PENDING_NOT_VERIFIED",
+      "source_commit_url": "https://github.com/ShantiDraconis/m-core-hodge/commit/f4918c01d970658e303033c1caf7c2ee0899b342",
+      "certificate_commit_url": "https://github.com/ShantiDraconis/m-core-hodge/commit/a4d9172f8795030dba07beff06109b20fa5fea30",
+      "public_archive_root": "external-certificates/m-core-hodge/",
+      "final_proof_credit": 0
+    },
+    {
+      "problem": "Yang–Mills and Mass Gap",
+      "key": "YANG_MILLS",
+      "source_repo": "ShantiDraconis/m-core-yang-mills",
+      "source_frozen_commit": "dc5b45c4b1ec9e435b76f22e156878634dfdb59c",
+      "certificate_package_commit": "075c2aee62cc829fe2a5ed10579e8e8475e4d4db",
+      "runs": [
+        35632222934,
+        35624033137
+      ],
+      "final_fail": "YANG_MILLS",
+      "external_status": "OPEN_MATH",
+      "scope": "TERMINAL_FRONTIER_B6",
+      "archive_doi": "10.6084/m9.figshare.33990856",
+      "individual_problem_doi": null,
+      "individual_problem_doi_status": "DOI_PENDING_NOT_VERIFIED",
+      "source_commit_url": "https://github.com/ShantiDraconis/m-core-yang-mills/commit/dc5b45c4b1ec9e435b76f22e156878634dfdb59c",
+      "certificate_commit_url": "https://github.com/ShantiDraconis/m-core-yang-mills/commit/075c2aee62cc829fe2a5ed10579e8e8475e4d4db",
+      "public_archive_root": "external-certificates/m-core-yang-mills/",
+      "final_proof_credit": 0
+    },
+    {
+      "problem": "P versus NP",
+      "key": "P_VS_NP",
+      "source_repo": "ShantiDraconis/m-core-p-vs-np",
+      "source_frozen_commit": "e927d32684ae9294bb97f2fa5e66f24e57e085de",
+      "certificate_package_commit": "8ca2065ebc829a4c8cefe91062f03677f5396031",
+      "runs": [
+        35632081050,
+        35632081097,
+        35629473883,
+        35629474058,
+        35629473878
+      ],
+      "final_fail": "P_VS_NP",
+      "external_status": "OPEN_MATH_TWO_EXACT_PRODUCERS",
+      "scope": "CANONICAL_TERMINAL_FAIL_PROOF_BOUNDARY",
+      "external_chain": [
+        {
+          "name": "FinalExternal integration",
+          "sha": "c102d9d482d708a7a865803e94f294c6da82ed9a",
+          "run": 35722252805
+        },
+        {
+          "name": "FinalExternalTwoGap",
+          "sha": "b406b806da58ebe6bc1f85863ee44054ad42edb2",
+          "run": 35722743845
+        },
+        {
+          "name": "G2.2 wiring",
+          "sha": "38db71b416906e5b7138774842e91d3e367aad09",
+          "run": 35722282451
+        }
+      ],
+      "archive_doi": "10.6084/m9.figshare.33990856",
+      "individual_problem_doi": null,
+      "individual_problem_doi_status": "DOI_PENDING_NOT_VERIFIED",
+      "source_commit_url": "https://github.com/ShantiDraconis/m-core-p-vs-np/commit/e927d32684ae9294bb97f2fa5e66f24e57e085de",
+      "certificate_commit_url": "https://github.com/ShantiDraconis/m-core-p-vs-np/commit/8ca2065ebc829a4c8cefe91062f03677f5396031",
+      "public_archive_root": "external-certificates/m-core-p-vs-np/",
+      "final_proof_credit": 0
+    },
+    {
+      "problem": "Birch and Swinnerton-Dyer",
+      "key": "BSD",
+      "source_repo": "ShantiDraconis/m-core-bsd",
+      "source_frozen_commit": "6258a9f9a13cd90193dc7d12927ce3c044fe0da6",
+      "certificate_package_commit": "5a1bb915bd600da469dcf14db61be08092fade48",
+      "runs": [
+        35641972827,
+        35641972739,
+        35642114588
+      ],
+      "final_fail": "BSD",
+      "external_status": "OPEN_MATH",
+      "scope": "SEMANTIC_COUNTERMODEL_TO_OVERBROAD_PRODUCER",
+      "archive_doi": "10.6084/m9.figshare.33990856",
+      "individual_problem_doi": null,
+      "individual_problem_doi_status": "DOI_PENDING_NOT_VERIFIED",
+      "source_commit_url": "https://github.com/ShantiDraconis/m-core-bsd/commit/6258a9f9a13cd90193dc7d12927ce3c044fe0da6",
+      "certificate_commit_url": "https://github.com/ShantiDraconis/m-core-bsd/commit/5a1bb915bd600da469dcf14db61be08092fade48",
+      "public_archive_root": "external-certificates/m-core-bsd/",
+      "final_proof_credit": 0
+    }
+  ]
+}
