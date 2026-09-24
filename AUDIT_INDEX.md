@@ -5,15 +5,16 @@ This repository is the public, reviewable publication of the frozen Elyon Claim1
 ## Start here
 
 1. `README.md` — verification entry point.
-2. `public/PUBLIC_EXTERNAL_CERTIFICATE.md` — exact certified scope.
-3. `public/INDEPENDENT_VERIFICATION.md` — clean-room reproduction procedure.
-4. `public/EXTERNAL_CERTIFICATE_COMPLETE.json` — machine-readable certificate metadata.
-5. `AUDIT_PROVENANCE.json` — source/publication provenance and historical CI runs.
-6. `EXTERNAL_AUDIT_CHECKLIST.md` — reviewer checklist.
-7. `SCOPE_AND_LIMITATIONS.md` — what the package does and does not establish.
-8. `certs/elyon_claim1_7_only/SHA256SUMS` — frozen file digests.
-9. `lean/MCore/Real/Claim1To7Only.lean` — public endpoint.
-10. `lean/MCore/Real/BridgeSeven.lean` — seven-claim bridge and concrete endpoint.
+2. `PUBLIC_REPRODUCIBILITY.md` — clean-room public reproduction with no private-repository access required.
+3. `public/PUBLIC_EXTERNAL_CERTIFICATE.md` — exact certified scope.
+4. `public/INDEPENDENT_VERIFICATION.md` — preserved historical source-era reproduction instructions.
+5. `public/EXTERNAL_CERTIFICATE_COMPLETE.json` — machine-readable certificate metadata.
+6. `AUDIT_PROVENANCE.json` — source/publication provenance and historical CI runs.
+7. `EXTERNAL_AUDIT_CHECKLIST.md` — reviewer checklist.
+8. `SCOPE_AND_LIMITATIONS.md` — what the package does and does not establish.
+9. `certs/elyon_claim1_7_only/SHA256SUMS` — frozen file digests.
+10. `lean/MCore/Real/Claim1To7Only.lean` — public endpoint.
+11. `lean/MCore/Real/BridgeSeven.lean` — seven-claim bridge and concrete endpoint.
 
 ## Certified chain
 
