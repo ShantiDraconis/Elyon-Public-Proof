@@ -1,0 +1,15 @@
+frontier:
+  - id: HODGE-SIGNATURE-ADAPTER
+    status: DEFINITION_INTERFACE
+    evidence: lean/MCore/Hodge.lean
+  - id: HODGE-BOUNDARY-SEMANTICS
+    status: DEFINITION_INTERFACE
+    evidence: lean/MCore/HodgeBoundary.lean
+  - id: HODGE-CYCLE-CLASS-DIRECTION
+    status: DEFINITION_INTERFACE
+    evidence: lean/MCore/Hodge.lean::CycleClassIsHodge
+  - id: HODGE-ALGEBRAICITY-SURJECTIVITY
+    status: OPEN_BRIDGE
+    statement: "For every smooth projective complex variety X, every rational Hodge class is in the rational span of algebraic cycle classes."
+    evidence: lean/MCore/Hodge.lean::RationalHodgeConjecture
+    promotion_requirement: "A concrete geometry implementation plus a proof of RationalHodgeConjecture; no assumption/axiom/admit/sorry may certify this node."

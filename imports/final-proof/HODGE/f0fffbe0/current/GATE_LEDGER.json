@@ -1,0 +1,21 @@
+{
+  "schema": "ATK_GATE_LEDGER_V2",
+  "repo": "m-core-hodge",
+  "queue": "HODGE",
+  "hard_composite_remaining": 1,
+  "hard_atomic_remaining": 1,
+  "current_gate": "H01",
+  "current_head": "42eaf7d4d639871f82eceb121ee525a6c4f30d84",
+  "canonical_hard_base": {
+    "state": "GREEN_FROZEN_REUSED",
+    "branch": "frozen/h01-minimal-forward-payload-green-42eaf7d4",
+    "sha": "42eaf7d4d639871f82eceb121ee525a6c4f30d84",
+    "certified_scope": "H01MinimalForwardPayload is sufficient for the concrete pointwise Hodge endpoint"
+  },
+  "state_ci": "GREEN_PREFIX_REUSED",
+  "state_math": "OPEN_MATH",
+  "next": "construct H01MinimalForwardPayload for every smooth-projective rational Hodge class in arbitrary codimension",
+  "progress_metric": "FROZEN_HARD/TOTAL_HARD",
+  "tests_are_progress_metric": false,
+  "frozen_prefix_decrements_hard": false
+}
