@@ -118,3 +118,7 @@ For press, reviewers, and indexers, use the DOI and ORCID above as the stable di
 ## Cross-repository certificate archive
 
 Additional public-safe certificates and audit evidence from related research repositories are indexed in `external-certificates/README.md`. Every imported package is namespaced by source repository and source SHA so independent reviewers can distinguish provenance and scope.
+
+## Cross-problem certificate map
+
+For the seven problem slots, see `FINAL_FAIL_EXTERNAL_CROSSWALK.md` and `FINAL_FAIL_EXTERNAL_CROSSWALK.json` for FINAL_FAIL/EXTERNAL boundaries, source SHAs, certificate-package SHAs, CI runs, public archive paths, and DOI linkage.
