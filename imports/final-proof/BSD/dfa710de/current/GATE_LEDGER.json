@@ -1,0 +1,21 @@
+{
+  "schema": "ATK_GATE_LEDGER_V2",
+  "repo": "m-core-bsd",
+  "queue": "BSD",
+  "hard_composite_remaining": 1,
+  "hard_atomic_remaining": 2,
+  "current_gate": "D01",
+  "current_head": "c1e7b245726c4c65f5f9f878acefb86460746f4a",
+  "canonical_hard_base": {
+    "state": "GREEN_FROZEN_REUSED",
+    "branch": "frozen/d01-universal-firewall-v2-green-c1e7b245",
+    "sha": "c1e7b245726c4c65f5f9f878acefb86460746f4a",
+    "certified_scope": "universal-promotion firewall; finite/curve-specific evidence cannot imply unrestricted BSD"
+  },
+  "state_ci": "GREEN_PREFIX_REUSED",
+  "state_math": "OPEN_MATH",
+  "next": "restrict producer to realizable elliptic-curve arithmetic/analytic data; prove rank equality, then refined leading coefficient + regulator/height + Sha identity on the same domain",
+  "progress_metric": "FROZEN_HARD/TOTAL_HARD",
+  "tests_are_progress_metric": false,
+  "frozen_prefix_decrements_hard": false
+}

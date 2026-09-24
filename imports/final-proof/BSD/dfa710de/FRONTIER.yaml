@@ -1,0 +1,16 @@
+frontier:
+  - id: BSD-RANK-SIGNATURE
+    status: OPEN_BRIDGE
+  - id: BSD-LEADING-COEFFICIENT-BOUNDARY
+    status: OPEN_BRIDGE
+  - id: BSD-HIGHER-RANK-HEIGHT-IDENTITY
+    status: OPEN_BRIDGE
+    object_constructed_universally: false
+    instance_r_1: PROVED_EXTERNAL
+  - id: PENCHEV-2026-PRC
+    status: PENDING_INDEPENDENT_VERIFICATION
+    source_status: EXTERNAL_UNREFEREED
+    downstream_promotion: FORBIDDEN
+  - id: PENCHEV-2026-AGGP-UNIVERSALIZATION
+    status: DOMAIN_GAP_UNLESS_DISCHARGED
+    note: "Existing independently visible AGGP results found by the audit have rank/local/ordinarity or low-dimensional restrictions; universal all-ranks inference requires exact hypothesis discharge."

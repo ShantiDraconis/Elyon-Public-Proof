@@ -1,0 +1,12 @@
+frontier:
+  - id: BEAL-GCD-SIGNATURE-INFRASTRUCTURE
+    status: PROVED_LOGIC
+    evidence: lean/MCore/GCDSignature.lean
+  - id: BEAL-DISCRETE-BOUNDARY-INFRASTRUCTURE
+    status: PROVED_LOGIC
+    evidence: lean/MCore/DiscreteBoundary.lean
+  - id: BEAL-COMMON-PRIME-ENDPOINT
+    status: OPEN_BRIDGE
+    statement: "forall admissible A,B,C,x,y,z, A^x + B^y = C^z implies a common prime divides A,B,C"
+    evidence: lean/MCore/BealSpecification.lean
+    note: "This is the Beal conjecture itself; do not promote without a proof or verified counterexample."

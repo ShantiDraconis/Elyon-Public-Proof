@@ -1,0 +1,92 @@
+{
+  "schema": "mcore.premio-final-crosswalk.v1",
+  "date": "2026-09-23",
+  "purpose": "Cross the historical m-core-premio-final line with the current M-Core FINAL_PROOF chain and attach only statement-compatible reusable artifacts.",
+  "historical_source": {
+    "label": "m-core-premio-final",
+    "status": "historical local/repository label; not currently exposed as a standalone installed GitHub repository",
+    "recovered_in": "ShantiDraconis/M-Core",
+    "branch": "python-audit",
+    "branch_head_observed": "de53defdccc97071f6b386f4f94547d4667efafb"
+  },
+  "recovered_artifacts": {
+    "ProjectionDistance": {
+      "domain": "RIEMANN",
+      "import_commit": "68d515d6dcc92a11ad2f681334318240b51f6cb9",
+      "fix_commit": "74d3f261bf8d80d7bd8371841966b8f9f837c536",
+      "path": "MCore/RH/NB/ProjectionDistance.lean",
+      "historical_run": 35083222295,
+      "role": "finite nested approximation/projection-distance machinery",
+      "compatibility": "RIEMANN_ONLY",
+      "pnp_terminal_compatibility": false
+    },
+    "CentralBridge": {
+      "domain": "RIEMANN",
+      "historical_state": "OPEN_BRIDGE",
+      "role": "historical Riemann terminal bridge lineage",
+      "compatibility": "RIEMANN_ONLY",
+      "pnp_terminal_compatibility": false
+    }
+  },
+  "current_final_proof_chain": {
+    "registry": "lean/MCore/FinalProofRegistry.lean",
+    "global_manifest": "final-proof/all_relevant_files.json",
+    "pnp_reuse": "final-proof/pnp_reuse_chain.json",
+    "pnp_prior_formalization": "final-proof/pnp_prior_formalization_reuse.json",
+    "external_linkage": "certs/final_external/FINAL_PROOF_REUSE_LINKS_20260923.json"
+  },
+  "p_vs_np_exact_chain": {
+    "T1": {
+      "endpoint": "P01ConstructionGap",
+      "equivalent_payload": "Nonempty P01MachineConstruction",
+      "current_source": "ShantiDraconis/m-core-p-vs-np",
+      "reuse_status": "LINKED_REUSE_FAIL_CLOSED"
+    },
+    "T5": {
+      "endpoint": "G21Pointwise",
+      "equivalents": [
+        "P02Target",
+        "Nonempty FailureGenerator(SATBits circuitBitEncoding)",
+        "SAT not in P"
+      ],
+      "current_source": "ShantiDraconis/m-core-p-vs-np",
+      "reuse_status": "LINKED_REUSE_FAIL_CLOSED"
+    },
+    "consumer_chain": "P01ConstructionGap + G21Pointwise -> FinalExternalGap -> OfficialPneqNP -> FINAL_PROOF[P_VS_NP]"
+  },
+  "prior_pnp_equivalent_plumbing_already_absorbed": {
+    "source_snapshot": "7abed94530d6f3f7272a12a6deadb15ba988f90a",
+    "ThreeTracks": "classical equality/separation endpoint wiring plus conditional ApproximationBridge route",
+    "EndpointCompression": "OfficialModelMatch + FixedK10WitnessExistence -> endpoint plumbing",
+    "mapping": {
+      "OfficialModelMatch": "reuse existing G3/ExternalModelMatch certified lane",
+      "FixedK10WitnessExistence": "candidate target for G21Pointwise/P02Target bridge",
+      "P01": "reuse T1 chain to SATInNPGap"
+    },
+    "limitation": "Does not by itself inhabit G21Pointwise or ApproximationBridge."
+  },
+  "crosswalk_result": {
+    "ProjectionDistance_to_P01ConstructionGap": "INCOMPATIBLE_DOMAIN",
+    "ProjectionDistance_to_G21Pointwise": "INCOMPATIBLE_DOMAIN",
+    "CentralBridge_to_P01ConstructionGap": "INCOMPATIBLE_DOMAIN",
+    "CentralBridge_to_G21Pointwise": "INCOMPATIBLE_DOMAIN",
+    "historical_final_proof_orchestration": "ALREADY_ABSORBED_BY_CURRENT_MCORE_FINAL_PROOF_REGISTRY_AND_REUSE_LINKERS",
+    "pnp_classical_endpoint_plumbing": "ALREADY_ABSORBED",
+    "remaining_pnp_terminal_producers": [
+      "P01ConstructionGap",
+      "G21Pointwise"
+    ]
+  },
+  "promotion_policy": {
+    "rule": "No cross-domain artifact is allowed to inhabit a terminal proposition merely by structural similarity or shared naming.",
+    "required_for_promotion": [
+      "exact statement compatibility",
+      "hypothesis compatibility",
+      "quantifier compatibility",
+      "domain compatibility",
+      "kernel-checked proof",
+      "axiom/circularity audit"
+    ]
+  },
+  "state": "CHAIN_REPAIRED_PROVENANCE_ONLY__PNP_TWO_TERMINALS_REMAIN_OPEN"
+}
