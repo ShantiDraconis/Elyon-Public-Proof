@@ -39,3 +39,9 @@ The historical SHAs identify the private source history from which this public s
 ## Independent-review boundary
 
 A successful Lean build establishes that the stated formal terms typecheck under the pinned Lean/mathlib environment. It does not, by itself, establish that the formal definitions exactly capture the standard P versus NP problem. That correspondence is a separate mathematical-review obligation.
+
+## Cross-problem FINAL_FAIL / EXTERNAL index
+
+- `FINAL_FAIL_EXTERNAL_CROSSWALK.md` — human-readable problem → FINAL_FAIL/EXTERNAL → SHA → run → DOI map.
+- `FINAL_FAIL_EXTERNAL_CROSSWALK.json` — machine-readable equivalent.
+
