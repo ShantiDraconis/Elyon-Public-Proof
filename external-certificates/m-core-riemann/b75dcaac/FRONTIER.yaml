@@ -1,5 +1,0 @@
-frontier:
-  - id: RH-SIGNATURE-ADAPTER
-    status: OPEN_BRIDGE
-  - id: RH-BOUNDARY-SEMANTICS
-    status: OPEN_BRIDGE
