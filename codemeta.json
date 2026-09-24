@@ -1,0 +1,27 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "name": "ELYON Claim1-7: Lean-Verified Formal Certificate and Reproducible Audit Package",
+  "description": "Public reproducible Lean 4 formal verification and external-audit package for the repository-scoped ELYON Claim1-Claim7 certificate chain.",
+  "codeRepository": "https://github.com/ShantiDraconis/Elyon-Public-Proof",
+  "datePublished": "2026-09-24",
+  "license": "https://spdx.org/licenses/MIT.html",
+  "identifier": "https://doi.org/10.6084/m9.figshare.33990856",
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Tiago Paschoalatto",
+      "familyName": "Fagliari",
+      "@id": "https://orcid.org/0009-0006-6874-3910"
+    }
+  ],
+  "programmingLanguage": [
+    "Lean 4",
+    "Python",
+    "Shell"
+  ],
+  "keywords": "P versus NP, P vs NP, computational complexity, Lean 4, formal proof, formal verification, theorem proving, SAT, CNF, Cook-Levin, circuit complexity, proof audit, reproducible mathematics, machine-checked proof, formal methods, proof engineering, mathematical logic, computability, ELYON, M-Core",
+  "applicationCategory": "Formal verification / theorem proving / computational complexity",
+  "developmentStatus": "active",
+  "referencePublication": "https://doi.org/10.6084/m9.figshare.33990856"
+}
