@@ -1,0 +1,5 @@
+frontier:
+  - id: YM-SIGNATURE-ADAPTER
+    status: OPEN_BRIDGE
+  - id: YM-BOUNDARY-SEMANTICS
+    status: OPEN_BRIDGE
