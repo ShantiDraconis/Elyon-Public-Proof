@@ -19,6 +19,16 @@ lake build
 
 Expected result: the scoped Claim1–Claim7 endpoint and the repository build complete successfully under the pinned toolchain.
 
+## One-command scoped audit
+
+After installing the pinned Lean toolchain:
+
+```bash
+bash scripts/verify_public_release.sh
+```
+
+The script verifies the frozen SHA-256 manifest, scans the public endpoint/bridge for placeholders or local axiom declarations, builds the scoped endpoint, and prints its Lean axiom footprint.
+
 ## Audit entry points
 
 Start with `AUDIT_INDEX.md`. The core public evidence is:
@@ -27,6 +37,9 @@ Start with `AUDIT_INDEX.md`. The core public evidence is:
 - `public/EXTERNAL_CERTIFICATE_COMPLETE.json`
 - `public/INDEPENDENT_VERIFICATION.md`
 - `AUDIT_PROVENANCE.json`
+- `CRITICAL_BLOB_EQUIVALENCE.json`
+- `PUBLICATION_MANIFEST.json`
+- `AUDITOR_REPORT_TEMPLATE.md`
 - `EXTERNAL_AUDIT_CHECKLIST.md`
 - `SCOPE_AND_LIMITATIONS.md`
 - `certs/elyon_claim1_7_only/SHA256SUMS`
