@@ -1,0 +1,101 @@
+name: M-Core Final Proof Integrated
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'final-proof/**'
+      - 'lean/**'
+      - 'certs/final_external/**'
+      - 'scripts/**'
+      - 'lakefile.lean'
+      - 'lean-toolchain'
+      - '.github/workflows/mcore-final-proof-integrated.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: mcore-final-proof-integrated
+  cancel-in-progress: false
+
+jobs:
+  final-proof:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout M-Core
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Preserve current HEAD
+        shell: bash
+        run: |
+          set -euo pipefail
+          git rev-parse HEAD | tee /tmp/mcore_head.txt
+          git status --short
+          test -z "$(git status --porcelain)" || {
+            echo "FAIL_CLOSED: checkout is not clean"
+            exit 1
+          }
+
+      - name: Run FINAL_PROOF dependency miner
+        run: python3 scripts/final_proof_miner.py
+
+      - name: Link FINAL_PROOF chains
+        run: python3 scripts/global_final_proof_linker.py
+
+      - name: Install Lean toolchain
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl https://elan.lean-lang.org/elan-init.sh -sSf | sh -s -- -y
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      - name: Resolve Lean dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          export PATH="$HOME/.elan/bin:$PATH"
+          lake update
+          lake exe cache get
+
+      - name: Kernel check FINAL_PROOF registry
+        shell: bash
+        run: |
+          set -euo pipefail
+          export PATH="$HOME/.elan/bin:$PATH"
+          lake build MCore.FinalProofRegistry
+
+      - name: Kernel check FINAL_PROOF firewall
+        shell: bash
+        run: |
+          set -euo pipefail
+          export PATH="$HOME/.elan/bin:$PATH"
+          lake build MCore.FinalProofFirewall
+
+      - name: Reject Lean placeholders
+        shell: bash
+        run: |
+          set -euo pipefail
+          if grep -RInE '\\b(sorry|admit|sorryAx)\\b' --include='*.lean' lean; then
+            echo "FAIL_CLOSED: Lean placeholder detected"
+            exit 1
+          fi
+          echo "HYGIENE_GREEN"
+
+      - name: Verify HEAD was not mutated
+        shell: bash
+        run: |
+          set -euo pipefail
+          before="$(cat /tmp/mcore_head.txt)"
+          after="$(git rev-parse HEAD)"
+          test "$before" = "$after"
+          test -z "$(git diff --name-only --diff-filter=ACMRTUXB)" || {
+            echo "FAIL_CLOSED: workflow mutated tracked repository contents"
+            git diff --name-status
+            exit 1
+          }
+          echo "HEAD_PRESERVED=$after"
