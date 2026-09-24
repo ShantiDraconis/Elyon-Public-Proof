@@ -1,0 +1,21 @@
+{
+  "schema": "ATK_GATE_LEDGER_V2",
+  "repo": "m-core-riemann",
+  "queue": "RH",
+  "hard_composite_remaining": 1,
+  "hard_atomic_remaining": 1,
+  "current_gate": "R01",
+  "current_head": "5c66f8dca03834f24a61a9b1219e7af9d4892dd6",
+  "canonical_hard_base": {
+    "state": "GREEN_FROZEN_REUSED",
+    "branch": "frozen/vanishing-upper-bound-green-5c66f8dc",
+    "sha": "5c66f8dca03834f24a61a9b1219e7af9d4892dd6",
+    "certified_scope": "VanishingUpperBound implies DNToZero and DNLimit=0"
+  },
+  "state_ci": "GREEN_PREFIX_REUSED",
+  "state_math": "OPEN_MATH",
+  "next": "construct unconditional BCF/zero-residue control yielding VanishingUpperBound for the concrete generator family",
+  "progress_metric": "FROZEN_HARD/TOTAL_HARD",
+  "tests_are_progress_metric": false,
+  "frozen_prefix_decrements_hard": false
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "ATK_GATE_LEDGER_V2",
+  "repo": "m-core-yang-mills",
+  "queue": "YM",
+  "hard_composite_remaining": 1,
+  "hard_atomic_remaining": 1,
+  "current_gate": "Y01",
+  "current_head": "cd4bbfd348b607bd24ed0c6d605207b764286f58",
+  "canonical_hard_base": {
+    "state": "GREEN_FROZEN_REUSED",
+    "branch": "frozen/prefix-y01-b3b5-hardening-cd4bbfd",
+    "sha": "cd4bbfd348b607bd24ed0c6d605207b764286f58",
+    "certified_scope": "B3-B5 physical-interface hardening blocks trivial/phantom mass-gap witnesses"
+  },
+  "state_ci": "GREEN_PREFIX_REUSED",
+  "state_math": "OPEN_MATH",
+  "next": "construct B6 genuine 4D physical realization with continuum/IR control and spectral-transfer witness yielding a positive uniform gap",
+  "progress_metric": "FROZEN_HARD/TOTAL_HARD",
+  "tests_are_progress_metric": false,
+  "frozen_prefix_decrements_hard": false
+}
