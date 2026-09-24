@@ -1,0 +1,68 @@
+{
+  "schema": "elyon.critical-blob-equivalence.v1",
+  "source_commit": "d7298c44b8efc7202819f8095cef977e8929d4dc",
+  "result": "ALL_IDENTICAL",
+  "files": [
+    {
+      "path": "lakefile.lean",
+      "source_blob": "28535df8d2530b4454e270c6cf0f973a23d6d94d",
+      "public_blob": "28535df8d2530b4454e270c6cf0f973a23d6d94d",
+      "identical": true
+    },
+    {
+      "path": "lean-toolchain",
+      "source_blob": "7aca1d8a939cc24c413eddd793671cdce7070b74",
+      "public_blob": "7aca1d8a939cc24c413eddd793671cdce7070b74",
+      "identical": true
+    },
+    {
+      "path": "lean/MCore/Real/BridgeSeven.lean",
+      "source_blob": "482afbf893be85df185a23f7a8391f1541c3686b",
+      "public_blob": "482afbf893be85df185a23f7a8391f1541c3686b",
+      "identical": true
+    },
+    {
+      "path": "lean/MCore/Real/Claim1To7Only.lean",
+      "source_blob": "b00e8ff8634cf6ad96c4de35a0695209d26b31cd",
+      "public_blob": "b00e8ff8634cf6ad96c4de35a0695209d26b31cd",
+      "identical": true
+    },
+    {
+      "path": "public/EXTERNAL_CERTIFICATE_COMPLETE.json",
+      "source_blob": "b558677b55fa3e04fae08458556eda75b3e33fed",
+      "public_blob": "b558677b55fa3e04fae08458556eda75b3e33fed",
+      "identical": true
+    },
+    {
+      "path": "public/PUBLIC_EXTERNAL_CERTIFICATE.md",
+      "source_blob": "87bc3e37bdb829cf3267ee2e53450b89c1b240ce",
+      "public_blob": "87bc3e37bdb829cf3267ee2e53450b89c1b240ce",
+      "identical": true
+    },
+    {
+      "path": "certs/elyon_claim1_7_only/manifest.json",
+      "source_blob": "cc4152ff35cef1aa9721431627ddcbd31db668de",
+      "public_blob": "cc4152ff35cef1aa9721431627ddcbd31db668de",
+      "identical": true
+    },
+    {
+      "path": "certs/elyon_claim1_7_only/CLAIM1_7_CERTIFICATE.json",
+      "source_blob": "f3f551f315686c3a3f200f40c1570d633635b7a0",
+      "public_blob": "f3f551f315686c3a3f200f40c1570d633635b7a0",
+      "identical": true
+    },
+    {
+      "path": "certs/elyon_claim1_7_only/FINAL_ISSUANCE.json",
+      "source_blob": "5929d638c3351e437a171d18516a928810c36336",
+      "public_blob": "5929d638c3351e437a171d18516a928810c36336",
+      "identical": true
+    },
+    {
+      "path": "certs/elyon_claim1_7_only/SHA256SUMS",
+      "source_blob": "10343cafa9630b613a4a4639339fc8bc8e0aaaff",
+      "public_blob": "10343cafa9630b613a4a4639339fc8bc8e0aaaff",
+      "identical": true
+    }
+  ],
+  "note": "Git blob SHA equality proves byte-for-byte identity for these critical files."
+}
