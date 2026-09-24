@@ -1,0 +1,21 @@
+{
+  "schema": "ATK_GATE_LEDGER_V2",
+  "repo": "navier-stokes-critical-barrier-audit",
+  "queue": "NS",
+  "hard_composite_remaining": 2,
+  "hard_atomic_remaining": 2,
+  "current_gate": "N01",
+  "current_head": "b7caecc2db571679af4b6ee64829253dcd97cea2",
+  "canonical_hard_base": {
+    "state": "GREEN_FROZEN_REUSED",
+    "branch": "frozen/prefix-n01-uniformity-b7caecc2",
+    "sha": "b7caecc2db571679af4b6ee64829253dcd97cea2",
+    "certified_scope": "N01 uniformity prefix and quantifier obstruction"
+  },
+  "state_ci": "GREEN_PREFIX_REUSED",
+  "state_math": "OPEN_MATH",
+  "next": "derive a single positive parameter-independent signed-depletion constant from ActualNS; then discharge N02 endpoint regularity",
+  "progress_metric": "FROZEN_HARD/TOTAL_HARD",
+  "tests_are_progress_metric": false,
+  "frozen_prefix_decrements_hard": false
+}
