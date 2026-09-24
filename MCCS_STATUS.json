@@ -1,0 +1,989 @@
+{
+  "schema": "MCCS_STATUS_V5",
+  "updated_utc": "2026-09-22",
+  "scheduler": {
+    "repos": 8,
+    "problem_repos": 7,
+    "hub_repo": "M-Core",
+    "execution": "PARALLEL_ACROSS_REPOS_AND_INDEPENDENT_GATES",
+    "within_repo": "PARALLEL_WHEN_GATES_ARE_LOGICALLY_INDEPENDENT",
+    "green_transition": "CERTIFY_FREEZE_ADVANCE_IMMEDIATELY",
+    "red_infra": "REPAIR_AND_RERUN_SAME_GATE",
+    "red_math": "ISOLATE_MINIMAL_NONCIRCULAR_OBLIGATION_AND_CONTINUE",
+    "open_math": "REUSE_CANONICAL_FROZEN_HARD_BASE_THEN_ATTACK_ONLY_UNCOVERED_MATERIAL_DELTA",
+    "cross_chain_reuse": "PIN_FROZEN_CERTIFICATE_AND_REPROVE_GENERIC_LEMMA_LOCALLY",
+    "core_formulation_parallel": true,
+    "core_formulation_rule": "ADVANCE_MCORE_FORMULATION_WITHOUT_COUNTING_IT_AS_A_MILLENNIUM_ENDPOINT_OR_IMPORTING_UNPROVED_ENDPOINT_CLAIMS"
+  },
+  "counters": {
+    "hard_composite_remaining": 10,
+    "hard_atomic_remaining": 11,
+    "material_producer_slots": 8,
+    "terminal_certificates_green_frozen": 7,
+    "canonical_hard_bases_green_frozen": 7,
+    "active_clean_attacks": 7,
+    "source_hygiene_pass": 7,
+    "kernel_certified_new_attacks": 0,
+    "progress_metric": "FROZEN_HARD/TOTAL_HARD",
+    "microtests_progress_metric": false,
+    "frozen_prefixes_do_not_decrement": true,
+    "final_proof": "0/7",
+    "closed_center_hard_foundation_green_frozen": 1,
+    "active_problem_attacks": 7,
+    "active_core_formulation_tracks": 1,
+    "active_tracks_total": 8,
+    "mcore_formulation_endpoint_credit": 0,
+    "p_vs_np_two_gap": "0/2",
+    "p_vs_np_endpoint": "OPEN",
+    "p_vs_np_external_math_certified": false
+  },
+  "queues": [
+    {
+      "repo": "m-core-beal",
+      "state": "IN_PROCESS",
+      "canonical_hard_base": "b6667e63a2c28c32cee0ab17714f9d772a0b4768",
+      "canonical_frozen": "frozen/b01-conductor-level-interface-green-b6667e63",
+      "active_attack_head": "bfa2caa9b73da14d318e9b71d58a89222e9445da",
+      "attack_branch": "attack/b01-exact-conductor-contract-clean-20260921",
+      "source_hygiene": "PASS",
+      "kernel_state": "BUILD_PENDING",
+      "current": [
+        "B01_CONDUCTOR_EXACT_LEVEL",
+        "B02_RESIDUAL_ELIMINATION"
+      ],
+      "next_delta": "T60 odd local arithmetic packet -> genuine minimal-model/multiplicative-reduction conductor exponent + exact lowered level -> residual universal CommonPrime families",
+      "composite_remaining": 2,
+      "atomic_remaining": 2,
+      "recovered_provenance": [
+        "canonical base already absorbs frozen/b01-conductor-api-audit-green-e3b48ef0"
+      ],
+      "terminal_certificate": {
+        "repo": "m-core-beal",
+        "scope": "EXACT_TERMINAL_REDUCTION",
+        "source_frozen_commit": "73f1fd7b2a692ea857acaea70e18745f08878c2a",
+        "source_frozen_branch": "frozen/triple-gcd-equivalence-green-73f1fd7b",
+        "certificate_package_commit": "0a0819ea3800d1a9cf40c2888eb971ad35dda188",
+        "frozen_certificate_branch": "frozen/atk-terminal-certificate-beal-0a0819ea",
+        "certificate_branch": "cert/atk-terminal-beal-73f1fd7b-20260921",
+        "certifying_runs": [
+          35641414716,
+          35641414763,
+          35641897480
+        ],
+        "source_status": "GREEN_FROZEN",
+        "mathematical_endpoint_status": "OPEN",
+        "final_proof_credit": 0
+      }
+    },
+    {
+      "repo": "navier-stokes-critical-barrier-audit",
+      "state": "IN_PROCESS",
+      "canonical_hard_base": "b7caecc2db571679af4b6ee64829253dcd97cea2",
+      "canonical_frozen": "frozen/prefix-n01-uniformity-b7caecc2",
+      "active_attack_head": "1fbec755edf9dc83e726ab57e3a3f255cba373c5",
+      "attack_branch": "attack/n01-uniformization-clean-v2-20260921",
+      "source_hygiene": "PASS",
+      "kernel_state": "BUILD_PENDING",
+      "current": [
+        "N01_SIGNED_DEPLETION",
+        "N02_ENDPOINT_REGULARITY"
+      ],
+      "next_delta": "quantitative coherence -> kernel estimate + one positive parameter-independent signed-depletion constant from ActualNS; then N02 endpoint regularity",
+      "composite_remaining": 2,
+      "atomic_remaining": 2,
+      "recovered_provenance": [
+        "frozen/n01-hardened-geometry-green-04aa4c04"
+      ],
+      "terminal_certificate": {
+        "repo": "navier-stokes-critical-barrier-audit",
+        "scope": "N01_HARDENED_GEOMETRY_FRONTIER",
+        "source_frozen_commit": "04aa4c0450bba417e83c643de1eb54eb189b7c53",
+        "source_frozen_branch": "frozen/n01-hardened-geometry-green-04aa4c04",
+        "certificate_package_commit": "99117aaa64280acf8c889b28eade26a8a51f5714",
+        "frozen_certificate_branch": "frozen/atk-terminal-certificate-navier-stokes-99117aaa",
+        "certificate_branch": "cert/atk-terminal-navier-stokes-04aa4c04-20260921",
+        "certifying_runs": [
+          35587202636
+        ],
+        "source_status": "GREEN_FROZEN",
+        "mathematical_endpoint_status": "OPEN",
+        "final_proof_credit": 0
+      }
+    },
+    {
+      "repo": "m-core-riemann",
+      "state": "IN_PROCESS",
+      "canonical_hard_base": "5c66f8dca03834f24a61a9b1219e7af9d4892dd6",
+      "canonical_frozen": "frozen/vanishing-upper-bound-green-5c66f8dc",
+      "active_attack_head": "47b0b7da65a00d9096ed108989d5676037f6be93",
+      "attack_branch": "attack/bcf-zero-residue-clean-20260921",
+      "source_hygiene": "PASS",
+      "kernel_state": "BUILD_PENDING",
+      "current": [
+        "R01_ZERO_RESIDUE_DNLIMIT"
+      ],
+      "next_delta": "construct FiniteSpanApproximatesChi for the concrete generator family (certified equivalent to DNLimit=0 and DNToZero); BCF/zero-residue control remains one route",
+      "composite_remaining": 1,
+      "atomic_remaining": 1,
+      "recovered_provenance": [
+        "frozen/nb-zero-limit-density-equivalence-green-d6a291b4"
+      ],
+      "terminal_certificate": {
+        "repo": "m-core-riemann",
+        "scope": "NB_ZERO_LIMIT_DENSITY_EQUIVALENCE",
+        "source_frozen_commit": "d6a291b4563f9021f74ab63cc983d44f079472da",
+        "source_frozen_branch": "frozen/nb-zero-limit-density-equivalence-green-d6a291b4",
+        "certificate_package_commit": "8a179aee88ba3c7e794169e4e4e4100f5b5e8b32",
+        "frozen_certificate_branch": "frozen/atk-terminal-certificate-riemann-8a179aee",
+        "certificate_branch": "cert/atk-terminal-riemann-d6a291b4-20260921",
+        "certifying_runs": [
+          35641657140
+        ],
+        "source_status": "GREEN_FROZEN",
+        "mathematical_endpoint_status": "OPEN",
+        "final_proof_credit": 0
+      }
+    },
+    {
+      "repo": "m-core-hodge",
+      "state": "IN_PROCESS",
+      "canonical_hard_base": "42eaf7d4d639871f82eceb121ee525a6c4f30d84",
+      "canonical_frozen": "frozen/h01-minimal-forward-payload-green-42eaf7d4",
+      "active_attack_head": "3fc162842ad03cfd4be3af0204d7950a95581d75",
+      "attack_branch": "attack/h01-universal-producer-clean-20260921",
+      "source_hygiene": "PASS",
+      "kernel_state": "BUILD_PENDING",
+      "current": [
+        "H01_GENERAL_ALGEBRAICITY"
+      ],
+      "next_delta": "construct H01UniversalForwardPayload on the intended geometric semantics",
+      "composite_remaining": 1,
+      "atomic_remaining": 1,
+      "recovered_provenance": [
+        "canonical base already absorbs frozen/hodge-r3-exact-variational-v10-72e61c07 and earlier R3/R3a chain"
+      ],
+      "terminal_certificate": {
+        "repo": "m-core-hodge",
+        "scope": "TERMINAL_FRONTIER_MINIMAL_CUT",
+        "source_frozen_commit": "f4918c01d970658e303033c1caf7c2ee0899b342",
+        "source_frozen_branch": "frozen/terminal-frontier-green-f4918c01",
+        "certificate_package_commit": "a4d9172f8795030dba07beff06109b20fa5fea30",
+        "frozen_certificate_branch": "frozen/atk-terminal-certificate-hodge-a4d9172f",
+        "certificate_branch": "cert/atk-terminal-hodge-f4918c01-20260921",
+        "certifying_runs": [
+          35632216335,
+          35624030040
+        ],
+        "source_status": "GREEN_FROZEN",
+        "mathematical_endpoint_status": "OPEN",
+        "final_proof_credit": 0
+      }
+    },
+    {
+      "repo": "m-core-yang-mills",
+      "state": "IN_PROCESS",
+      "canonical_hard_base": "cd4bbfd348b607bd24ed0c6d605207b764286f58",
+      "canonical_frozen": "frozen/prefix-y01-b3b5-hardening-cd4bbfd",
+      "active_attack_head": "d8a5e95ef2eadd1524c5c6a33af4a2a7d5e57bc1",
+      "attack_branch": "attack/b6-terminal-witness-clean-20260921",
+      "source_hygiene": "PASS",
+      "kernel_state": "BUILD_PENDING",
+      "current": [
+        "Y01_4D_IR_CLUSTERING_GAP"
+      ],
+      "next_delta": "construct genuine uniform physical mass lower bound / 4D realization, then OS-reconstruction and spectral transfer; integer-distance clustering -> K14 clustering is already recovered",
+      "composite_remaining": 1,
+      "atomic_remaining": 1,
+      "recovered_provenance": [
+        "frozen/y01-uniform-integer-clustering-green-37acd577"
+      ],
+      "source_delta": [
+        "lean/MCore/YangMills/A1/K14ClusteringAdapter.lean: SOURCE_BUILD_PENDING"
+      ],
+      "terminal_certificate": {
+        "repo": "m-core-yang-mills",
+        "scope": "TERMINAL_FRONTIER_B6",
+        "source_frozen_commit": "dc5b45c4b1ec9e435b76f22e156878634dfdb59c",
+        "source_frozen_branch": "frozen/terminal-frontier-green-dc5b45c4",
+        "certificate_package_commit": "075c2aee62cc829fe2a5ed10579e8e8475e4d4db",
+        "frozen_certificate_branch": "frozen/atk-terminal-certificate-yang-mills-075c2aee",
+        "certificate_branch": "cert/atk-terminal-yang-mills-dc5b45c4-20260921",
+        "certifying_runs": [
+          35632222934,
+          35624033137
+        ],
+        "source_status": "GREEN_FROZEN",
+        "mathematical_endpoint_status": "OPEN",
+        "final_proof_credit": 0
+      }
+    },
+    {
+      "repo": "m-core-p-vs-np",
+      "state": "IN_PROCESS",
+      "canonical_hard_base": "969408f2d84121667319da04680893dd2978e9a6",
+      "canonical_frozen": "frozen/material-orientation-green-969408f2",
+      "active_attack_head": "0ff71d49edd9457025377fe6eaf041bea8bd2171",
+      "attack_branch": "attack/p01-hard-realization-20260922",
+      "source_hygiene": "PASS",
+      "kernel_state": "GREEN_FROZEN_CERTIFIED_P01_BINARY_HEAD_PREFIX__P01_FULL_SIMULATION_IN_PROCESS",
+      "current": [
+        "P01_PARSER_COMPONENTS_GREEN_FROZEN",
+        "P01_PARSER_MACRO_GREEN_FROZEN",
+        "P01_BINARY_RETURN_REWIND_GREEN_FROZEN",
+        "P01_LEAF_POP_GREEN_FROZEN",
+        "P01_LEAF_STATE14_15_GREEN_FROZEN",
+        "P01_LEAF_SOURCE_GREEN_FROZEN",
+        "P01_TERMINAL_BRANCHES_GREEN_FROZEN_CERTIFIED",
+        "P01_PHASE_MACROS_GLOBAL_SLOTLOG_GREEN_FROZEN_CERTIFIED",
+        "P01_TM_TO_NTM_INTEGRATION_PREFIX_GREEN_FROZEN",
+        "P01_FULL_SIMULATION_IN_PROCESS",
+        "P01_INTEGRATED_NTM_COMPOSITION_OPEN",
+        "P02_G2_0_GREEN_FROZEN_CERTIFIED",
+        "P02_G2_1_LITERAL_ROUTE_CLOSED_BY_FALSIFICATION",
+        "P02_G2_1_POINTWISE_OPEN_MATH",
+        "P02_G2_2_WIRING_GREEN_FROZEN_CERTIFIED",
+        "P02_FINAL_OPEN_MATH",
+        "G3_FORMAL_EXTERNAL_CONTRACT_CLOSED_GREEN_FROZEN_CERTIFIED",
+        "FINAL_EXTERNAL_INTEGRATION_GREEN_FROZEN_CERTIFIED",
+        "FINAL_EXTERNAL_TWO_GAP_REDUCTION_GREEN_FROZEN_CERTIFIED",
+        "P01_INTEGRATED_PARSER_LEAF_CHAIN_GREEN_FROZEN_CERTIFIED",
+        "P01_LEAF_SOURCE_RETURN_GREEN_FROZEN_CERTIFIED",
+        "P01_BINARY_HEAD_GREEN_FROZEN_CERTIFIED"
+      ],
+      "next_delta": "P01: construct SlotParserMachineSimulationCertificate from the certified Fin-25 parser macros, including total halting under parserTimeBound and exact parserAccepting ↔ slotAccept semantics; then compose parser + fixed-control witness guesser + verifier into P01MachineConstruction. P02/G21 remains OPEN_MATH and untouched.",
+      "composite_remaining": 2,
+      "atomic_remaining": 2,
+      "recovered_provenance": [
+        "frozen/p01-verified-relation-green-1453539c",
+        "frozen/p01-component-failproof-green-9e21b631",
+        "frozen/p01-parser-components-green-fc20887e",
+        "frozen/p01-parser-macro-green-db716cec",
+        "frozen/p02-g2-0-normalization-green-d72e53bc",
+        "frozen/g3-external-contract-scaffold-green-97a95327",
+        "frozen/p01-binary-return-rewind-green-f29f5984",
+        "frozen/g3-cook-cmi-provenance-green-f29f5984",
+        "frozen/p01-leaf-pop-green-26e721ab",
+        "frozen/p01-leaf-pop-green-eb492843",
+        "frozen/p01-leaf-state14-15-return-green-72aa7be3",
+        "frozen/p01-leaf-source-green-93f1321f",
+        "frozen/p01-integration-prefix-green-ada18eed",
+        "frozen/p02-semantic-diagonal-transformer-green-f29f5984",
+        "frozen/p02-literal-fixed-point-firewall-green-26e721ab",
+        "frozen/g3-normalized-dtm-two-way-green-26e721ab",
+        "frozen/g3-normalized-ntm-two-way-green-77070515",
+        "frozen/g3-normalized-four-way-green-3f04da00",
+        "frozen/g3-normalized-contract-green-f2cafea7",
+        "frozen/p02-literal-fixed-point-countermodel-green-9d6dd957",
+        "frozen/p01-terminal-branches-green-f9add608",
+        "frozen/p01-phase-macros-green-614f88fe",
+        "frozen/p01-global-slotlog-spec-green-614f88fe",
+        "frozen/p02-g2-2-wiring-green-38db71b4",
+        "frozen/final-external-integration-green-c102d9d4",
+        "frozen/final-external-two-gap-green-b406b806",
+        "frozen/p01-integrated-parser-leaf-chain-green-3690ab05",
+        "frozen/p01-leaf-source-return-green-2221f431",
+        "frozen/p01-binary-head-green-9d987dc8",
+        "frozen/p01-binary-head-green-0ff71d49"
+      ],
+      "source_delta": [
+        "Exact decoder inverse and slotAccept semantics: GREEN",
+        "Finite-control tag/VAR consumers: GREEN",
+        "Single-tape layout/init/slot-log machines: GREEN",
+        "Concrete parserMachine TM (Fin 25) (Option Bool): GREEN source/build",
+        "Initialization/path/budget proof chain: GREEN source/build",
+        "Exact P02 terminal frontier: GREEN statement only",
+        "No P01/P02 endpoint promoted"
+      ],
+      "rejected_shortcuts": [
+        "copilot/worksat-realization-foundations/SATRealization.lean: invalid for canonical P01 because SATState embeds arbitrary CNF and SATSymbol embeds String/List Bool, so control/alphabet are not fixed finite Fin/Option Bool",
+        "legacy ParserMachineCertificate/WitnessGuessMachineCertificate/VerifierMachineCertificate: certified vacuous and non-promotable"
+      ],
+      "p01_state": "PARSER/LEAF + TERMINAL BRANCHES + PHASE/GLOBAL SLOTLOG + BINARY HEAD GREEN_FROZEN_CERTIFIED / FULL PARSER SIMULATION IN_PROCESS / INTEGRATED WITNESS+VERIFIER NTM OPEN / P01 HARD OPEN",
+      "p02_state": "G2_0 GREEN_FROZEN_CERTIFIED / G2.1 literal fixed-point route CLOSED_BY_FALSIFICATION / G2.1 pointwise producer OPEN_MATH / G2.2 wiring GREEN_FROZEN_CERTIFIED at 38db71b4 (run 35722282451) / P02 FINAL OPEN_MATH",
+      "frozen_parser_prefix": {
+        "source_sha": "fc20887e556091a4775080ab23ee1ff61917040e",
+        "frozen_branch": "frozen/p01-parser-components-green-fc20887e",
+        "certificate_branch": "cert/p01-parser-components-fc20887e-run35700922856",
+        "certificate_commit": "2043a76bc04157c4c6c74ef5fc82ad28c1852f45",
+        "p01_clean_run": 35700922856,
+        "repository_certificate_run": 35700922859,
+        "state": "GREEN_FROZEN_PREFIX"
+      },
+      "g3_state": "FORMAL_G3_EXTERNAL_CONTRACT CLOSED / GREEN_FROZEN_CERTIFIED at f2cafea7; Cook normalized P/NP two-way match proved. Independent Cook/CMI source-fidelity identification remains UNFORMALIZED/OPEN_AUDIT and is not endpoint proof credit.",
+      "frozen_parser_macro": {
+        "source_sha": "db716cec19ddbba552f5b91f865089abd4eea9e5",
+        "frozen_branch": "frozen/p01-parser-macro-green-db716cec",
+        "certificate_branch": "cert/p01-parser-macro-db716cec-run35709328356",
+        "certificate_commit": "b0ff13266c2615dd38e38b722a0485911a6f32a2",
+        "run": 35709328356,
+        "state": "GREEN_FROZEN_CERTIFIED"
+      },
+      "g3_scaffold": {
+        "source_sha": "97a95327360c3d4fc29dae1453330974e5f30519",
+        "frozen_branch": "frozen/g3-external-contract-scaffold-green-97a95327",
+        "certificate_branch": "cert/g3-external-contract-scaffold-97a95327-run35707370601",
+        "certificate_commit": "8a0ecfcad1fd3806f16abb481010ce5631a5055d",
+        "run": 35707370601,
+        "state": "GREEN_FROZEN_CERTIFIED_SCAFFOLD"
+      },
+      "g20_canonical": {
+        "source_sha": "d72e53bc7f667c75a432226a23adc59a255c5652",
+        "frozen_branch": "frozen/p02-g2-0-normalization-green-d72e53bc",
+        "certificate_branch": "cert/p02-g2-0-normalization-d72e53bc-run35707286302",
+        "certificate_commit": "3c244256a4cf46b9e43b0934495eb7298fdbfda8",
+        "runs": [
+          35707286302,
+          35707286255
+        ],
+        "state": "GREEN_FROZEN_CERTIFIED",
+        "historical_equivalent": "77ed82750762fa3057c96f340254f522681ccdee"
+      },
+      "frozen_binary_return": {
+        "source_sha": "f29f5984a92d7681887801e50ec2b6143d9f7ee4",
+        "frozen_branch": "frozen/p01-binary-return-rewind-green-f29f5984",
+        "certificate_branch": "cert/p01-binary-return-rewind-f29f5984-run35710913516",
+        "certificate_commit": "cab90e15d5347163b5bbc5536ec2bb28e9efff06",
+        "run": 35710913516,
+        "state": "GREEN_FROZEN_CERTIFIED"
+      },
+      "g3_source_provenance": {
+        "source_sha": "f29f5984a92d7681887801e50ec2b6143d9f7ee4",
+        "source_file": "lean/MCore/Real/OfficialCookSource.lean",
+        "source_object": "MCore.Real.OfficialCookSource.cookCMISource",
+        "frozen_branch": "frozen/g3-cook-cmi-provenance-green-f29f5984",
+        "certificate_branch": "cert/g3-cook-cmi-provenance-f29f5984-run35710913408",
+        "certificate_commit": "81a8ce7ee18bce83a6f5048f5e5f0dc62edfd45f",
+        "run": 35710913408,
+        "state": "GREEN_FROZEN_CERTIFIED_PROVENANCE_ONLY"
+      },
+      "frozen_leaf_pop": {
+        "source_sha": "eb49284311029102ae1e47d80091c0d15aed7352",
+        "frozen_branch": "frozen/p01-leaf-pop-green-eb492843",
+        "certificate_branch": "cert/p01-leaf-pop-eb492843-run35720014541",
+        "certificate_commit": "e2d24a050e5b1411fa4f604b5afe2bd7fe6d2954",
+        "run": 35720014541,
+        "state": "GREEN_FROZEN_CERTIFIED"
+      },
+      "p02_semantic_diagonal": {
+        "source_sha": "f29f5984a92d7681887801e50ec2b6143d9f7ee4",
+        "frozen_branch": "frozen/p02-semantic-diagonal-transformer-green-f29f5984",
+        "certificate_branch": "cert/p02-semantic-diagonal-transformer-f29f5984-run35710913464",
+        "run": 35710913464,
+        "state": "GREEN_FROZEN_CERTIFIED",
+        "limitation": "semantic transformer only; literal fixed point existence not proved"
+      },
+      "p02_fixed_point_firewall": {
+        "source_sha": "26e721ab25425d62312945200baa9c127910d320",
+        "frozen_branch": "frozen/p02-literal-fixed-point-firewall-green-26e721ab",
+        "certificate_branch": "cert/p02-literal-fixed-point-firewall-26e721ab-run35713976797",
+        "run": 35713976797,
+        "state": "GREEN_FROZEN_CERTIFIED",
+        "conclusion": "naive literal fixed-point route is blocked for candidates correct on canonical constant encodings"
+      },
+      "g3_cook_provenance": {
+        "source_sha": "f29f5984a92d7681887801e50ec2b6143d9f7ee4",
+        "frozen_branch": "frozen/g3-cook-cmi-provenance-green-f29f5984",
+        "certificate_branch": "cert/g3-cook-cmi-provenance-f29f5984-run35710913408",
+        "run": 35710913408,
+        "state": "GREEN_FROZEN_CERTIFIED"
+      },
+      "g3_normalized_dtm_two_way": {
+        "source_sha": "26e721ab25425d62312945200baa9c127910d320",
+        "frozen_branch": "frozen/g3-normalized-dtm-two-way-green-26e721ab",
+        "certificate_branch": "cert/g3-normalized-dtm-two-way-26e721ab-run35713976730",
+        "run": 35713976730,
+        "state": "GREEN_FROZEN_CERTIFIED"
+      },
+      "frozen_leaf_state14_15": {
+        "source_sha": "72aa7be339ddcde8ffd83527a3bf0b932879cd45",
+        "frozen_branch": "frozen/p01-leaf-state14-15-return-green-72aa7be3",
+        "certificate_branch": "cert/p01-leaf-state14-15-return-72aa7be3-run35714475319",
+        "certificate_commit": "8b6360e9f334e4a11084f6ddd833123975b02190",
+        "run": 35714475319,
+        "state": "GREEN_FROZEN_CERTIFIED"
+      },
+      "frozen_leaf_source": {
+        "source_sha": "93f1321f53aa93e18c7dcbf8a8a04e2844a15cbe",
+        "frozen_branch": "frozen/p01-leaf-source-green-93f1321f",
+        "certificate_branch": "cert/p01-leaf-source-93f1321f-run35720074676",
+        "certificate_commit": "6f24ad42f651e1ef33a9ece7cbe8e867a2643c40",
+        "run": 35720074676,
+        "state": "GREEN_FROZEN_CERTIFIED"
+      },
+      "terminal_certificate": {
+        "repo": "m-core-p-vs-np",
+        "scope": "CANONICAL_TERMINAL_FAIL_PROOF_BOUNDARY",
+        "source_frozen_commit": "e927d32684ae9294bb97f2fa5e66f24e57e085de",
+        "source_frozen_branch": "frozen/canonical-terminal-green-e927d326",
+        "certificate_package_commit": "8ca2065ebc829a4c8cefe91062f03677f5396031",
+        "frozen_certificate_branch": "frozen/atk-terminal-certificate-p-vs-np-8ca2065e",
+        "certificate_branch": "cert/atk-terminal-p-vs-np-e927d326-20260921",
+        "certifying_runs": [
+          35632081050,
+          35632081097,
+          35629473883,
+          35629474058,
+          35629473878
+        ],
+        "source_status": "GREEN_FROZEN",
+        "mathematical_endpoint_status": "OPEN",
+        "final_proof_credit": 0
+      },
+      "g3_normalized_ntm_two_way": {
+        "source_sha": "7707051580cd4e4685e30c8206cfdc060ae1b1ab",
+        "frozen_branch": "frozen/g3-normalized-ntm-two-way-green-77070515",
+        "certificate_branch": "cert/g3-normalized-ntm-two-way-77070515-run35715054272",
+        "run": 35715054272,
+        "state": "GREEN_FROZEN_CERTIFIED"
+      },
+      "g3_normalized_four_way": {
+        "source_sha": "3f04da0076dc9cf7e244a62fa729d98f0a21e612",
+        "frozen_branch": "frozen/g3-normalized-four-way-green-3f04da00",
+        "certificate_branch": "cert/g3-normalized-four-way-3f04da00-run35715387641",
+        "run": 35715387641,
+        "state": "GREEN_FROZEN_CERTIFIED",
+        "limitation": "official/source-fidelity external model match remains open"
+      },
+      "g3_normalized_contract": {
+        "source_sha": "f2cafea7a74f3ef8ad4140943515622545c9f1d8",
+        "frozen_branch": "frozen/g3-normalized-contract-green-f2cafea7",
+        "certificate_branch": "cert/g3-normalized-contract-f2cafea7-run35719428075",
+        "run": 35719428075,
+        "state": "GREEN_FROZEN_CERTIFIED"
+      },
+      "g3_normalized_external_contract": {
+        "source_sha": "f2cafea7a74f3ef8ad4140943515622545c9f1d8",
+        "frozen_branch": "frozen/g3-normalized-external-contract-green-f2cafea7",
+        "certificate_branch": "cert/g3-normalized-external-contract-f2cafea7-run35719428075",
+        "run": 35719428075,
+        "state": "GREEN_FROZEN_CERTIFIED_CONTRACT_ONLY",
+        "limitation": "does not by itself prove official P/NP equivalence"
+      },
+      "p01_integration_prefix": {
+        "source_sha": "ada18eeddb72490e44a9c6033d63690a416a7f0b",
+        "frozen_branch": "frozen/p01-integration-prefix-green-ada18eed",
+        "certificate_branch": "cert/p01-integration-prefix-ada18eed-run35699864579",
+        "certificate_commit": "d909103f75087f41711c697aca400e53df4a4b82",
+        "run": 35699864579,
+        "scope": "deterministic parser TM embedded as singleton-branch NTM; simulation transfers to ParserNTMPhaseCertificate once SlotParserMachineSimulationCertificate exists",
+        "state": "GREEN_FROZEN_CERTIFIED_PREFIX"
+      },
+      "p02_supporting_certificates": {
+        "semantic_diagonal_transformer": {
+          "source_sha": "f29f5984a92d7681887801e50ec2b6143d9f7ee4",
+          "frozen_branch": "frozen/p02-semantic-diagonal-transformer-green-f29f5984",
+          "certificate_branch": "cert/p02-semantic-diagonal-transformer-f29f5984-run35710913464",
+          "certificate_commit": "321a1ad6f0205eb2795939655ed802a9114de480",
+          "run": 35710913464,
+          "state": "GREEN_FROZEN_CERTIFIED"
+        },
+        "literal_fixed_point_firewall": {
+          "source_sha": "26e721ab25425d62312945200baa9c127910d320",
+          "frozen_branch": "frozen/p02-literal-fixed-point-firewall-green-26e721ab",
+          "certificate_branch": "cert/p02-literal-fixed-point-firewall-26e721ab-run35713976797",
+          "certificate_commit": "01de3cf83d79338db8b9d4740c37719d3b9cca4c",
+          "run": 35713976797,
+          "state": "GREEN_FROZEN_CERTIFIED",
+          "meaning": "rules out the naive two-constant literal fixed-point route when the candidate is correct on both constant encodings"
+        }
+      },
+      "g3_certified_chain": {
+        "cook_cmi_provenance": {
+          "source_sha": "f29f5984a92d7681887801e50ec2b6143d9f7ee4",
+          "frozen_branch": "frozen/g3-cook-cmi-provenance-green-f29f5984",
+          "certificate_branch": "cert/g3-cook-cmi-provenance-f29f5984-run35710913408",
+          "certificate_commit": "81a8ce7ee18bce83a6f5048f5e5f0dc62edfd45f",
+          "run": 35710913408,
+          "state": "GREEN_FROZEN_CERTIFIED"
+        },
+        "normalized_dtm_two_way": {
+          "source_sha": "26e721ab25425d62312945200baa9c127910d320",
+          "frozen_branch": "frozen/g3-normalized-dtm-two-way-green-26e721ab",
+          "certificate_branch": "cert/g3-normalized-dtm-two-way-26e721ab-run35713976730",
+          "certificate_commit": "ffadd26536e73d9b58f63cba5e2d3b381693e595",
+          "run": 35713976730,
+          "state": "GREEN_FROZEN_CERTIFIED"
+        },
+        "normalized_ntm_two_way": {
+          "source_sha": "7707051580cd4e4685e30c8206cfdc060ae1b1ab",
+          "frozen_branch": "frozen/g3-normalized-ntm-two-way-green-77070515",
+          "certificate_branch": "cert/g3-normalized-ntm-two-way-77070515-run35715054272",
+          "certificate_commit": "0320de1f6993adcc5a06e5d3ba1da2963ed9aed5",
+          "run": 35715054272,
+          "state": "GREEN_FROZEN_CERTIFIED"
+        },
+        "normalized_four_way": {
+          "source_sha": "3f04da0076dc9cf7e244a62fa729d98f0a21e612",
+          "frozen_branch": "frozen/g3-normalized-four-way-green-3f04da00",
+          "certificate_branch": "cert/g3-normalized-four-way-3f04da00-run35715387641",
+          "certificate_commit": "0fda1584b6a2ed22610c6dbd7140f004423dbc30",
+          "run": 35715387641,
+          "state": "GREEN_FROZEN_CERTIFIED"
+        },
+        "normalized_contract": {
+          "source_sha": "f2cafea7a74f3ef8ad4140943515622545c9f1d8",
+          "frozen_branch": "frozen/g3-normalized-contract-green-f2cafea7",
+          "certificate_branch": "cert/g3-normalized-contract-f2cafea7-run35719428075",
+          "certificate_commit": "b1879a0342416b29d0f4890aa08ddfc45f1dda0c",
+          "run": 35719428075,
+          "state": "GREEN_FROZEN_CERTIFIED_TYPED_CONTRACT",
+          "note": "closes repository G3Gap for the normalized Cook-style formal model; does not certify complete fidelity to every Cook/CMI prose convention"
+        }
+      },
+      "g3_formal_contract": {
+        "source_sha": "f2cafea7a74f3ef8ad4140943515622545c9f1d8",
+        "source_file": "lean/MCore/Real/CookNormalizedG3Contract.lean",
+        "theorem": "MCore.Real.CookNormalizedG3Contract.cook_normalized_g3_contract_closed",
+        "p_match_theorem": "MCore.Real.CookNormalizedG3Contract.cook_normalized_contract_p_match",
+        "np_match_theorem": "MCore.Real.CookNormalizedG3Contract.cook_normalized_contract_np_match",
+        "frozen_branch": "frozen/g3-normalized-contract-green-f2cafea7",
+        "certificate_branch": "cert/g3-normalized-contract-f2cafea7-run35719428075",
+        "run": 35719428075,
+        "state": "GREEN_FROZEN_CERTIFIED_CLOSED"
+      },
+      "g3_source_fidelity": {
+        "provenance_source": "MCore.Real.OfficialCookSource.cookCMISource",
+        "selected_model": "MCore.Real.CookNormalizedMachineModel.cookNormalizedModel",
+        "state": "UNFORMALIZED_OPEN_AUDIT",
+        "reason": "The existing proof matches the internal canonical model to an independently defined normalized Cook-style machine model. The repository does not contain independent formal predicates officialP/officialNP extracted from the Cook/CMI source against which source fidelity could be proved.",
+        "endpoint_credit": 0
+      },
+      "p02_literal_countermodel": {
+        "source_sha": "9d6dd9575a61782c70137abff348356f805bc654",
+        "frozen_branch": "frozen/p02-literal-fixed-point-countermodel-green-9d6dd957",
+        "certificate_branch": "cert/p02-literal-fixed-point-countermodel-9d6dd957-run35721311898",
+        "run": 35721311898,
+        "state": "GREEN_FROZEN_CERTIFIED_DISPROVE_ROUTE",
+        "endpoint_credit": 0
+      },
+      "p02_g21_falsification": {
+        "source_sha": "17c04b62d03946aab4573894833f087ade25bc33",
+        "source_file": "lean/MCore/Real/P02LiteralFixedPointCountermodel.lean",
+        "frozen_branch": "frozen/p02-g2-1-literal-fixed-point-falsified-17c04b62",
+        "certificate_branch": "cert/p02-g2-1-literal-fixed-point-falsified-17c04b62-run35721158651",
+        "run": 35721158651,
+        "state": "CLOSED_BY_FALSIFICATION",
+        "scope": "literal semanticDiagonalBits fixed-point route only",
+        "endpoint_credit": 0
+      },
+      "p01_hard_scaffold": {
+        "source_sha": "9d6dd9575a61782c70137abff348356f805bc654",
+        "frozen_branch": "frozen/p01-hard-scaffold-green-9d6dd957",
+        "certificate_branch": "cert/p01-hard-scaffold-9d6dd957-run35721236027",
+        "certificate_commit": "44b9787d6c7c8ec02366849424cc09183931f825",
+        "run": 35721236027,
+        "state": "GREEN_FROZEN_CERTIFIED_SCAFFOLD",
+        "limitation": "P01MachineConstruction inhabitant remains OPEN; scaffold itself is not SATInNPGap"
+      },
+      "p01_leaf_source_rewind": {
+        "source_sha": "325e83cb",
+        "frozen_branch": "frozen/p01-leaf-source-rewind-green-325e83cb",
+        "certificate_branch": "cert/p01-leaf-source-rewind-325e83cb-run35719744729",
+        "run": 35719744729,
+        "state": "GREEN_FROZEN_CERTIFIED"
+      },
+      "p02_g21_g22_equivalence": {
+        "source_sha": "3ec5e116dde0969e82272ed9ca37e6e92c36c5e1",
+        "branch": "attack/g21-g22-only-20260922",
+        "runs": [
+          35708473916,
+          35708311362
+        ],
+        "state": "GREEN_VERIFIED_EQUIVALENCE",
+        "theorem": "g21_iff_g22",
+        "meaning": "G2.2 is not an independent technical gate; it is equivalent to the P02 target / SAT not in P",
+        "endpoint_credit": 0
+      },
+      "remaining_terminal_producers": [
+        {
+          "gate": "P01",
+          "proposition": "SATInNPGap circuitBitEncoding",
+          "exact_open_payload": "Nonempty P01MachineConstruction",
+          "state": "OPEN_IMPLEMENTATION",
+          "reusable_frozen": [
+            "parser components",
+            "parser macro",
+            "binary return/rewind",
+            "leaf pop",
+            "leaf state14/15",
+            "leaf source",
+            "leaf source rewind",
+            "witness guesser/spec"
+          ]
+        },
+        {
+          "gate": "P02",
+          "proposition": "Nonempty (FailureGenerator (SATBits circuitBitEncoding))",
+          "equivalent_to": "¬ InP (SATBits circuitBitEncoding)",
+          "state": "OPEN_MATH",
+          "note": "This is the substantive P vs NP lower bound; no certified witness exists in the repository."
+        }
+      ],
+      "p01_integrated_parser_leaf_chain": {
+        "source_sha": "3690ab0593358d065930b36ec1e7a67852a88fa0",
+        "frozen_branch": "frozen/p01-integrated-parser-leaf-chain-green-3690ab05",
+        "certificate_branch": "cert/p01-integrated-parser-leaf-chain-3690ab05-run35722427864",
+        "certificate_commit": "1fa201ff0b580e75650357e24d175b5a1c5f9226",
+        "primary_run": 35722427864,
+        "regression_runs": [
+          35722427842,
+          35722427859,
+          35722427863,
+          35722427865,
+          35722427901,
+          35722431242,
+          35722431275,
+          35722431278,
+          35722431316,
+          35722431762
+        ],
+        "state": "GREEN_FROZEN_CERTIFIED_SUBGATE",
+        "sha256": "d55aa15106498a26b81b93c37e75450e03d3af64dc9f61cf490bf9af5ebd6a5e",
+        "closes": [
+          "parser macro chain",
+          "binary return/rewind chain",
+          "leaf-pop chain",
+          "leaf state14/15 chain",
+          "leaf-source return/accept/reject chain"
+        ],
+        "does_not_close": [
+          "SlotParserMachineSimulationCertificate",
+          "CanonicalRecursiveParserOperationalGap",
+          "integrated SAT NTM",
+          "CanonicalSATMachineClosure",
+          "P01 HARD"
+        ]
+      },
+      "p01_terminal_branches": {
+        "source_sha": "f9add60881d709ce8320cb54a4d52f26d829b8f5",
+        "frozen_branch": "frozen/p01-terminal-branches-green-f9add608",
+        "certificate_branch": "cert/p01-terminal-branches-f9add608-run35722846538",
+        "run": 35722846538,
+        "state": "GREEN_FROZEN_CERTIFIED"
+      },
+      "p01_global_slotlog_spec": {
+        "source_sha": "614f88fe020fd05b9b251a6a2283301acf7ff733",
+        "frozen_branch": "frozen/p01-global-slotlog-spec-green-614f88fe",
+        "certificate_branch": "cert/p01-global-slotlog-spec-614f88fe-run35723570545",
+        "run": 35723570545,
+        "state": "GREEN_FROZEN_CERTIFIED_SUBGATE",
+        "limitation": "does not by itself inhabit Nonempty P01MachineConstruction"
+      },
+      "p02_g22_wiring": {
+        "source_sha": "38db71b416906e5b7138774842e91d3e367aad09",
+        "frozen_branch": "frozen/p02-g2-2-wiring-green-38db71b4",
+        "certificate_branch": "cert/p02-g2-2-wiring-38db71b4-run35722282451",
+        "run": 35722282451,
+        "state": "GREEN_FROZEN_CERTIFIED_WIRING",
+        "limitation": "G21Pointwise remains the exact OPEN_MATH producer; G2.2 adds no independent endpoint proof"
+      },
+      "final_external_integration": {
+        "source_sha": "c102d9d482d708a7a865803e94f294c6da82ed9a",
+        "frozen_branch": "frozen/final-external-integration-green-c102d9d4",
+        "certificate_branch": "cert/final-external-integration-c102d9d4-run35722252805",
+        "run": 35722252805,
+        "state": "GREEN_FROZEN_CERTIFIED_PIPELINE",
+        "endpoint_credit": 0
+      },
+      "final_external_two_gap": {
+        "source_sha": "b406b806da58ebe6bc1f85863ee44054ad42edb2",
+        "frozen_branch": "frozen/final-external-two-gap-green-b406b806",
+        "certificate_branch": "cert/final-external-two-gap-b406b806-run35722743845",
+        "run": 35722743845,
+        "theorem": "MCore.Real.FinalExternalTwoGap.final_external_two_gap_closes",
+        "state": "GREEN_FROZEN_CERTIFIED_REDUCTION",
+        "exact_remaining": [
+          "P01ConstructionGap",
+          "G21Pointwise"
+        ],
+        "endpoint_credit": 0
+      },
+      "p01_integrated_parser_leaf": {
+        "source_sha": "3690ab0593358d065930b36ec1e7a67852a88fa0",
+        "frozen_branch": "frozen/p01-integrated-parser-leaf-chain-green-3690ab05",
+        "certificate_branch": "cert/p01-integrated-parser-leaf-chain-3690ab05-run35722427864",
+        "certificate_commit": "1fa201ff0b580e75650357e24d175b5a1c5f9226",
+        "run": 35722427864,
+        "state": "GREEN_FROZEN_CERTIFIED_SUBGATE",
+        "limitation": "SlotParserMachineSimulationCertificate and integrated SAT NTM remain open"
+      },
+      "p01_leaf_source_return": {
+        "source_sha": "2221f4318dbc73d0900b623e324127d19482758c",
+        "frozen_branch": "frozen/p01-leaf-source-return-green-2221f431",
+        "certificate_branch": "cert/p01-leaf-source-return-2221f431-run35722490794",
+        "certificate_commit": "8e927cfde49b2d3a49d38baab010dd0e584c3753",
+        "run": 35722490794,
+        "state": "GREEN_FROZEN_CERTIFIED"
+      },
+      "p01_binary_head": {
+        "source_sha": "0ff71d49edd9457025377fe6eaf041bea8bd2171",
+        "frozen_branch": "frozen/p01-binary-head-green-0ff71d49",
+        "certificate_branch": "cert/p01-binary-head-0ff71d49-run35731861724",
+        "run": 35731861724,
+        "state": "GREEN_FROZEN_CERTIFIED"
+      }
+    },
+    {
+      "repo": "m-core-bsd",
+      "state": "IN_PROCESS",
+      "canonical_hard_base": "c1e7b245726c4c65f5f9f878acefb86460746f4a",
+      "canonical_frozen": "frozen/d01-universal-firewall-v2-green-c1e7b245",
+      "active_attack_head": "1377e2e799533e9e0447e401771bb8c10179db41",
+      "attack_branch": "attack/d01-realizable-domain-clean-20260921",
+      "source_hygiene": "PASS",
+      "kernel_state": "BUILD_PENDING",
+      "current": [
+        "D01_RANK",
+        "D01_REFINED_LEADING_SHA",
+        "D01_COMPOSITE"
+      ],
+      "next_delta": "instantiate genuine elliptic-curve realizable families and prove BSDRankPart on their image; unrestricted forall BSDArithmeticAnalyticData is certified false as an abstraction; then refined leading coefficient/regulator/height/Sha identity on the same domain",
+      "composite_remaining": 1,
+      "atomic_remaining": 2,
+      "recovered_provenance": [
+        "frozen/bsd-universal-producer-countermodel-green-6258a9f9"
+      ],
+      "terminal_certificate": {
+        "repo": "m-core-bsd",
+        "scope": "SEMANTIC_COUNTERMODEL_TO_OVERBROAD_PRODUCER",
+        "source_frozen_commit": "6258a9f9a13cd90193dc7d12927ce3c044fe0da6",
+        "source_frozen_branch": "frozen/bsd-universal-producer-countermodel-green-6258a9f9",
+        "certificate_package_commit": "5a1bb915bd600da469dcf14db61be08092fade48",
+        "frozen_certificate_branch": "frozen/atk-terminal-certificate-bsd-5a1bb915",
+        "certificate_branch": "cert/atk-terminal-bsd-6258a9f9-20260921",
+        "certifying_runs": [
+          35641972827,
+          35641972739,
+          35642114588
+        ],
+        "source_status": "GREEN_FROZEN",
+        "mathematical_endpoint_status": "OPEN",
+        "final_proof_credit": 0
+      }
+    },
+    {
+      "repo": "M-Core",
+      "track": "CORE_FORMULATION",
+      "state": "IN_PROCESS",
+      "canonical_hard_base": "e6bcc70441797e7c2b371bff1a473be19a5663a4",
+      "inherited_foundation": "frozen/final-fail-closed-center-hard-ee1ec8fb",
+      "active_attack_head": "53cab04081827f792c6f55f7dc5d1eb232155134",
+      "attack_branch": "attack/mcore-formulation-v2-clean-20260921",
+      "source_hygiene": "PENDING_CI",
+      "kernel_state": "BUILD_PENDING",
+      "current": [
+        "MCORE_F2_RELATIONAL_CENTER_UNIFICATION",
+        "MCORE_F2_MASTER_CORE_REPAIR"
+      ],
+      "established": [
+        "ClosedCenterHard START<->CENTER<->FINISH foundation is GREEN_FROZEN",
+        "FundamentalIndeterminacy is structural branching, not numeric 0/0",
+        "RelationalHardAtom preserves admissible continuations",
+        "read-only external interface remains separate from internal attack/formulation namespaces"
+      ],
+      "source_delta": [
+        "RelationalCenterBridge.lean: FailAt/FundamentalIndeterminacy/IFail bridge",
+        "RelationalClosedCenterBridge.lean: relational totality -> proposition-level ClosedCenterHard; explicit functional witness avoids choice; FailAt coexists",
+        "Master.lean: CORE_V2 integration",
+        "mcore-formulation-v2.yml: fail-closed build/axiom gate"
+      ],
+      "next_delta": "relation-level HARD closure: characterize when total/single-valued relational arrows induce ClosedCenterHard maps while preserving non-unique branch structure; then add an explicit typed adapter firewall between recovered Phi3 numeric indeterminacy and structural IFail rather than identifying them definitionally",
+      "counts_toward_final_proof": false,
+      "counts_toward_hard_remaining": false,
+      "endpoint_promotion": false,
+      "superseded_branch": "attack/mcore-formulation-v2-20260921",
+      "formulation_obligations": {
+        "green": 2,
+        "source_build_pending": 1,
+        "open": 1,
+        "total": 4,
+        "green_items": [
+          "FailAt <-> FundamentalIndeterminacy <-> IFail under induced center resolution with admissible identity",
+          "DeterminedAt <-> CenterDetermined"
+        ],
+        "source_items": [
+          "relation-level HARD closure: RelationalTotality induces proposition-level ClosedCenterHard and preserves separate FailAt; explicit RelationalFunctionalWitness supplies underlying maps without Classical.choice"
+        ],
+        "open_items": [
+          "typed adapter from certified external Phi3/numeric indeterminacy to structural IFail without definitional collapse"
+        ]
+      }
+    }
+  ],
+  "hub": {
+    "repo": "M-Core",
+    "state": "IN_PROCESS",
+    "terminal_certificate_master": "frozen/atk-seven-terminal-certificates-42a720d9",
+    "current": "7/7 terminal frontier packages verified + P-vs-NP FinalExternalTwoGap pipeline GREEN/FROZEN/CERTIFIED + P01 binary-head macro now GREEN/FROZEN/CERTIFIED at 0ff71d49 (run 35731861724). P01 full parser simulation IN_PROCESS; integrated SAT NTM still OPEN. G21Pointwise remains OPEN_MATH. FINAL_ROOT null; FINAL_EXTERNAL not issued; GLOBAL 0/7.",
+    "verification_note": "G3 repository contract is formally closed by cook_normalized_g3_contract_closed. This does not establish that cookNormalizedModel is definitionally/exhaustively faithful to every Cook/CMI prose convention. Terminal frontier certificates remain non-endpoint proof credit.",
+    "final_external_math_gate": {
+      "g1_p01": "IN_PROCESS_FULL_PARSER_SIMULATION_THEN_INTEGRATED_P01_CONSTRUCTION",
+      "g2_p02": "OPEN_MATH_G21_POINTWISE_EQ_SAT_NOT_IN_P",
+      "g2_wiring": "CLOSED_GREEN_FROZEN_CERTIFIED",
+      "g3": "CLOSED_GREEN_FROZEN_CERTIFIED",
+      "two_gap_reduction": "CLOSED_GREEN_FROZEN_CERTIFIED",
+      "exact_remaining_producers": [
+        "P01ConstructionGap",
+        "G21Pointwise"
+      ],
+      "final_external_issued": false,
+      "final_root": null,
+      "two_gap_progress": "0/2",
+      "p_vs_np_endpoint": "OPEN",
+      "p_vs_np_external_math_certified": false,
+      "final_root_math": null,
+      "global_7_problems": "0/7"
+    },
+    "taxonomy": {
+      "final_external_two_gap": {
+        "progress": "0/2",
+        "p01": "OPEN_IMPLEMENTATION",
+        "g21": "OPEN_MATH",
+        "closed_condition": "P01ConstructionGap AND G21Pointwise"
+      },
+      "p_vs_np_endpoint": {
+        "state": "OPEN",
+        "endpoint_credit_global": 0
+      },
+      "global_7_problems": {
+        "final_proof": "0/7",
+        "rule": "P01 and G21 are internal producers of the single P vs NP endpoint; closing both changes global credit from 0/7 to 1/7, not 2/7."
+      },
+      "roots": {
+        "preparatory_root": "4cdaf7b62ee2ff85676c7dcd98fb6dfe965fa8afd4abccf19ba6aedb42878f24",
+        "final_root_math": null,
+        "final_root": null
+      }
+    }
+  },
+  "hard_foundation": {
+    "state": "GREEN_FROZEN",
+    "model": "START <-> CENTER <-> FINISH via two oriented forces",
+    "source_commit": "c3910589cd1865b4adfbe790938a1e77884ebfcd",
+    "main_merge_commit": "6c9de849df210cd35063c0cf7f74333cf4eadfe6",
+    "workflow_run": 35652843838,
+    "workflow_job": 106509145638,
+    "certificate_branch": "cert/final-fail-closed-center-hard-c3910589",
+    "frozen_branch": "frozen/final-fail-closed-center-hard-ee1ec8fb",
+    "certificate_sha256": "9d3a64ba4af8deedf66757dd723ec5173b6d17649483d1b86fe90bc18a769747",
+    "semantic_rule": "The four maps Start->Center, Center->Start, Center->Finish, Finish->Center must be proved by each concrete application; the foundation manufactures none of them.",
+    "endpoint_promotion": false
+  },
+  "verified_terminal_certificate_anchors": {
+    "RIEMANN": {
+      "repo": "m-core-riemann",
+      "scope": "NB_ZERO_LIMIT_DENSITY_EQUIVALENCE",
+      "source_frozen_commit": "d6a291b4563f9021f74ab63cc983d44f079472da",
+      "source_frozen_branch": "frozen/nb-zero-limit-density-equivalence-green-d6a291b4",
+      "certificate_package_commit": "8a179aee88ba3c7e794169e4e4e4100f5b5e8b32",
+      "frozen_certificate_branch": "frozen/atk-terminal-certificate-riemann-8a179aee",
+      "certificate_branch": "cert/atk-terminal-riemann-d6a291b4-20260921",
+      "certifying_runs": [
+        35641657140
+      ],
+      "source_status": "GREEN_FROZEN",
+      "mathematical_endpoint_status": "OPEN",
+      "final_proof_credit": 0
+    },
+    "BEAL": {
+      "repo": "m-core-beal",
+      "scope": "EXACT_TERMINAL_REDUCTION",
+      "source_frozen_commit": "73f1fd7b2a692ea857acaea70e18745f08878c2a",
+      "source_frozen_branch": "frozen/triple-gcd-equivalence-green-73f1fd7b",
+      "certificate_package_commit": "0a0819ea3800d1a9cf40c2888eb971ad35dda188",
+      "frozen_certificate_branch": "frozen/atk-terminal-certificate-beal-0a0819ea",
+      "certificate_branch": "cert/atk-terminal-beal-73f1fd7b-20260921",
+      "certifying_runs": [
+        35641414716,
+        35641414763,
+        35641897480
+      ],
+      "source_status": "GREEN_FROZEN",
+      "mathematical_endpoint_status": "OPEN",
+      "final_proof_credit": 0
+    },
+    "HODGE": {
+      "repo": "m-core-hodge",
+      "scope": "TERMINAL_FRONTIER_MINIMAL_CUT",
+      "source_frozen_commit": "f4918c01d970658e303033c1caf7c2ee0899b342",
+      "source_frozen_branch": "frozen/terminal-frontier-green-f4918c01",
+      "certificate_package_commit": "a4d9172f8795030dba07beff06109b20fa5fea30",
+      "frozen_certificate_branch": "frozen/atk-terminal-certificate-hodge-a4d9172f",
+      "certificate_branch": "cert/atk-terminal-hodge-f4918c01-20260921",
+      "certifying_runs": [
+        35632216335,
+        35624030040
+      ],
+      "source_status": "GREEN_FROZEN",
+      "mathematical_endpoint_status": "OPEN",
+      "final_proof_credit": 0
+    },
+    "BSD": {
+      "repo": "m-core-bsd",
+      "scope": "SEMANTIC_COUNTERMODEL_TO_OVERBROAD_PRODUCER",
+      "source_frozen_commit": "6258a9f9a13cd90193dc7d12927ce3c044fe0da6",
+      "source_frozen_branch": "frozen/bsd-universal-producer-countermodel-green-6258a9f9",
+      "certificate_package_commit": "5a1bb915bd600da469dcf14db61be08092fade48",
+      "frozen_certificate_branch": "frozen/atk-terminal-certificate-bsd-5a1bb915",
+      "certificate_branch": "cert/atk-terminal-bsd-6258a9f9-20260921",
+      "certifying_runs": [
+        35641972827,
+        35641972739,
+        35642114588
+      ],
+      "source_status": "GREEN_FROZEN",
+      "mathematical_endpoint_status": "OPEN",
+      "final_proof_credit": 0
+    },
+    "YANG_MILLS": {
+      "repo": "m-core-yang-mills",
+      "scope": "TERMINAL_FRONTIER_B6",
+      "source_frozen_commit": "dc5b45c4b1ec9e435b76f22e156878634dfdb59c",
+      "source_frozen_branch": "frozen/terminal-frontier-green-dc5b45c4",
+      "certificate_package_commit": "075c2aee62cc829fe2a5ed10579e8e8475e4d4db",
+      "frozen_certificate_branch": "frozen/atk-terminal-certificate-yang-mills-075c2aee",
+      "certificate_branch": "cert/atk-terminal-yang-mills-dc5b45c4-20260921",
+      "certifying_runs": [
+        35632222934,
+        35624033137
+      ],
+      "source_status": "GREEN_FROZEN",
+      "mathematical_endpoint_status": "OPEN",
+      "final_proof_credit": 0
+    },
+    "P_VS_NP": {
+      "repo": "m-core-p-vs-np",
+      "scope": "CANONICAL_TERMINAL_FAIL_PROOF_BOUNDARY",
+      "source_frozen_commit": "e927d32684ae9294bb97f2fa5e66f24e57e085de",
+      "source_frozen_branch": "frozen/canonical-terminal-green-e927d326",
+      "certificate_package_commit": "8ca2065ebc829a4c8cefe91062f03677f5396031",
+      "frozen_certificate_branch": "frozen/atk-terminal-certificate-p-vs-np-8ca2065e",
+      "certificate_branch": "cert/atk-terminal-p-vs-np-e927d326-20260921",
+      "certifying_runs": [
+        35632081050,
+        35632081097,
+        35629473883,
+        35629474058,
+        35629473878
+      ],
+      "source_status": "GREEN_FROZEN",
+      "mathematical_endpoint_status": "OPEN",
+      "final_proof_credit": 0
+    },
+    "NAVIER_STOKES": {
+      "repo": "navier-stokes-critical-barrier-audit",
+      "scope": "N01_HARDENED_GEOMETRY_FRONTIER",
+      "source_frozen_commit": "04aa4c0450bba417e83c643de1eb54eb189b7c53",
+      "source_frozen_branch": "frozen/n01-hardened-geometry-green-04aa4c04",
+      "certificate_package_commit": "99117aaa64280acf8c889b28eade26a8a51f5714",
+      "frozen_certificate_branch": "frozen/atk-terminal-certificate-navier-stokes-99117aaa",
+      "certificate_branch": "cert/atk-terminal-navier-stokes-04aa4c04-20260921",
+      "certifying_runs": [
+        35587202636
+      ],
+      "source_status": "GREEN_FROZEN",
+      "mathematical_endpoint_status": "OPEN",
+      "final_proof_credit": 0
+    }
+  }
+}
