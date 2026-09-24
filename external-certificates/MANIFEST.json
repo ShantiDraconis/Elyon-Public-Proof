@@ -1,0 +1,51 @@
+{
+  "schema": "elyon.external-certificate-archive.v1",
+  "generated": "2026-09-24",
+  "public_repository": "ShantiDraconis/Elyon-Public-Proof",
+  "doi": "10.6084/m9.figshare.33990856",
+  "orcid": "0009-0006-6874-3910",
+  "licensing": {
+    "software": "MIT",
+    "scientific_content": "CC BY 4.0"
+  },
+  "sources": [
+    {
+      "repo": "ShantiDraconis/m-core-p-vs-np",
+      "sha": "91124f7b7aad032a6d009d0cf664edbd2d492ca7"
+    },
+    {
+      "repo": "ShantiDraconis/m-core-bsd",
+      "sha": "185703454ebf360a34ed0cc8b3054e18a24d8a50"
+    },
+    {
+      "repo": "ShantiDraconis/m-core-hodge",
+      "sha": "fa1aa759eb956bb9a4496d691b49464e4731e3d4"
+    },
+    {
+      "repo": "ShantiDraconis/m-core-riemann",
+      "sha": "b75dcaaccb979ad5cec5fd46eed6e2c38c2b4cd3"
+    },
+    {
+      "repo": "ShantiDraconis/m-core-yang-mills",
+      "sha": "97a566dad680be3de5fbde11b1b71e4bebc88193"
+    },
+    {
+      "repo": "ShantiDraconis/m-core-beal",
+      "sha": "fe1e5027dbe051cecdf4750ada197a57defae816"
+    },
+    {
+      "repo": "ShantiDraconis/navier-stokes-critical-barrier-audit",
+      "sha": "612579582e24efdc862225038f9b3dfb001fda60"
+    }
+  ],
+  "exclusions": [
+    ".env",
+    ".lake",
+    "credentials",
+    "private keys",
+    "local build outputs",
+    "unrelated personal data",
+    "private Git history"
+  ],
+  "disclosure": "Archived source certificates are provenance evidence. Independent mathematical validation remains a separate review step."
+}
