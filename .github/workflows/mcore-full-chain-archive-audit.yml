@@ -1,0 +1,183 @@
+name: M-Core Full Chain Archive Audit
+# current-chain rerun marker
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'final-proof/**'
+      - 'certs/final_external/**'
+      - 'lean/MCore/FinalFail/**'
+      - 'lean/MCore/FinalProofRegistry.lean'
+      - 'lean/MCore/FinalProofFirewall.lean'
+      - 'scripts/final_proof_miner.py'
+      - 'scripts/global_final_proof_linker.py'
+      - 'lakefile.lean'
+      - 'lean-toolchain'
+      - '.github/workflows/mcore-full-chain-archive-audit.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: mcore-full-chain-archive-audit
+  cancel-in-progress: false
+
+jobs:
+  archive-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout preserved chain
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Record immutable HEAD
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -z "$(git status --porcelain)" || {
+            echo "FAIL_CLOSED: checkout is not clean before evidence generation"
+            git status --short
+            exit 1
+          }
+          mkdir -p evidence/full-chain
+          git rev-parse HEAD | tee evidence/full-chain/HEAD
+          : > evidence/full-chain/worktree.txt
+
+      - name: Validate all JSON manifests and certificates
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, pathlib
+          roots = [pathlib.Path("final-proof"), pathlib.Path("certs/final_external")]
+          files = sorted(p for root in roots if root.exists() for p in root.rglob("*.json"))
+          assert files, "no JSON evidence found"
+          for p in files:
+              with p.open("r", encoding="utf-8") as f:
+                  json.load(f)
+              print("JSON_GREEN", p)
+          print("JSON_TOTAL", len(files))
+          PY
+
+      - name: Verify FINAL_EXTERNAL v1 checksums
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd certs/final_external/v1
+          sha256sum -c SHA256SUMS
+
+      - name: Verify required chain artifacts exist
+        shell: bash
+        run: |
+          set -euo pipefail
+          required=(
+            final-proof/all_relevant_files.json
+            final-proof/endpoints.json
+            final-proof/global_sources.json
+            final-proof/pnp_reuse_chain.json
+            final-proof/pnp_prior_formalization_reuse.json
+            final-proof/premio_final_crosswalk_20260923.json
+            certs/final_external/FINAL_PROOF_REUSE_LINKS_20260923.json
+            certs/final_external/v1/MATH_TERMINAL_BOUNDARY_20260922.json
+            certs/final_external/v1/PREPARATORY_ROOT
+            certs/final_external/v1/manifest.json
+            certs/final_external/v1/status.json
+            certs/final_external/v1/provenance.json
+            certs/final_external/v1/axiom_footprint.json
+            certs/final_external/v1/gate_ledger.json
+            lean/MCore/FinalProofRegistry.lean
+            lean/MCore/FinalProofFirewall.lean
+            lean/MCore/FinalFail/Master.lean
+            lean/MCore/FinalFail/ExactGapLedger.lean
+            lean/MCore/FinalFail/RecoveryFirewall.lean
+            lean/MCore/FinalFail/TopologyOperatorCore.lean
+            lean/MCore/FinalFail/TriadicObstructionCalculus.lean
+            scripts/final_proof_miner.py
+            scripts/global_final_proof_linker.py
+          )
+          for f in "${required[@]}"; do
+            test -f "$f" || { echo "MISSING $f"; exit 1; }
+            echo "FOUND $f"
+          done
+
+      - name: Run endpoint miner
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/final_proof_miner.py | tee evidence/full-chain/final_proof_miner.txt
+
+      - name: Run seven-chain linker
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/global_final_proof_linker.py | tee evidence/full-chain/global_final_proof_linker.txt
+
+      - name: Install Lean toolchain
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl https://elan.lean-lang.org/elan-init.sh -sSf | sh -s -- -y
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      - name: Resolve Lean dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          export PATH="$HOME/.elan/bin:$PATH"
+          lake update
+          lake exe cache get
+
+      - name: Kernel audit FINAL_PROOF endpoints
+        shell: bash
+        run: |
+          set -euo pipefail
+          export PATH="$HOME/.elan/bin:$PATH"
+          lake build MCore.FinalProofRegistry MCore.FinalProofFirewall
+          echo "FINAL_PROOF_ENDPOINTS_GREEN" | tee evidence/full-chain/final_proof_kernel.txt
+
+      - name: Kernel audit FinalFail accumulated modules
+        shell: bash
+        run: |
+          set -euo pipefail
+          export PATH="$HOME/.elan/bin:$PATH"
+          lake build MCore.FinalFail.Master
+          lake build MCore.FinalFail.ExactGapLedger
+          lake build MCore.FinalFail.RecoveryFirewall
+          lake build MCore.FinalFail.TopologyOperatorCore
+          lake build MCore.FinalFail.TriadicObstructionCalculus
+          echo "FINAL_FAIL_ACCUMULATED_GREEN" | tee evidence/full-chain/final_fail_kernel.txt
+
+      - name: Fail closed on Lean placeholders
+        shell: bash
+        run: |
+          set -euo pipefail
+          if grep -RInE '\\b(sorry|admit|sorryAx)\\b' --include='*.lean' lean/MCore; then
+            echo "LEAN_PLACEHOLDER_RED"
+            exit 1
+          fi
+          echo "LEAN_PLACEHOLDER_GREEN" | tee evidence/full-chain/hygiene.txt
+
+      - name: Snapshot artifact hashes
+        shell: bash
+        run: |
+          set -euo pipefail
+          find final-proof certs/final_external lean/MCore/FinalFail \
+            -type f -print0 | sort -z | xargs -0 sha256sum \
+            > evidence/full-chain/SHA256SUMS.ALL
+          sha256sum lean/MCore/FinalProofRegistry.lean \
+                    lean/MCore/FinalProofFirewall.lean \
+                    scripts/final_proof_miner.py \
+                    scripts/global_final_proof_linker.py \
+            >> evidence/full-chain/SHA256SUMS.ALL
+
+      - name: Upload full-chain evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: mcore-full-chain-evidence
+          path: evidence/full-chain/
+          if-no-files-found: error
+          retention-days: 90
