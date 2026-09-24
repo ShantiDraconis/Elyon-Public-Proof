@@ -1,0 +1,37 @@
+node_id	chain	kind	locator	pinned_id	status	feeds
+ROOT-RECOVERY	GLOBAL	control	ATK_RECOVERY_INDEX.md	fa22b7ab09000d0cffc9d3c93234d4b4f9f14eda	PINNED	ALL
+ROOT-MCCS	GLOBAL	control	MCCS_STATUS.json	fd8510cc7c1ece7bd9ea82ff48005e489dfe7b00	PINNED	ALL
+ROOT-HARD	GLOBAL	control	ATK_HARD_CHAIN_INDEX.md	b768335db4e9e9932a1bed9532f3c4555d2006fb	PINNED	ALL
+ROOT-FORENSIC	GLOBAL	genealogy	navier-stokes-critical-barrier-audit:data/declaration_genealogy.csv	5e76141dbb8cb8f79aa81f40737bfb193af71ac3dabf9c1613fee2ec17f1c0ab	PINNED	ALL
+BEAL-K6	BEAL	certificate	CERTIFICATES/K6_GREEN_434d6b7.md	434d6b7bba82298e7f90e13817f147011bef5b1e	CERTIFIED	BEAL-HARD
+BEAL-K9	BEAL	frozen_certificate	CERTIFICATES/K9_GREEN_e3b8598.md	e3b8598a2513b539b285dfb31dc383b770ab840f	CERTIFIED	BEAL-HARD
+BEAL-HARD-BASE	BEAL	canonical_frozen	frozen/b01-conductor-level-interface-green-b6667e63	b6667e63a2c28c32cee0ab17714f9d772a0b4768	GREEN_FROZEN_REUSED	BEAL-HARD
+BEAL-HARD	BEAL	open_math	exact conductor/lowered level -> universal CommonPrime	-	ATTACK	BEAL-ENDPOINT
+HODGE-R3A	HODGE	frozen_certificate	frozen/hodge-r3-relative-cycle-cut-v4-8ba37af1	8ba37af1	CERTIFIED	HODGE-HARD
+HODGE-HARD-BASE	HODGE	canonical_frozen	frozen/h01-minimal-forward-payload-green-42eaf7d4	42eaf7d4d639871f82eceb121ee525a6c4f30d84	GREEN_FROZEN_REUSED	HODGE-HARD
+HODGE-MP	HODGE	historical_source	MillenniumAudit/Millennium/Hodge.lean	cb009d8caf7c4a0e3cdfaf04c32cc270792d546b2b0adb8e0ce7b497d0ce2180	HASH_PINNED	HODGE-HARD
+HODGE-HARD	HODGE	open_math	construct H01MinimalForwardPayload universally	-	ATTACK	HODGE-ENDPOINT
+YM-K21	YM	frozen_certificate	frozen-K21-green-0352c6af	0352c6afb7e9255bf0fc777269984a2def047080	CERTIFIED	YM-HARD
+YM-HARD-BASE	YM	canonical_frozen	frozen/prefix-y01-b3b5-hardening-cd4bbfd	cd4bbfd348b607bd24ed0c6d605207b764286f58	GREEN_FROZEN_REUSED	YM-HARD
+YM-MP	YM	historical_source	MillenniumAudit/Millennium/YangMills.lean	7a1f781d316f9414325ec038d82f3175dea082ed284881f9ecf59a5f436c28a8	HASH_PINNED	YM-HARD
+YM-HARD	YM	open_math	B6 4D physical realization + IR/limit + spectral transfer	-	ATTACK	YM-ENDPOINT
+RH-K8	RH	certificate	m-core-riemann K8	ad3011f14bdab32161205e053fa925bc8c851ad4	CERTIFIED	RH-HARD
+RH-HARD-BASE	RH	canonical_frozen	frozen/vanishing-upper-bound-green-5c66f8dc	5c66f8dca03834f24a61a9b1219e7af9d4892dd6	GREEN_FROZEN_REUSED	RH-HARD
+RH-HIST1	RH	historical_source	millennium-riemann-I	12a65e11b53d336b389b47e8fb85c0e75caaf762	OPEN_BRIDGE	RH-HARD
+RH-HIST2	RH	historical_source	millennium-riemann-classical	477a8d2b71e951619c830129909c03ce7a9ff615	OPEN_BRIDGE	RH-HARD
+RH-MP	RH	historical_source	MillenniumAudit/Millennium/Riemann.lean	24a6c365e92c7bdce64abf5edc926b55245b39da7fe6566fb5c562da50a80cc9	HASH_PINNED	RH-HARD
+RH-HARD	RH	open_math	unconditional BCF/zero-residue control yielding VanishingUpperBound	-	ATTACK	RH-ENDPOINT
+PNP-K7	PNP	certificate	certificates/K7.md	6b965e39dddffb23b407b6779c6241d2c6721997	CERTIFIED	PNP-HARD
+PNP-C1	PNP	frozen_certificate	frozen/C1-ecdbb0b1	ecdbb0b1	CERTIFIED	PNP-HARD
+PNP-HARD-BASE	PNP	canonical_frozen	frozen/material-orientation-green-969408f2	969408f2d84121667319da04680893dd2978e9a6	GREEN_FROZEN_REUSED	PNP-HARD
+PNP-MP	PNP	historical_source	MillenniumAudit/Millennium/PvsNP.lean	3b9e8833ea7f5df5db9380d933c4a8ee5e618af083a46593c80d8da5ef164939	HASH_PINNED	PNP-HARD
+PNP-HARD	PNP	open_math	construct genuine MaterialOrientation	-	ATTACK	PNP-ENDPOINT
+BSD-K7K14	BSD	certified_chain	K7..K14	d24472341ce161cbb49388ef5e1379ea36ac39b2	CERTIFIED_ARCHITECTURE	BSD-HARD
+BSD-HARD-BASE	BSD	canonical_frozen	frozen/d01-universal-firewall-v2-green-c1e7b245	c1e7b245726c4c65f5f9f878acefb86460746f4a	GREEN_FROZEN_REUSED	BSD-HARD
+BSD-MP	BSD	historical_source	MillenniumAudit/Millennium/BSD.lean	12f736c46902f76343105f1f73705fa655767c322883964a2782880df7d5b5cf	HASH_PINNED	BSD-HARD
+BSD-HARD	BSD	open_math	realizable elliptic-curve rank equality + refined formula	-	ATTACK	BSD-ENDPOINT
+NS-FAILPROOF	NS	certificate	run 35565581964	job 106226618089	CERTIFIED_FAILPROOF	NS-CAN2
+NS-HARD-BASE	NS	canonical_frozen	frozen/prefix-n01-uniformity-b7caecc2	b7caecc2db571679af4b6ee64829253dcd97cea2	GREEN_FROZEN_REUSED	NS-CAN2
+NS-MP	NS	historical_source	MillenniumAudit/Millennium/NavierStokes.lean	1e9c6a0f028372f60683be88792c4f0a396e415690a70e09a2478b5fecb6d97d	HASH_PINNED	NS-CAN2
+NS-CAN2	NS	open_math	uniform parameter-independent signed depletion from ActualNS	-	ATTACK	NS-OPENCZ
+NS-OPENCZ	NS	open_math	signed far-field cancellation	-	BLOCKED_BY_CAN2	NS-ENDPOINT

@@ -1,0 +1,49 @@
+{
+  "schema": "MCORE_READONLY_INTERFACE_V1",
+  "date": "2026-09-21",
+  "repository": "ShantiDraconis/M-Core",
+  "core_commit": "dbfd1ca3bd5cc948c64401074808498b61e53b72",
+  "certified_core_source": "2d47aa595f031d384162fd10e74ce0481602c11d",
+  "certificate_frozen_branch": "frozen/fundamental-indeterminacy-core-e931de92",
+  "certificate_sha256": "11aebdd24cdc864f668443da28ef3eddb9248068e4aabf6d97ba0fe2edddf38a",
+  "mode": "READ_ONLY_SYMBOLIC_CONTRACT",
+  "exports": [
+    "MCore.FinalFail.ClosedCenterHard",
+    "MCore.FinalFail.ClosedCenterHard.start_iff_center",
+    "MCore.FinalFail.ClosedCenterHard.center_iff_finish",
+    "MCore.FinalFail.ClosedCenterHard.start_iff_finish",
+    "MCore.FinalFail.ResolvedCenter",
+    "MCore.FinalFail.CenterDetermined",
+    "MCore.FinalFail.FundamentalIndeterminacy",
+    "MCore.FinalFail.IFail",
+    "MCore.FinalFail.fundamental_indeterminacy_not_determined",
+    "MCore.FinalFail.CenterCoordinateEquiv",
+    "MCore.FinalFail.fundamental_indeterminacy_forward_invariant",
+    "MCore.FinalFail.RelationalHardAtom",
+    "MCore.FinalFail.RelationalHardAtom.FailAt",
+    "MCore.FinalFail.RelationalHardAtom.DeterminedAt",
+    "MCore.FinalFail.RelationalHardAtom.CommonFixed"
+  ],
+  "excluded_namespaces": [
+    "MCore.FinalFail.Attack",
+    "MCore.FinalFail.ExactGapLedger",
+    "MCore.FinalFail.DeltaIsolation",
+    "MCore.FinalFail.ArtifactAttachment",
+    "MCore.FinalFail.Master"
+  ],
+  "forbidden_consumer_capabilities": [
+    "mutate_mcore_repository",
+    "dispatch_mcore_workflows",
+    "merge_mcore_branches",
+    "create_mcore_proof_claims",
+    "read_unexported_problem_attack_modules",
+    "promote_open_problem_endpoints"
+  ],
+  "consumer_rule": "Consumers may copy or parse only this exported contract and certified public results. Full M-Core source is not a runtime dependency.",
+  "scope": {
+    "contains_executable_agent": false,
+    "contains_external_action_capability": false,
+    "contains_millennium_attack_payloads": false,
+    "open_problem_endpoint_promotion": false
+  }
+}
