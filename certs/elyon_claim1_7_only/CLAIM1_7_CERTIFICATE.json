@@ -1,0 +1,24 @@
+{
+  "schema": "elyon.claim1-7-only.certificate.v3",
+  "certificate": "ELYON_CLAIM1_7",
+  "state": "GREEN_FROZEN_CERTIFIED",
+  "claims": [
+    "Claim1",
+    "Claim2",
+    "Claim3",
+    "Claim4",
+    "Claim5",
+    "Claim6",
+    "Claim7"
+  ],
+  "theorem": "MCore.Real.Claim1To7Only.canonicalClaim1To7",
+  "external_certificate": "MCore.Real.Claim1To7Only.canonicalExternalCertificate",
+  "final_root": "MCore.Real.Claim1To7Only.canonicalFinalRoot",
+  "final_proof": "MCore.Real.Claim1To7Only.canonicalFinalProof",
+  "policy": "Claim-only endpoints; nothing outside Claim1-Claim7 is promoted.",
+  "source_sha": "6634422c8004966b97c9c96b0f878852dbbd9175",
+  "source_run": 36048534795,
+  "kernel_result": "SUCCESS",
+  "frozen_branch": "frozen/elyon-claim1-7-final-green-6634422c",
+  "certified_branch": "cert/elyon-claim1-7-final-run36048534795"
+}

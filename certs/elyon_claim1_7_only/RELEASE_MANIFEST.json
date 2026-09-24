@@ -1,0 +1,24 @@
+{
+  "schema": "elyon.claim1-7-only.release.v1",
+  "scope": "CLAIM1_TO_CLAIM7_ONLY",
+  "state": "RELEASE_CANDIDATE",
+  "audited_sha": "d95cbb72b0ea671a1e70b6aa773a8f8647944de4",
+  "audited_run": 36049892790,
+  "audited_pointer": "final/elyon-claim1-7-audited",
+  "frozen_ref": "frozen/elyon-claim1-7-audit-green-d95cbb72",
+  "certified_ref": "cert/elyon-claim1-7-audit-run36049892790",
+  "artifacts": [
+    "manifest.json",
+    "CLAIM1_7_CERTIFICATE.json",
+    "FINAL_ISSUANCE.json",
+    "AUDIT_MANIFEST.json",
+    "SHA256SUMS",
+    "REPRODUCE.md"
+  ],
+  "endpoints": {
+    "external_certificate": "MCore.Real.Claim1To7Only.canonicalExternalCertificate",
+    "final_root": "MCore.Real.Claim1To7Only.canonicalFinalRoot",
+    "final_proof": "MCore.Real.Claim1To7Only.canonicalFinalProof"
+  },
+  "policy": "External release metadata for the audited Claim1-Claim7 scoped package only."
+}

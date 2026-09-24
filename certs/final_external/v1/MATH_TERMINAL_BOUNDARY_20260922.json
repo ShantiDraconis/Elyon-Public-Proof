@@ -1,0 +1,162 @@
+{
+  "schema": "mcore.final-external.math-boundary.v1",
+  "date": "2026-09-22",
+  "source_of_truth": "M-Core/MCCS_STATUS.json",
+  "source_of_truth_commit": "5510df7110faf602595550088e3a2f6989581d2c",
+  "p_vs_np": {
+    "repository": "ShantiDraconis/m-core-p-vs-np",
+    "P01": {
+      "state": "OPEN_IMPLEMENTATION",
+      "target": "SATInNPGap circuitBitEncoding",
+      "scaffold": {
+        "source_sha": "9d6dd9575a61782c70137abff348356f805bc654",
+        "frozen_branch": "frozen/p01-hard-scaffold-green-9d6dd957",
+        "certificate_branch": "cert/p01-hard-scaffold-9d6dd957-run35721236027",
+        "run": 35721236027,
+        "status": "GREEN_FROZEN_CERTIFIED_SCAFFOLD"
+      },
+      "exact_missing": "P01ConstructionGap / Nonempty P01MachineConstruction (global parser simulation plus integrated fixed-control SAT NTM closure)",
+      "endpoint_credit": 0,
+      "latest_certified_subgates": {
+        "integrated_parser_leaf_chain": {
+          "source_sha": "3690ab0593358d065930b36ec1e7a67852a88fa0",
+          "frozen_branch": "frozen/p01-integrated-parser-leaf-chain-green-3690ab05",
+          "certificate_branch": "cert/p01-integrated-parser-leaf-chain-3690ab05-run35722427864",
+          "run": 35722427864,
+          "status": "GREEN_FROZEN_CERTIFIED_SUBGATE"
+        },
+        "terminal_branches": {
+          "source_sha": "f9add60881d709ce8320cb54a4d52f26d829b8f5",
+          "frozen_branch": "frozen/p01-terminal-branches-green-f9add608",
+          "certificate_branch": "cert/p01-terminal-branches-f9add608-run35722846538",
+          "run": 35722846538,
+          "status": "GREEN_FROZEN_CERTIFIED"
+        },
+        "global_slotlog_spec": {
+          "source_sha": "614f88fe020fd05b9b251a6a2283301acf7ff733",
+          "frozen_branch": "frozen/p01-global-slotlog-spec-green-614f88fe",
+          "certificate_branch": "cert/p01-global-slotlog-spec-614f88fe-run35723570545",
+          "run": 35723570545,
+          "status": "GREEN_FROZEN_CERTIFIED_SUBGATE"
+        }
+      }
+    },
+    "P02": {
+      "state": "OPEN_MATH",
+      "target": "Nonempty (FailureGenerator (SATBits circuitBitEncoding))",
+      "equivalent_to": "¬ InP (SATBits circuitBitEncoding)",
+      "g21_literal_fixed_point": {
+        "state": "CLOSED_BY_FALSIFICATION",
+        "source_sha": "17c04b62d03946aab4573894833f087ade25bc33",
+        "run": 35721158651,
+        "frozen_branch": "frozen/p02-g2-1-literal-fixed-point-falsified-17c04b62",
+        "certificate_branch": "cert/p02-g2-1-literal-fixed-point-falsified-17c04b62-run35721158651"
+      },
+      "countermodel": {
+        "source_sha": "9d6dd9575a61782c70137abff348356f805bc654",
+        "run": 35721311898,
+        "status": "GREEN_FROZEN_CERTIFIED_DISPROVE_ROUTE"
+      },
+      "g21_g22_equivalence": {
+        "source_sha": "3ec5e116dde0969e82272ed9ca37e6e92c36c5e1",
+        "theorem": "g21_iff_g22",
+        "status": "GREEN_VERIFIED_EQUIVALENCE"
+      },
+      "endpoint_credit": 0,
+      "g22_wiring": {
+        "source_sha": "38db71b416906e5b7138774842e91d3e367aad09",
+        "frozen_branch": "frozen/p02-g2-2-wiring-green-38db71b4",
+        "certificate_branch": "cert/p02-g2-2-wiring-38db71b4-run35722282451",
+        "run": 35722282451,
+        "status": "GREEN_FROZEN_CERTIFIED_WIRING",
+        "theorem": "g21_iff_g22",
+        "meaning": "G2.2 is a certified consequence/equivalent wiring of the exact G21Pointwise lower-bound producer and is not an independent mathematical producer."
+      },
+      "exact_missing": "G21Pointwise, equivalent to P02Target / Nonempty FailureGenerator(SATBits circuitBitEncoding) / SAT not in P"
+    },
+    "G3": {
+      "state": "CLOSED_GREEN_FROZEN_CERTIFIED",
+      "source_sha": "f2cafea7a74f3ef8ad4140943515622545c9f1d8",
+      "run": 35719428075,
+      "theorem": "MCore.Real.CookNormalizedG3Contract.cook_normalized_g3_contract_closed"
+    }
+  },
+  "final_external": {
+    "FinalExternalInputs": "REDUCED_TO_EXACTLY_TWO_MATHEMATICAL_PRODUCERS",
+    "FINAL_ROOT": null,
+    "FINAL_EXTERNAL_ISSUED": false,
+    "final_proof": "0/7",
+    "fail_closed": true,
+    "two_gap_pipeline": {
+      "integration": {
+        "source_sha": "c102d9d482d708a7a865803e94f294c6da82ed9a",
+        "frozen_branch": "frozen/final-external-integration-green-c102d9d4",
+        "certificate_branch": "cert/final-external-integration-c102d9d4-run35722252805",
+        "run": 35722252805,
+        "status": "GREEN_FROZEN_CERTIFIED_PIPELINE"
+      },
+      "reduction": {
+        "source_sha": "b406b806da58ebe6bc1f85863ee44054ad42edb2",
+        "frozen_branch": "frozen/final-external-two-gap-green-b406b806",
+        "certificate_branch": "cert/final-external-two-gap-b406b806-run35722743845",
+        "run": 35722743845,
+        "theorem": "MCore.Real.FinalExternalTwoGap.final_external_two_gap_closes",
+        "status": "GREEN_FROZEN_CERTIFIED_REDUCTION",
+        "exact_remaining": [
+          "P01ConstructionGap",
+          "G21Pointwise"
+        ]
+      }
+    },
+    "FINAL_ROOT_MATH": null,
+    "P_VS_NP_EXTERNAL_MATH_CERTIFIED": false,
+    "two_gap_progress": "0/2",
+    "p_vs_np_endpoint": "OPEN",
+    "global_final_proof": "0/7"
+  },
+  "open_gaps": [
+    "P01ConstructionGap",
+    "G21Pointwise"
+  ],
+  "instruction_to_system": {
+    "mode": "INTERFACE_ONLY_FAIL_CLOSED",
+    "rule": "Do not attempt to prove P≠NP and do not fabricate inhabitants for P01ConstructionGap or G21Pointwise.",
+    "certified_source_rule": "No sorry, admit, axiom, opaque placeholder, or hidden endpoint assumption may be added to certified Lean source.",
+    "p01": "Keep P01ConstructionGap := Nonempty P01MachineConstruction open until a concrete finite-control NTM construction with halting, polynomial bound, and SAT correctness is supplied.",
+    "g21": "Keep G21Pointwise as the exact open lower-bound proposition. Reuse the already-certified equivalence to P02Target / SAT not in P; do not attempt to manufacture a FailureGenerator.",
+    "final_external": "Reuse FinalExternalTwoGap.lean conditionally. While either open gap is uninhabited, FINAL_ROOT must remain null and FINAL_EXTERNAL_ISSUED must remain false.",
+    "scratch_policy": "If an exploratory template with sorry is ever used, it must stay outside the certified source/CI path and must not be labeled GREEN/FROZEN/CERTIFIED."
+  },
+  "interface_status": {
+    "p01_file": "lean/MCore/Real/P01FinalCertificate.lean",
+    "p01_gap": "P01ConstructionGap",
+    "p01_state": "OPEN_IMPLEMENTATION",
+    "g21_file": "lean/MCore/Real/P02G21G22Attack.lean",
+    "g21_gap": "G21Pointwise",
+    "g21_state": "OPEN_MATH",
+    "final_external_file": "lean/MCore/Real/FinalExternalTwoGap.lean",
+    "final_external_state": "GREEN_FROZEN_CERTIFIED_REDUCTION",
+    "additional_math_producers_after_two_gaps": 0
+  },
+  "taxonomy": {
+    "FINAL_EXTERNAL_TWO_GAP": {
+      "progress": "0/2",
+      "P01ConstructionGap": "OPEN_IMPLEMENTATION",
+      "G21Pointwise": "OPEN_MATH"
+    },
+    "P_VS_NP_ENDPOINT": "OPEN",
+    "P_VS_NP_EXTERNAL_MATH_CERTIFIED": false,
+    "FINAL_ROOT_MATH": null,
+    "GLOBAL_7_PROBLEMS": {
+      "FINAL_PROOF": "0/7",
+      "p_vs_np_endpoint_credit": 0
+    },
+    "FINAL_ROOT": null,
+    "FINAL_EXTERNAL_ISSUED": false,
+    "transition_rules": {
+      "p01_only": "TwoGap 1/2; P_VS_NP_ENDPOINT remains OPEN; GLOBAL remains 0/7",
+      "p01_and_g21": "TwoGap 2/2; P_VS_NP_ENDPOINT CLOSED; P_VS_NP_EXTERNAL_MATH_CERTIFIED true; GLOBAL becomes 1/7",
+      "global_seven": "Only seven distinct problem endpoints can produce 7/7; internal subgates do not count separately."
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schema": "mcore.final-external-reuse-links.v1",
+  "date": "2026-09-23",
+  "final_external_package": "certs/final_external/v1",
+  "frozen_package_mutation": false,
+  "note": "This linkage file is outside the immutable v1 payload. It records reusable source artifacts and must be incorporated only by an explicit package revision/re-hash.",
+  "global_manifest": "final-proof/all_relevant_files.json",
+  "pnp_reuse_ledger": "final-proof/pnp_reuse_chain.json",
+  "final_proof_registry": "lean/MCore/FinalProofRegistry.lean",
+  "promotion_firewall": "lean/MCore/FinalProofFirewall.lean",
+  "pnp_external_sources": [
+    "imports/pnp/c102d9d4/lean/MCore/Real/FinalExternalCertificate.lean",
+    "imports/pnp/b406b806/lean/MCore/Real/FinalExternalTwoGap.lean",
+    "imports/pnp/c102d9d4/lean/MCore/Real/P02G21G22Attack.lean"
+  ],
+  "required_pnp_terminal": [
+    "P01ConstructionGap",
+    "G21Pointwise"
+  ],
+  "current_external_state": "PREPARATORY_NOT_ISSUED",
+  "FINAL_EXTERNAL_ISSUED": false,
+  "FINAL_ROOT": null,
+  "FINAL_PROOF": "0/7"
+}
