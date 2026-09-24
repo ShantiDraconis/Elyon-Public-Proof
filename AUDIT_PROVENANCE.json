@@ -37,5 +37,22 @@
     "MCore.Real.Claim1To7Only.canonicalFinalRoot",
     "MCore.Real.Claim1To7Only.canonicalFinalProof"
   ],
-  "disclosure": "Historical source SHAs are provenance anchors from the source repository. Independent mathematical validation remains separate from repository CI/kernel verification."
+  "disclosure": "Historical source SHAs are provenance anchors from the source repository. Independent mathematical validation remains separate from repository CI/kernel verification.",
+  "author": {
+    "name": "Tiago Paschoalatto Fagliari",
+    "orcid": "0009-0006-6874-3910",
+    "orcid_url": "https://orcid.org/0009-0006-6874-3910"
+  },
+  "scientific_record": {
+    "doi": "10.6084/m9.figshare.33990856",
+    "url": "https://doi.org/10.6084/m9.figshare.33990856"
+  },
+  "license": "MIT",
+  "discovery_files": [
+    "CITATION.cff",
+    "codemeta.json",
+    "DISCOVERY_METADATA.json",
+    "FINDABILITY_AND_MEDIA.md",
+    "AUTHORS.md"
+  ]
 }
