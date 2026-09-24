@@ -81,3 +81,35 @@ The repository intentionally excludes `.lake/`, `.env`, credentials, private key
 
 - DOI: [10.6084/m9.figshare.33990856](https://doi.org/10.6084/m9.figshare.33990856)
 - ORCID: [0009-0006-6874-3910](https://orcid.org/0009-0006-6874-3910)
+
+
+## Citation, author identity, and discovery metadata
+
+**Author:** Tiago Paschoalatto Fagliari  
+**ORCID:** https://orcid.org/0009-0006-6874-3910  
+**DOI:** https://doi.org/10.6084/m9.figshare.33990856  
+**License:** MIT
+
+Recommended citation metadata is available in `CITATION.cff` and `codemeta.json`. Machine-readable discovery metadata is also provided in `DISCOVERY_METADATA.json`.
+
+### Research areas and communities that may benefit from this package
+
+This repository is relevant to reviewers and researchers working in:
+
+- theoretical computer science;
+- computational complexity and P versus NP;
+- SAT, CNF, Cook–Levin style encodings, restrictions, and circuit complexity;
+- proof theory and formal methods;
+- theorem proving and Lean 4;
+- proof engineering, reproducible mathematics, and machine-checked verification;
+- mathematical logic and computability;
+- automated reasoning and proof-carrying research artifacts;
+- software verification and trustworthy computing;
+- research reproducibility, scientific software preservation, and external audit methodology;
+- AI-assisted formal mathematics, when used with independent human review of the resulting formal statements.
+
+### Search terms
+
+`P versus NP`, `P vs NP`, `computational complexity`, `Lean 4`, `formal proof`, `formal verification`, `theorem proving`, `SAT`, `CNF`, `Cook-Levin`, `circuit complexity`, `proof audit`, `reproducible mathematics`, `machine-checked proof`, `formal methods`, `proof engineering`, `ELYON`, `M-Core`.
+
+For press, reviewers, and indexers, use the DOI and ORCID above as the stable discovery identifiers.
