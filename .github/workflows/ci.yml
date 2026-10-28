@@ -70,6 +70,13 @@ jobs:
           export PATH="$HOME/.elan/bin:$PATH"
           lake build MCore.Real.Claim1To7Only
 
+      - name: Kernel build default target (lake build)
+        shell: bash
+        run: |
+          set -euo pipefail
+          export PATH="$HOME/.elan/bin:$PATH"
+          lake build
+
       - name: Print endpoint axiom dependencies
         shell: bash
         run: |
