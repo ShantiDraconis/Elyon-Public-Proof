@@ -1,5 +1,7 @@
 # Elyon Public Proof
 
+Contact: fagliarit@gmail.com | MVEI
+
 Public, independently reviewable snapshot of the Elyon Claim1–Claim7 formal verification package.
 
 ## Verify in a clean environment
@@ -13,8 +15,8 @@ elan toolchain install "$(cat lean-toolchain)"
 elan default "$(cat lean-toolchain)"
 lake update
 sha256sum -c certs/elyon_claim1_7_only/SHA256SUMS
-lake build MCore.Real.Claim1To7Only
-lake build
+lake build MCore.Real.Claim1To7Only   # scoped Claim1–Claim7 endpoint
+lake build                            # default target MCore: lean/MCore.lean imports the endpoint
 ```
 
 Expected result: the scoped Claim1–Claim7 endpoint and the repository build complete successfully under the pinned toolchain.
