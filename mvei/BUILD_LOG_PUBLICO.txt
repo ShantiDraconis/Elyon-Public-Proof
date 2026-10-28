@@ -1,0 +1,68 @@
+MVEI — log consolidado da verificação (2026-10-28T13:47:17+00:00)
+Os logs completos de cada compilação no GitHub ficam na página da execução do workflow (Actions).
+
+== atk-beal-public/imports/lean/MCore  [sem lean-toolchain -> v4.35.0 (stable)]  FALHOU
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
+   nota: AVULSO: arquivos .lean sem lakefile; nenhum arquivo compilou
+
+== atk-beal-public/imports/m-core-beal/lean  [leanprover/lean4:v4.19.0 -> v4.19.0]  FALHOU
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
+   nota: AVULSO: arquivos .lean sem lakefile; nenhum arquivo compilou
+
+== atk-bsd-public/imports/lean/MCore/Material  [sem lean-toolchain -> v4.35.0 (stable)]  FALHOU
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
+   nota: AVULSO: arquivos .lean sem lakefile; nenhum arquivo compilou
+
+== atk-hodge-public/imports/m-core-hodge/lean  [leanprover/lean4:v4.19.0 -> v4.19.0]  FALHOU
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
+   nota: AVULSO: arquivos .lean sem lakefile; nenhum arquivo compilou
+
+== atk-hodge-public/imports/open_math  [sem lean-toolchain -> v4.35.0 (stable)]  FALHOU
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
+   nota: AVULSO: arquivos .lean sem lakefile; nenhum arquivo compilou
+
+== atk-math-core-public/imports/AxiomaticMillenium  [sem lean-toolchain -> padrão do elan]  FALHOU
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
+   nota: AVULSO: arquivos .lean sem lakefile; nenhum arquivo compilou
+
+== atk-math-core-public/imports/M-Core/lean  [sem lean-toolchain -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 245, condicionais 0, abertos 0; axiomas declarados 0
+   nota: AVULSO: arquivos .lean sem lakefile; o MVEI montou um projeto com MCore e o Mathlib v4.19.0
+
+== atk-navier-stokes-public/imports/Material  [sem lean-toolchain -> padrão do elan]  FALHOU
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
+   nota: AVULSO: arquivos .lean sem lakefile; nenhum arquivo compilou
+
+== atk-navier-stokes-public/imports/navier-stokes-critical-barrier-audit/formal/G1  [sem lean-toolchain -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 29, condicionais 0, abertos 0; axiomas declarados 0
+   nota: AVULSO: arquivos .lean sem lakefile; o MVEI montou um projeto com HypothesesComplete_v2 e o Mathlib v4.19.0
+
+== atk-p-vs-np-public/imports/M-Core/imports/pnp/b406b806/lean/MCore/Real  [sem lean-toolchain -> v4.35.0 (stable)]  FALHOU
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
+   nota: AVULSO: arquivos .lean sem lakefile; nenhum arquivo compilou
+
+== atk-p-vs-np-public/imports/M-Core/imports/pnp/c102d9d4/lean/MCore/Real  [sem lean-toolchain -> v4.35.0 (stable)]  FALHOU
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
+   nota: AVULSO: arquivos .lean sem lakefile; nenhum arquivo compilou
+
+== atk-riemann-public/imports/lean/MCore/Material  [sem lean-toolchain -> padrão do elan]  FALHOU
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
+   nota: AVULSO: arquivos .lean sem lakefile; nenhum arquivo compilou
+
+== atk-riemann-public/imports/m-core-riemann/atk-kernel/ATK  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
+   nota: AVULSO: arquivos .lean sem lakefile; nenhum arquivo compilou
+
+== atk-yang-mills-public/imports/lean/MCore/Material  [sem lean-toolchain -> v4.35.0 (stable)]  FALHOU
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
+   nota: AVULSO: arquivos .lean sem lakefile; nenhum arquivo compilou
+
+== Beit-Hamikdash-iii/.  [leanprover/lean4:v4.35.0 -> leanprover/lean4:v4.35.0]  OK
+   teoremas: fechados 194, condicionais 0, abertos 0; axiomas declarados 0
+
+== Elyon-Public-Proof/.  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 870, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: imports-no-topo
+   nota: CORRIGIDO PELO MVEI (imports-no-topo): imports movidos para antes do comentário de módulo em 1 arquivo(s). MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 73 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
