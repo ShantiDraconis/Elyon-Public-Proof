@@ -6,9 +6,12 @@
 
 | Closed theorems in the public repositories | |
 |---|---:|
-| Counting each project | 1 338 |
-| Unique (name + statement) | 1 272 |
-| Unique, without the lemmas Lean generates itself (`eq_1`, `mk.inj`, `sizeOf_spec`, `deriving`) | 631 |
+| Counting each project | 1 435 |
+| Unique (name + statement) | 1 361 |
+| Unique, without the lemmas Lean generates itself (`eq_1`, `mk.inj`, `sizeOf_spec`, `deriving`) | 717 |
+
+Of the closed theorems, 78 come from the file-by-file check: every `.lean` file that no Lake build
+reached went through Lean whole, with a `#print axioms` for each theorem.
 
 The data files are here, at the same relative paths the book cites, so the SHA-256 values in its
 "Reprodutibilidade" section can be checked with `sha256sum`:
@@ -19,4 +22,6 @@ The data files are here, at the same relative paths the book cites, so the SHA-2
 - `BUILD_LOG_PUBLICO.txt` — one block per project: Lean version, result, errors
 
 The full verification, including private repositories, stays in the author's MVEI and cannot be
-checked from here.
+checked from here. The Lean sources of the M-Core family (M-Core, P vs NP, Hodge, Riemann, BSD, Beal,
+Yang–Mills, Navier–Stokes) and their kernel results are public in the atk-*-public repositories, each with
+its own `mvei/` folder.
