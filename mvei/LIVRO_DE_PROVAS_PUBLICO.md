@@ -2,7 +2,7 @@
 
 > Este livro cobre só os repositórios públicos de ShantiDraconis (16 de 250). As contagens abaixo foram recalculadas para esse conjunto e podem ser refeitas por qualquer pessoa a partir dos repositórios. A verificação completa, com os repositórios privados, fica no MVEI do autor e não pode ser conferida a partir daqui.
 
-Gerado pelo MVEI em 2026-10-28 16:45 UTC. Verificação feita no kernel do Lean (`Lean.collectAxioms`, a função de `#print axioms`). **T** = fechado só com axiomas padrão (propext, Classical.choice, Quot.sound); **Ω** = aberto; **condicional** = vale no mundo do repositório, que aceita os axiomas que ele declara.
+Gerado pelo MVEI em 2026-10-28 19:20 UTC. Verificação feita no kernel do Lean (`Lean.collectAxioms`, a função de `#print axioms`). **T** = fechado só com axiomas padrão (propext, Classical.choice, Quot.sound); **Ω** = aberto; **condicional** = vale no mundo do repositório, que aceita os axiomas que ele declara.
 
 ## Visão geral
 
@@ -16,6 +16,8 @@ Gerado pelo MVEI em 2026-10-28 16:45 UTC. Verificação feita no kernel do Lean 
 | Teoremas fechados (T), por projeto | 1435 (1357 no build dos projetos, 78 checados arquivo a arquivo; 1163 em projetos que só compilaram com lakefile gerado ou correções do MVEI) |
 | Teoremas fechados únicos (nome + enunciado) | 1361 (as cópias em pastas de snapshot contam uma vez) |
 | Únicos sem os lemas que o Lean gera sozinho | 717 (fora: equações `eq_N`, `mk.inj`, `sizeOf_spec`, lemas de `deriving`) |
+| Fechados sem variáveis no enunciado | 242 dos 717 únicos escritos são afirmações sobre objetos concretos (sem ∀, ∃ ou →: contas, valores e definições do próprio arquivo); os outros têm variáveis |
+| Fechados em famílias numeradas | 0 dos 717 únicos escritos têm nome numa família de 20 ou mais com o mesmo padrão (`precedence_0001`, `precedence_0002`, …), o sinal de arquivo gerado por programa |
 | Arquivos .lean sem lakefile (o MVEI montou 14 projetos) | 3 compilaram, 293 teoremas fechados |
 | Teoremas condicionais | 0 no build |
 | Pontes abertas (sorryAx) | 0 no build |
@@ -224,8 +226,8 @@ Projetos com lakefile gerado pelo MVEI: 3 (293 teoremas lidos no kernel).
 
 SHA-256 dos arquivos de dados usados neste relatório (no pacote do MVEI, em `propostas/`):
 
-- `_verificacao/VERIFICACAO.json`: `cbb0cc7cfdee5515ae7666cfb823f601ad54c73c82b08c615490be64088003ef`
-- `_verificacao/SIMULACAO.json`: `862db4c828a5aac7af6b6d97807ece66fab14d0b40939c6433cd762334b3c3d6`
+- `_verificacao/VERIFICACAO.json`: `c973aae56e6caaafb6677f92b3ceaf81918e4d1095f91643a2b8c63a248de97f`
+- `_verificacao/SIMULACAO.json`: `cc3cae961642c4fe7d2c282411b1aece1bb3e31a96b078c1647534b0d6d67073`
 - `_verificacao/INTEGRIDADE.json`: `419c42caf7987f7e877d601dd54601ebc8a27f9c3205f8b6196dee9a6b6d449f`
 - `_indice/INDEX.json`: `0816109bd6ca0f2311cc45672460e60a2da2097210a97a21a67be2908a646efd`
 - `correcoes/Elyon-Public-Proof/imports-no-topo.patch`: `98df1093c7e078529b84d36ecae3a9a2c2cff0ba3782393d81174058f0bee60f`
