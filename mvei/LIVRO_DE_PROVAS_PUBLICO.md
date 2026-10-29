@@ -2,7 +2,7 @@
 
 > Este livro cobre só os repositórios públicos de ShantiDraconis (16 de 250). As contagens abaixo foram recalculadas para esse conjunto e podem ser refeitas por qualquer pessoa a partir dos repositórios. A verificação completa, com os repositórios privados, fica no MVEI do autor e não pode ser conferida a partir daqui.
 
-Gerado pelo MVEI em 2026-10-29 01:38 UTC. Verificação feita no kernel do Lean (`Lean.collectAxioms`, a função de `#print axioms`). **T** = fechado só com axiomas padrão (propext, Classical.choice, Quot.sound); **Ω** = aberto; **condicional** = vale no mundo do repositório, que aceita os axiomas que ele declara.
+Gerado pelo MVEI em 2026-10-29 02:47 UTC. Verificação feita no kernel do Lean (`Lean.collectAxioms`, a função de `#print axioms`). **T** = fechado só com axiomas padrão (propext, Classical.choice, Quot.sound); **Ω** = aberto; **condicional** = vale no mundo do repositório, que aceita os axiomas que ele declara.
 
 ## Visão geral
 
@@ -13,16 +13,16 @@ Gerado pelo MVEI em 2026-10-29 01:38 UTC. Verificação feita no kernel do Lean 
 | Compilados (nesta máquina ou no GitHub Actions, com o Mathlib) | 5 (3 com lakefile reconstruído) |
 | Não compilaram | 11 |
 | Sem compilar: o Mathlib não baixou ou não foi tentado | 0 |
-| Teoremas fechados (T), por projeto | 1443 (1357 no build dos projetos, 86 checados arquivo a arquivo; 1163 em projetos que só compilaram com lakefile gerado ou correções do MVEI) |
-| Teoremas fechados únicos (nome + enunciado) | 1369 (as cópias em pastas de snapshot contam uma vez) |
-| Únicos sem os lemas que o Lean gera sozinho | 725 (fora: equações `eq_N`, `mk.inj`, `sizeOf_spec`, lemas de `deriving`) |
-| Fechados sem variáveis no enunciado | 244 dos 725 únicos escritos são afirmações sobre objetos concretos (sem ∀, ∃ ou →: contas, valores e definições do próprio arquivo); os outros têm variáveis |
-| Fechados em famílias numeradas | 0 dos 725 únicos escritos têm nome numa família de 20 ou mais com o mesmo padrão (`precedence_0001`, `precedence_0002`, …), o sinal de arquivo gerado por programa |
-| Fechados com enunciado vazio | 28 dos 725 únicos escritos não afirmam nada: 0 com conclusão `True`, 0 `∃ …, True` e 28 campo de registro igual ao valor que o próprio arquivo gravou (lista em ENUNCIADOS_VAZIOS.md) |
+| Teoremas fechados (T), por projeto | 1455 (1357 no build dos projetos, 98 checados arquivo a arquivo; 1163 em projetos que só compilaram com lakefile gerado ou correções do MVEI) |
+| Teoremas fechados únicos (nome + enunciado) | 1379 (as cópias em pastas de snapshot contam uma vez) |
+| Únicos sem os lemas que o Lean gera sozinho | 735 (fora: equações `eq_N`, `mk.inj`, `sizeOf_spec`, lemas de `deriving`) |
+| Fechados sem variáveis no enunciado | 247 dos 735 únicos escritos são afirmações sobre objetos concretos (sem ∀, ∃ ou →: contas, valores e definições do próprio arquivo); os outros têm variáveis |
+| Fechados em famílias numeradas | 0 dos 735 únicos escritos têm nome numa família de 20 ou mais com o mesmo padrão (`precedence_0001`, `precedence_0002`, …), o sinal de arquivo gerado por programa |
+| Fechados com enunciado vazio | 28 dos 735 únicos escritos não afirmam nada: 0 com conclusão `True`, 0 `∃ …, True` e 28 campo de registro igual ao valor que o próprio arquivo gravou (lista em ENUNCIADOS_VAZIOS.md) |
 | Arquivos .lean sem lakefile (o MVEI montou 14 projetos) | 3 compilaram, 293 teoremas fechados |
 | Teoremas condicionais | 0 no build |
 | Pontes abertas (sorryAx) | 0 no build |
-| Checados arquivo a arquivo (arquivos fora de qualquer build) | 336 teoremas: 86 fechados, 0 condicionais, 0 abertos, 9 com erro na prova, 241 não alcançados |
+| Checados arquivo a arquivo (arquivos fora de qualquer build) | 336 teoremas: 98 fechados, 0 condicionais, 0 abertos, 9 com erro na prova, 229 não alcançados |
 | Axiomas declarados (projetos compilados) | 0 |
 | Auditoria estática de todos os .lean | 876 teoremas, 0 axiomas, 0 `sorry` |
 
@@ -65,22 +65,22 @@ Os arquivos `.lean` declaram 876 `theorem`/`lemma` (837 nomes distintos; as cóp
 
 | Estado | Teoremas declarados |
 |---|---:|
-| fechado no kernel | 595 |
+| fechado no kernel | 607 |
 | condicional (axiomas do repositório) | 0 |
 | aberto (`sorry`) | 0 |
-| nunca checado pelo kernel | 281 |
+| nunca checado pelo kernel | 269 |
 
-Nomes distintos entre os declarados que fecharam: 580. Esta é a contagem mais conservadora: só teoremas escritos no texto (sem os lemas que o Lean gera), cada nome uma vez.
+Nomes distintos entre os declarados que fecharam: 590. Esta é a contagem mais conservadora: só teoremas escritos no texto (sem os lemas que o Lean gera), cada nome uma vez.
 
 Por que os não checados não foram checados:
 
 | Motivo | Teoremas |
 |---|---:|
-| testado arquivo a arquivo: o Lean não chegou ao teorema (import ausente, erro de sintaxe que interrompe o arquivo ou tempo esgotado) | 241 |
+| testado arquivo a arquivo: o Lean não chegou ao teorema (import ausente, erro de sintaxe que interrompe o arquivo ou tempo esgotado) | 229 |
 | o arquivo compilou, mas o nome não apareceu no kernel (private, mutual ou gerado por macro) | 31 |
 | testado arquivo a arquivo: a prova escrita não passa no kernel (o Lean deu erro nela) | 9 |
 
-Repositórios com mais teoremas nunca checados: Elyon-Public-Proof (180), atk-hodge-public (60), atk-beal-public (24), atk-p-vs-np-public (8), atk-math-core-public (5), atk-riemann-public (2), Beit-Hamikdash-iii (2).
+Repositórios com mais teoremas nunca checados: Elyon-Public-Proof (168), atk-hodge-public (60), atk-beal-public (24), atk-p-vs-np-public (8), atk-math-core-public (5), atk-riemann-public (2), Beit-Hamikdash-iii (2).
 
 ## Preenchimento automático: o que as táticas já fecham
 
@@ -223,8 +223,8 @@ Projetos com lakefile gerado pelo MVEI: 3 (293 teoremas lidos no kernel).
 
 SHA-256 dos arquivos de dados usados neste relatório (no pacote do MVEI, em `propostas/`):
 
-- `_verificacao/VERIFICACAO.json`: `6f6e31e85f237a9d7fcabcec95e020c95ee7445a72ffd2db5845bae2d8709476`
-- `_verificacao/SIMULACAO.json`: `6471e559ea03bc26f2be5b099c2792a39cce4ec83096446585e46c35ba3c0889`
+- `_verificacao/VERIFICACAO.json`: `c1a6d2a3462d1c92c319120ae2fede01e153311db676881a1713a08d1446202b`
+- `_verificacao/SIMULACAO.json`: `938294cd1f19af86e5ee91f2f73f7577e34304af8df51f64592e6ee70a72ceae`
 - `_verificacao/INTEGRIDADE.json`: `419c42caf7987f7e877d601dd54601ebc8a27f9c3205f8b6196dee9a6b6d449f`
 - `_indice/INDEX.json`: `0816109bd6ca0f2311cc45672460e60a2da2097210a97a21a67be2908a646efd`
 - `correcoes/Elyon-Public-Proof/imports-no-topo.patch`: `98df1093c7e078529b84d36ecae3a9a2c2cff0ba3782393d81174058f0bee60f`
