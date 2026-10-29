@@ -2,7 +2,7 @@
 
 > Este livro cobre só os repositórios públicos de ShantiDraconis (16 de 250). As contagens abaixo foram recalculadas para esse conjunto e podem ser refeitas por qualquer pessoa a partir dos repositórios. A verificação completa, com os repositórios privados, fica no MVEI do autor e não pode ser conferida a partir daqui.
 
-Gerado pelo MVEI em 2026-10-29 02:47 UTC. Verificação feita no kernel do Lean (`Lean.collectAxioms`, a função de `#print axioms`). **T** = fechado só com axiomas padrão (propext, Classical.choice, Quot.sound); **Ω** = aberto; **condicional** = vale no mundo do repositório, que aceita os axiomas que ele declara.
+Gerado pelo MVEI em 2026-10-29 06:27 UTC. Verificação feita no kernel do Lean (`Lean.collectAxioms`, a função de `#print axioms`). **T** = fechado só com axiomas padrão (propext, Classical.choice, Quot.sound); **Ω** = aberto; **condicional** = vale no mundo do repositório, que aceita os axiomas que ele declara.
 
 ## Visão geral
 
@@ -223,8 +223,8 @@ Projetos com lakefile gerado pelo MVEI: 3 (293 teoremas lidos no kernel).
 
 SHA-256 dos arquivos de dados usados neste relatório (no pacote do MVEI, em `propostas/`):
 
-- `_verificacao/VERIFICACAO.json`: `c1a6d2a3462d1c92c319120ae2fede01e153311db676881a1713a08d1446202b`
-- `_verificacao/SIMULACAO.json`: `938294cd1f19af86e5ee91f2f73f7577e34304af8df51f64592e6ee70a72ceae`
+- `_verificacao/VERIFICACAO.json`: `c29bedf66bf9e45ea6a30fabbf9821b220f8713aa05fa18be0f80a614e3b7946`
+- `_verificacao/SIMULACAO.json`: `6636f39e860e5bc51f51f5bf39b4307187514083da9eeda3599645c7b3de32fd`
 - `_verificacao/INTEGRIDADE.json`: `419c42caf7987f7e877d601dd54601ebc8a27f9c3205f8b6196dee9a6b6d449f`
 - `_indice/INDEX.json`: `0816109bd6ca0f2311cc45672460e60a2da2097210a97a21a67be2908a646efd`
 - `correcoes/Elyon-Public-Proof/imports-no-topo.patch`: `98df1093c7e078529b84d36ecae3a9a2c2cff0ba3782393d81174058f0bee60f`
