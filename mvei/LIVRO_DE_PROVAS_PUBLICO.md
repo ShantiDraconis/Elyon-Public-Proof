@@ -2,7 +2,7 @@
 
 > Este livro cobre só os repositórios públicos de ShantiDraconis (16 de 250). As contagens abaixo foram recalculadas para esse conjunto e podem ser refeitas por qualquer pessoa a partir dos repositórios. A verificação completa, com os repositórios privados, fica no MVEI do autor e não pode ser conferida a partir daqui.
 
-Gerado pelo MVEI em 2026-11-02 21:12 UTC. Verificação feita no kernel do Lean (`Lean.collectAxioms`, a função de `#print axioms`). **T** = fechado só com axiomas padrão (propext, Classical.choice, Quot.sound); **Ω** = aberto; **condicional** = vale no mundo do repositório, que aceita os axiomas que ele declara (ou, onde o MVEI acrescentou uma camada de nomes, os axiomas dela, que são hipóteses do MVEI).
+Gerado pelo MVEI em 2026-11-03 11:29 UTC. Verificação feita no kernel do Lean (`Lean.collectAxioms`, a função de `#print axioms`). **T** = fechado só com axiomas padrão (propext, Classical.choice, Quot.sound); **Ω** = aberto; **condicional** = vale no mundo do repositório, que aceita os axiomas que ele declara (ou, onde o MVEI acrescentou uma camada de nomes, os axiomas dela, que são hipóteses do MVEI).
 
 ## Visão geral
 
@@ -13,16 +13,16 @@ Gerado pelo MVEI em 2026-11-02 21:12 UTC. Verificação feita no kernel do Lean 
 | Compilados (nesta máquina ou no GitHub Actions, com o Mathlib) | 5 (3 com lakefile reconstruído) |
 | Não compilaram | 11 |
 | Sem compilar: o Mathlib não baixou ou não foi tentado | 0 |
-| Teoremas fechados (T), por projeto | 1623 (1357 no build dos projetos, 266 checados arquivo a arquivo; 1163 em projetos que só compilaram com lakefile gerado ou correções do MVEI) |
-| Teoremas fechados únicos (nome + enunciado) | 1546 (as cópias em pastas de snapshot contam uma vez) |
-| Únicos sem os lemas que o Lean gera sozinho | 902 (fora: equações `eq_N`, `mk.inj`, `sizeOf_spec`, lemas de `deriving`) |
-| Fechados sem variáveis no enunciado | 289 dos 902 únicos escritos são afirmações sobre objetos concretos (sem ∀, ∃ ou →: contas, valores e definições do próprio arquivo); os outros têm variáveis |
-| Fechados em famílias numeradas | 0 dos 902 únicos escritos têm nome numa família de 20 ou mais com o mesmo padrão (`precedence_0001`, `precedence_0002`, …), o sinal de arquivo gerado por programa |
-| Fechados com enunciado vazio | 30 dos 902 únicos escritos não afirmam nada: 0 com conclusão `True`, 0 `∃ …, True` e 30 campo de registro igual ao valor que o próprio arquivo gravou (lista em ENUNCIADOS_VAZIOS.md) |
+| Teoremas fechados (T), por projeto | 1649 (1357 no build dos projetos, 292 checados arquivo a arquivo; 1163 em projetos que só compilaram com lakefile gerado ou correções do MVEI) |
+| Teoremas fechados únicos (nome + enunciado) | 1572 (as cópias em pastas de snapshot contam uma vez) |
+| Únicos sem os lemas que o Lean gera sozinho | 928 (fora: equações `eq_N`, `mk.inj`, `sizeOf_spec`, lemas de `deriving`) |
+| Fechados sem variáveis no enunciado | 303 dos 928 únicos escritos são afirmações sobre objetos concretos (sem ∀, ∃ ou →: contas, valores e definições do próprio arquivo); os outros têm variáveis |
+| Fechados em famílias numeradas | 0 dos 928 únicos escritos têm nome numa família de 20 ou mais com o mesmo padrão (`precedence_0001`, `precedence_0002`, …), o sinal de arquivo gerado por programa |
+| Fechados com enunciado vazio | 31 dos 928 únicos escritos não afirmam nada: 0 com conclusão `True`, 0 `∃ …, True` e 31 campo de registro igual ao valor que o próprio arquivo gravou (lista em ENUNCIADOS_VAZIOS.md) |
 | Arquivos .lean sem lakefile (o MVEI montou 14 projetos) | 3 compilaram, 293 teoremas fechados |
 | Teoremas condicionais | 0 no build |
 | Pontes abertas (sorryAx) | 0 no build, 6 arquivo a arquivo |
-| Checados arquivo a arquivo (arquivos fora de qualquer build) | 336 teoremas: 266 fechados, 0 condicionais, 6 abertos, 4 com erro na prova, 60 não alcançados |
+| Checados arquivo a arquivo (arquivos fora de qualquer build) | 336 teoremas: 292 fechados, 0 condicionais, 6 abertos, 4 com erro na prova, 34 não alcançados |
 | Axiomas declarados (projetos compilados) | 0 |
 | Auditoria estática de todos os .lean | 876 teoremas, 0 axiomas, 0 `sorry` |
 
@@ -65,22 +65,22 @@ Os arquivos `.lean` declaram 876 `theorem`/`lemma` (837 nomes distintos; as cóp
 
 | Estado | Teoremas declarados |
 |---|---:|
-| fechado no kernel | 775 |
+| fechado no kernel | 801 |
 | condicional (axiomas do repositório ou, em mishkan-iii-core, da camada de nomes do MVEI) | 0 |
 | aberto (`sorry`) | 6 |
-| nunca checado pelo kernel | 95 |
+| nunca checado pelo kernel | 69 |
 
-Nomes distintos entre os declarados que fecharam: 757. Esta é a contagem mais conservadora: só teoremas escritos no texto (sem os lemas que o Lean gera), cada nome uma vez.
+Nomes distintos entre os declarados que fecharam: 783. Esta é a contagem mais conservadora: só teoremas escritos no texto (sem os lemas que o Lean gera), cada nome uma vez.
 
 Por que os não checados não foram checados:
 
 | Motivo | Teoremas |
 |---|---:|
-| testado arquivo a arquivo: o Lean não chegou ao teorema (import ausente, erro de sintaxe que interrompe o arquivo ou tempo esgotado) | 60 |
+| testado arquivo a arquivo: o Lean não chegou ao teorema (import ausente, erro de sintaxe que interrompe o arquivo ou tempo esgotado) | 34 |
 | o arquivo compilou, mas o nome não apareceu no kernel (private, mutual ou gerado por macro) | 31 |
 | testado arquivo a arquivo: a prova escrita não passa no kernel (o Lean deu erro nela) | 4 |
 
-Repositórios com mais teoremas nunca checados: Elyon-Public-Proof (67), atk-beal-public (24), Beit-Hamikdash-iii (2), atk-p-vs-np-public (1), atk-riemann-public (1).
+Repositórios com mais teoremas nunca checados: Elyon-Public-Proof (41), atk-beal-public (24), Beit-Hamikdash-iii (2), atk-p-vs-np-public (1), atk-riemann-public (1).
 
 ## Preenchimento automático: o que as táticas já fecham
 
@@ -223,8 +223,8 @@ Projetos com lakefile gerado pelo MVEI: 3 (293 teoremas lidos no kernel).
 
 SHA-256 dos arquivos de dados usados neste relatório (no pacote do MVEI, em `propostas/`):
 
-- `_verificacao/VERIFICACAO.json`: `ae5c1fef639658d268cb3935b93bff0c0528b17e964203dbb97c3d7ca533d5ad`
-- `_verificacao/SIMULACAO.json`: `b3111945f4dd025e4ff2c4247f75773bbfe4af9cd7022d93c60b123d6138bc8c`
+- `_verificacao/VERIFICACAO.json`: `4736e562784ce9b1ed7e5b0d877aa9526b2f3b960314bac1b3ebc81837a53ec4`
+- `_verificacao/SIMULACAO.json`: `4b4e9a6d3357695746916b08e9e2e79b44d9ca624eba3f848b150e6c7d225374`
 - `_verificacao/INTEGRIDADE.json`: `419c42caf7987f7e877d601dd54601ebc8a27f9c3205f8b6196dee9a6b6d449f`
 - `_indice/INDEX.json`: `0816109bd6ca0f2311cc45672460e60a2da2097210a97a21a67be2908a646efd`
 - `correcoes/atk-math-core-public/vocabulario-lean4.patch`: `faf2ffb8acdb2a31eca8e73320b7da07059148f1e6668e692f86c0e3e2eef075`
