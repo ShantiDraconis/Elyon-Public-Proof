@@ -1,17 +1,321 @@
-MVEI — log consolidado da verificação (2026-11-03T08:19:01+00:00)
+MVEI — log consolidado da verificação (2026-11-05T15:19:16+00:00)
 Os logs completos de cada compilação no GitHub ficam na página da execução do workflow (Actions).
+
+== atk-beal-public/branches/m-core-beal/atk-kernel-check/atk-kernel  [leanprover/lean4:v4.34.1 -> leanprover/lean4:v4.34.1]  OK
+   teoremas: fechados 19, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 1 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: ATK: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
+
+== atk-beal-public/branches/m-core-beal/atk_beal-full-toolchain-20261006  [leanprover/lean4:v4.33.1 -> leanprover/lean4:v4.33.1]  OK
+   teoremas: fechados 548, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MANIFESTO RESOLVIDO: o lake-manifest.json não trazia o Mathlib; o MVEI rodou `lake update` na cópia de trabalho (o repositório não foi alterado). RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com MCore e o Mathlib v4.33.1 e compilou o que foi possível
+   erro: (configuração original) o download do Mathlib falhou: error: mathlib: failed to fetch cache
+
+== atk-beal-public/branches/m-core-beal/atk_beal-parity-to-t59-partition-20261001  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 497, condicionais 0, abertos 0; axiomas declarados 0
+   nota: RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com MCore e o Mathlib v4.19.0 e compilou o que foi possível (erros restantes: error: ./././lean/MCore/T59ParityPartition.lean:45:4: tactic 'cases' failed, nested error: | error: Lean exited with code 1)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-beal-public/branches/m-core-beal/atk_beal-two-sided-resolution-20261001  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 547, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MANIFESTO RESOLVIDO: o lake-manifest.json não trazia o Mathlib; o MVEI rodou `lake update` na cópia de trabalho (o repositório não foi alterado). MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 111 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-beal-public/branches/m-core-beal/atk_concrete-terminal-law  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 113, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 19 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-beal-public/branches/m-core-beal/atk_power-sum-balance-identity-20261008  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 118, condicionais 0, abertos 0; axiomas declarados 0
+
+== atk-beal-public/branches/m-core-beal/attack_beal-b01-o1-conductor-bridge-20260926  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 578, condicionais 0, abertos 0; axiomas declarados 0
+   nota: RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com MCore e o Mathlib v4.19.0 e compilou o que foi possível
+   erro: (configuração original) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-beal-public/branches/m-core-beal/attack_beal-gcd-endpoint-equivalence-20260927  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 125, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 19 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-beal-public/branches/m-core-beal/attack_t31-frey-nodal-arithmetic-20260920  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 308, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 42 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-beal-public/branches/m-core-beal/attack_t36e2-c4-unit-minimality-20260920  [leanprover/lean4:v4.29.0-rc6 -> leanprover/lean4:v4.29.0-rc6]  FALHOU
+   teoremas: fechados 375, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 52 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 4294967294) | error: build failed
+
+== atk-beal-public/branches/m-core-beal/attack_t46-newform-signature-split-20260920  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 398, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 57 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-beal-public/branches/m-core-beal/attack_t61-modern-reduction-port-20260920  [leanprover/lean4:v4.29.0-rc6 -> leanprover/lean4:v4.29.0-rc6]  FALHOU
+   teoremas: fechados 475, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 71 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 4294967294) | error: build failed
+
+== atk-beal-public/branches/m-core-beal/k7-BEAL  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 74, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 10 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-beal-public/branches/m-core-beal/k7-preflight_Beal-OfficialSpec  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 76, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 10 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-beal-public/branches/m-core-beal/meta_finalproof-frontier-map-v1  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 14, condicionais 0, abertos 0; axiomas declarados 0
+   nota: RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com FinalProof e compilou o que foi possível
+   erro: (configuração original) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-beal-public/branches/m-core-beal/research_pure-math-final-proof-v1  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 153, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 29 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-beal-public/branches/m-core-beal/work_beal-bilateral-mincut-20261005  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 149, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 21 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
 
 == atk-beal-public/imports/lean/MCore  [sem lean-toolchain -> padrão do elan]  FALHOU
    teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
    nota: AVULSO: arquivos .lean sem lakefile; nenhum arquivo compilou
 
+== atk-beal-public/imports/m-core-beal  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 118, condicionais 0, abertos 0; axiomas declarados 0
+
+== atk-beal-public/imports/m-core-beal/atk-kernel  [leanprover/lean4:v4.34.1 -> leanprover/lean4:v4.34.1]  OK
+   teoremas: fechados 1, condicionais 0, abertos 0; axiomas declarados 0
+
 == atk-beal-public/imports/m-core-beal/lean  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
    teoremas: fechados 19, condicionais 0, abertos 0; axiomas declarados 0
    nota: AVULSO: arquivos .lean sem lakefile; o MVEI montou um projeto com MCore
 
-== atk-bsd-public/imports/lean/MCore/Material  [sem lean-toolchain -> v4.35.0 (stable)]  FALHOU
+== atk-bsd-public/branches/m-core-bsd/a0-preaudit/a0  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
+   nota: leitura de axiomas: nenhum módulo compilado encontrado
+
+== atk-bsd-public/branches/m-core-bsd/atk-kernel-check/atk-kernel  [leanprover/lean4:v4.34.1 -> leanprover/lean4:v4.34.1]  OK
+   teoremas: fechados 5, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 1 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: ATK: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
+
+== atk-bsd-public/branches/m-core-bsd/atk-terminal-forward-20261012/atk-kernel  [leanprover/lean4:v4.34.1 -> leanprover/lean4:v4.34.1]  OK
+   teoremas: fechados 2, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 1 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: ATK: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
+
+== atk-bsd-public/branches/m-core-bsd/atk_auto-compose-terminal-20260930  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 226, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 27 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-bsd-public/branches/m-core-bsd/atk_bsd-doubling-descent-20260928  [leanprover/lean4:v4.35.0-rc3 -> leanprover/lean4:v4.35.0-rc3]  OK
+   teoremas: fechados 2, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MANIFESTO RESOLVIDO: o lake-manifest.json não trazia o Mathlib; o MVEI rodou `lake update` na cópia de trabalho (o repositório não foi alterado). MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 1 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: BSDAlgebraicProbe: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
+
+== atk-bsd-public/branches/m-core-bsd/atk_bsd-local-order-20261006  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 483, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 51 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-bsd-public/branches/m-core-bsd/atk_bsd-lowrank-material-bridge-20261007  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 219, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 20 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-bsd-public/branches/m-core-bsd/atk_first-real-open-math-bsd-20261005  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 251, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 30 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-bsd-public/branches/m-core-bsd/atk_next-bsd-concrete-realizable-domain-20260928  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 165, condicionais 0, abertos 0; axiomas declarados 0
+
+== atk-bsd-public/branches/m-core-bsd/atk_next-bsd-two-descent-finite-quotient-20260929  [leanprover/lean4:v4.35.0-rc3 -> leanprover/lean4:v4.35.0-rc3]  OK
+   teoremas: fechados 3, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MANIFESTO RESOLVIDO: o lake-manifest.json não trazia o Mathlib; o MVEI rodou `lake update` na cópia de trabalho (o repositório não foi alterado). MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 2 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: BSDAlgebraicProbe: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
+
+== atk-bsd-public/branches/m-core-bsd/atk_terminal-parameter-law-20261003  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 213, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 22 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-bsd-public/branches/m-core-bsd/attack_bsd-certified-foundation  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 162, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 47 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-bsd-public/branches/m-core-bsd/audit_multistate-proof-refutation-v1  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 207, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 23 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-bsd-public/branches/m-core-bsd/h2-archimedean-failclosed  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 25, condicionais 0, abertos 0; axiomas declarados 0
+   nota: RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com MCore e o Mathlib v4.19.0 e compilou o que foi possível (erros restantes: error: ./././lean/MCore/Heights/ArchimedeanSeries.lean:20:4: failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Real.instDivInvMonoid', and it does not have executable code | error: ./././lean/MCore/Heights/ArchimedeanSeries.lean:23:4: failed to compile defin)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-bsd-public/branches/m-core-bsd/k7-BSD  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 74, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 10 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-bsd-public/branches/m-core-bsd/k7-preflight_BSD-OfficialSpec  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 76, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 10 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-bsd-public/branches/m-core-bsd/open-math_bsd-gaps-20261004  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 230, condicionais 0, abertos 0; axiomas declarados 0
+   nota: RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com MCore, P06 e o Mathlib v4.19.0 e compilou o que foi possível
+   erro: (configuração original) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-bsd-public/branches/m-core-bsd/research_pure-math-final-proof-v1  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 155, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 19 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-bsd-public/imports/lean/MCore/Material  [sem lean-toolchain -> padrão do elan]  FALHOU
    teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
    nota: AVULSO: arquivos .lean sem lakefile; nenhum arquivo compilou
+
+== atk-bsd-public/imports/m-core-bsd  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 156, condicionais 0, abertos 0; axiomas declarados 0
+
+== atk-bsd-public/imports/m-core-bsd/atk-kernel  [leanprover/lean4:v4.34.1 -> leanprover/lean4:v4.34.1]  OK
+   teoremas: fechados 3, condicionais 0, abertos 0; axiomas declarados 0
+
+== atk-hodge-public/branches/m-core-hodge/atk_auto-compose-terminal-20260930  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 586, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 56 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-hodge-public/branches/m-core-hodge/atk_first-real-open-math-20261005  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 83, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 12 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-hodge-public/branches/m-core-hodge/atk_hodge-closed-math-line-20261007  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 692, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 62 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-hodge-public/branches/m-core-hodge/atk_hodge-material-producer-gate-20260928  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 84, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 12 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-hodge-public/branches/m-core-hodge/atk_hodge-material-target-hardening-20261001  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 272, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 29 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-hodge-public/branches/m-core-hodge/atk_hodge-r3-universal-family-compat-20260927  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 252, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 25 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-hodge-public/branches/m-core-hodge/atk_hodge-recovered-material-chain-20261007  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 788, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MANIFESTO RESOLVIDO: o lake-manifest.json não trazia o Mathlib; o MVEI rodou `lake update` na cópia de trabalho (o repositório não foi alterado). MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 64 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-hodge-public/branches/m-core-hodge/atk_hodge-relative-cycle-to-variational-20261001  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 287, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 26 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-hodge-public/branches/m-core-hodge/atk_kernel-r3-basepoint-20260928  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 180, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 20 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-hodge-public/branches/m-core-hodge/atk_material-rigid-integration-20261009  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 557, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MANIFESTO RESOLVIDO: o lake-manifest.json não trazia o Mathlib; o MVEI rodou `lake update` na cópia de trabalho (o repositório não foi alterado). RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com ATK, MCore e o Mathlib v4.19.0 e compilou o que foi possível
+   erro: (configuração original) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-hodge-public/branches/m-core-hodge/atk_proof-inventory-3fc16284  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 244, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 25 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-hodge-public/branches/m-core-hodge/audit_multistate-proof-refutation-v1  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 109, condicionais 0, abertos 0; axiomas declarados 0
+   nota: RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com MCore e o Mathlib v4.19.0 e compilou o que foi possível
+   erro: (configuração original) (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-hodge-public/branches/m-core-hodge/cert_hdg-final-attack-4419293f-run35232076043  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 304, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 30 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-hodge-public/branches/m-core-hodge/cert_journal-hodge-reduction-v1-8622e316-run35519976669  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 263, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 29 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-hodge-public/branches/m-core-hodge/claim_hodge-prize-surgery-lane2  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 297, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 24 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-hodge-public/branches/m-core-hodge/frozen_hodge-exact-remaining-green-78f997e5  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 553, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 46 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-hodge-public/branches/m-core-hodge/hdg-bridge-open  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 301, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 30 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-hodge-public/branches/m-core-hodge/k7-HODGE  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 74, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 10 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-hodge-public/branches/m-core-hodge/k7-preflight_Hodge-OfficialSpec  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 76, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 10 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-hodge-public/branches/m-core-hodge/open-math_hodge-final-certificate-chain  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 109, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 13 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-hodge-public/branches/m-core-hodge/open-math_hodge-gap-20261004  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 857, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 65 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-hodge-public/branches/m-core-hodge/research_pure-math-final-proof-v1  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 89, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 12 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-hodge-public/branches/m-core-hodge/reset_hodge-empty-final-scaffold  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 60, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 13 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-hodge-public/imports/m-core-hodge  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 1101, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MANIFESTO RESOLVIDO: o lake-manifest.json não trazia o Mathlib; o MVEI rodou `lake update` na cópia de trabalho (o repositório não foi alterado).
+
+== atk-hodge-public/imports/m-core-hodge/atk-kernel  [leanprover/lean4:v4.34.1 -> leanprover/lean4:v4.34.1]  OK
+   teoremas: fechados 2, condicionais 0, abertos 0; axiomas declarados 0
 
 == atk-hodge-public/imports/m-core-hodge/lean  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
    teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
@@ -29,13 +333,519 @@ Os logs completos de cada compilação no GitHub ficam na página da execução 
    teoremas: fechados 245, condicionais 0, abertos 0; axiomas declarados 0
    nota: AVULSO: arquivos .lean sem lakefile; o MVEI montou um projeto com MCore e o Mathlib v4.19.0
 
+== atk-navier-stokes-public/branches/M-private/cert_L-219-GH311  [leanprover/lean4:v4.34.0-rc2 -> leanprover/lean4:v4.34.0-rc2]  OK
+   teoremas: fechados 61, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: MPrivate: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/branches/M-private/chain_219-forward-corrected  [leanprover/lean4:v4.34.0-rc2 -> leanprover/lean4:v4.34.0-rc2]  FALHOU
+   teoremas: fechados 132, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 22 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: MPrivate: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/branches/M-private/math_low-route  [leanprover/lean4:v4.34.0-rc2 -> leanprover/lean4:v4.34.0-rc2]  OK
+   teoremas: fechados 13, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 1 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: MPrivate: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/branches/navier-stokes-critical-barrier-audit/a2.1-weightedIBP  [leanprover/lean4:v4.32.1 -> leanprover/lean4:v4.32.1]  OK
+   teoremas: fechados 458, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 21 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: G1: some modules have bad imports | error: build failed
+
+== atk-navier-stokes-public/branches/navier-stokes-critical-barrier-audit/atk_axiom-free-targets-20261008  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
+   nota: o cache do Mathlib v4.19.0 não foi baixado; reconstrução com essa versão não tentada (error: no such file or directory (error code: 2) | error: ././.lake/packages/mathlib/././Cache/Lean.lean: bad import 'Lean.Util.Paths')
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/branches/navier-stokes-critical-barrier-audit/atk_axiom-free-targets-20261008/formal/lean  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 23, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 1 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/branches/navier-stokes-critical-barrier-audit/atk_falsified-terminal-inhabitants-20260930  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 2, condicionais 0, abertos 0; axiomas declarados 0
+   nota: RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com audit e o Mathlib v4.19.0 e compilou o que foi possível
+   erro: (configuração original) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/branches/navier-stokes-critical-barrier-audit/atk_k1a-xieps-exact-derivative  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
+   nota: a configuração original não compila; o MVEI reconstruiu o lakefile com o Mathlib v4.19.0, mas o código também não compila: error: ././././formal/G1/XiEpsExactAlgebra.lean:31:6: unknown identifier 'sq_sqrt' | error: ././././formal/G1/XiEpsExactAlgebra.lean:29:53: unsolved goals
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/branches/navier-stokes-critical-barrier-audit/atk_k1a-xieps-exact-derivative/formal/millennium/lean  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 16, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 2 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/branches/navier-stokes-critical-barrier-audit/atk_kernel-theta-budget-20260928  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 234, condicionais 0, abertos 0; axiomas declarados 0
+   nota: RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com G1 e o Mathlib v4.19.0 e compilou o que foi possível (erros restantes: error: ./././formal/G1/XiEpsChainRule.lean:30:6: tactic 'rewrite' failed, did not find instance of the pattern in the target expression | error: ./././formal/G1/XiEpsChainRule.lean:39:47: unsolved goals)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/branches/navier-stokes-critical-barrier-audit/atk_kernel-theta-budget-20260928/formal/lean  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 125, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 11 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/branches/navier-stokes-critical-barrier-audit/atk_material-unification-v2-20260928  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 30, condicionais 0, abertos 0; axiomas declarados 0
+   nota: RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com G1 e o Mathlib v4.19.0 e compilou o que foi possível
+   erro: (configuração original) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/branches/navier-stokes-critical-barrier-audit/atk_next-ns-directional-depletion-20260928/formal/lean  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 8, condicionais 0, abertos 0; axiomas declarados 0
+   nota: RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com CriticalBarrier e o Mathlib v4.19.0 e compilou o que foi possível
+   erro: (configuração original) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/branches/navier-stokes-critical-barrier-audit/atk_ns-forcing-001  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 238, condicionais 0, abertos 0; axiomas declarados 0
+   nota: RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com G1_KAdmissible_to_SignedDepletion, audit, open_math e o Mathlib v4.19.0 e compilou o que foi possível (erros restantes: error: ././././G1_KAdmissible_to_SignedDepletion.lean:16:0: invalid 'import' command, it must be used in the beginning of the file | error: Lean exited with code 1)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/branches/navier-stokes-critical-barrier-audit/atk_ns-weightedlow-constant-firewall-20261001  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 7, condicionais 0, abertos 0; axiomas declarados 0
+   nota: RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com audit e o Mathlib v4.19.0 e compilou o que foi possível
+   erro: (configuração original) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/branches/navier-stokes-critical-barrier-audit/attack_n01-reuse-bulk-tail-20260921  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 99, condicionais 0, abertos 0; axiomas declarados 0
+   nota: RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com G1 e o Mathlib v4.19.0 e compilou o que foi possível
+   erro: (configuração original) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/branches/navier-stokes-critical-barrier-audit/attack_ns003-o1-core-v419  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 116, condicionais 0, abertos 0; axiomas declarados 0
+   nota: RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com G1_KAdmissible_to_SignedDepletion, HypothesesComplete_v3, formal e o Mathlib v4.19.0 e compilou o que foi possível (erros restantes: error: ././././HypothesesComplete_v3.lean:58:4: linarith failed to find a contradiction | error: Lean exited with code 1)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/branches/navier-stokes-critical-barrier-audit/attack_ns003-o1-core-v419/formal/millennium/lean  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 50, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 1 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/branches/navier-stokes-critical-barrier-audit/audit_closure-target-tree-v56/formal/G1  [sem lean-toolchain -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 26, condicionais 0, abertos 0; axiomas declarados 0
+   nota: AVULSO: arquivos .lean sem lakefile; o MVEI montou um projeto com DynamicCampanato e o Mathlib v4.19.0
+
+== atk-navier-stokes-public/branches/navier-stokes-critical-barrier-audit/audit_g1-beta-multiprover-20260913/formal/lean  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 17, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 4 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/branches/navier-stokes-critical-barrier-audit/copilot_primitive-to-bridge  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
+   nota: a configuração original não compila; o MVEI reconstruiu o lakefile com o Mathlib v4.19.0, mas o código também não compila: error: ././././formal/G1/DynamicCampanato.lean:388:20: unexpected token '/--'; expected term | error: ././././formal/G1/DynamicCampanato.lean:390:70: unexpected token '('; expected 'lemma'
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/branches/navier-stokes-critical-barrier-audit/copilot_teorema-alvo-hdynamic  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
+   nota: a configuração original não compila; o MVEI reconstruiu o lakefile com o Mathlib v4.19.0, mas o código também não compila: error: ././././formal/G1/DynamicCampanato.lean:134:23: application type mismatch | error: ././././formal/G1/DynamicCampanato.lean:157:40: invalid field notation, type is not of the form (C ...) where C is a constant
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/branches/navier-stokes-critical-barrier-audit/frozen_ns-conditional-closure-ba79d393  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 15, condicionais 0, abertos 0; axiomas declarados 0
+   nota: RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com open-math e o Mathlib v4.19.0 e compilou o que foi possível
+   erro: (configuração original) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/branches/navier-stokes-critical-barrier-audit/open-math_ns-final-empty  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 415, condicionais 0, abertos 0; axiomas declarados 0
+   nota: RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com formal, open-math e o Mathlib v4.19.0 e compilou o que foi possível
+   erro: (configuração original) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/branches/navier-stokes-critical-barrier-audit/open-math_ns-final-empty/formal/lean  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 22, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 4 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/branches/navier-stokes-critical-barrier-audit/research_pure-math-final-proof-v1  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 7, condicionais 0, abertos 0; axiomas declarados 0
+   nota: RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com formal e o Mathlib v4.19.0 e compilou o que foi possível
+   erro: (configuração original) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/branches/navier-stokes-critical-barrier-audit/work_first-real-open-math-20261005/formal/lean  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 21, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 3 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/imports/M-private  [leanprover/lean4:v4.34.0-rc2 -> leanprover/lean4:v4.34.0-rc2]  OK
+   teoremas: fechados 812, condicionais 1, abertos 0; axiomas declarados 0
+
 == atk-navier-stokes-public/imports/Material  [sem lean-toolchain -> padrão do elan]  FALHOU
    teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
-   nota: AVULSO: arquivos .lean sem lakefile; nenhum arquivo compilou
+   nota: AVULSO: arquivos .lean sem lakefile; a configuração original não compila; o MVEI reconstruiu o lakefile, mas o código também não compila: error: ././././Closure.lean:6:11: failed to synthesize | error: ././././Closure.lean:6:27: failed to synthesize
+
+== atk-navier-stokes-public/imports/navier-stokes-critical-barrier-audit  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
+   nota: leitura de axiomas: nenhum módulo compilado encontrado
+   erro: error: ././././MillenniumAudit/StabilizedHypothetical.lean:12:0: invalid 'import' command, it must be used in the beginning of the file | error: Lean exited with code 1 | error: build failed
 
 == atk-navier-stokes-public/imports/navier-stokes-critical-barrier-audit/formal/G1  [sem lean-toolchain -> leanprover/lean4:v4.19.0]  OK
    teoremas: fechados 29, condicionais 0, abertos 0; axiomas declarados 0
    nota: AVULSO: arquivos .lean sem lakefile; o MVEI montou um projeto com HypothesesComplete_v2 e o Mathlib v4.19.0
+
+== atk-navier-stokes-public/imports/navier-stokes-critical-barrier-audit/formal/lean  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 317, condicionais 1, abertos 0; axiomas declarados 19
+   nota: RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com CriticalBarrier, GapCollapseAudit, UnifiedAsymptoticLogic e o Mathlib v4.19.0 e compilou o que foi possível (erros restantes: error: ././././UnifiedAsymptoticLogic.lean:19:2: unknown identifier 'Real.sqrt' | error: Lean exited with code 1)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/imports/navier-stokes-critical-barrier-audit/formal/millennium/lean  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 50, condicionais 0, abertos 0; axiomas declarados 0
+   erro: error: ././././MillenniumAudit/HypothesesComplete_v3.lean:58:4: linarith failed to find a contradiction | error: Lean exited with code 1 | error: build failed
+
+== atk-navier-stokes-public/imports/navier-stokes-critical-barrier-audit/preservation/branch-snapshots/audit_correct-provenance-attribution-20260912/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  OK
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 10
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/imports/navier-stokes-critical-barrier-audit/preservation/branch-snapshots/audit_final-two-stage-review-nsb2-20260912/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 165, condicionais 1, abertos 0; axiomas declarados 19
+   nota: RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com CriticalBarrier, GapCollapseAudit, UnifiedAsymptoticLogic e o Mathlib v4.19.0 e compilou o que foi possível (erros restantes: error: ././././CriticalBarrier/EndpointInterfaces.lean:89:31: unexpected token '|'; expected term | error: ././././CriticalBarrier/EndpointInterfaces.lean:94:6: unexpected token '|'; expected term)
+   erro: error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/imports/navier-stokes-critical-barrier-audit/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/lean  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 165, condicionais 1, abertos 0; axiomas declarados 19
+   nota: RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com CriticalBarrier, GapCollapseAudit, UnifiedAsymptoticLogic e o Mathlib v4.19.0 e compilou o que foi possível (erros restantes: error: ././././CriticalBarrier/EndpointInterfaces.lean:89:31: unexpected token '|'; expected term | error: ././././CriticalBarrier/EndpointInterfaces.lean:94:6: unexpected token '|'; expected term)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/imports/navier-stokes-critical-barrier-audit/preservation/branch-snapshots/audit_g1-beta-multiprover-20260913/formal/millennium/lean  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 128, condicionais 0, abertos 0; axiomas declarados 0
+   erro: error: ././././MillenniumAudit/G1Audit.lean:46:2: dsimp made no progress | error: Lean exited with code 1 | error: build failed
+
+== atk-navier-stokes-public/imports/navier-stokes-critical-barrier-audit/preservation/branch-snapshots/audit_g1-prize-standard-v4-20260913/formal/millennium/lean  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 71, condicionais 0, abertos 0; axiomas declarados 0
+
+== atk-navier-stokes-public/imports/navier-stokes-critical-barrier-audit/preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 165, condicionais 1, abertos 0; axiomas declarados 19
+   nota: RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com CriticalBarrier, GapCollapseAudit, UnifiedAsymptoticLogic e o Mathlib v4.19.0 e compilou o que foi possível (erros restantes: error: ././././CriticalBarrier/EndpointInterfaces.lean:89:31: unexpected token '|'; expected term | error: ././././CriticalBarrier/EndpointInterfaces.lean:94:6: unexpected token '|'; expected term)
+   erro: error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/imports/navier-stokes-critical-barrier-audit/preservation/branch-snapshots/audit_millennium-multiprover-structure-20260913/formal/millennium/lean  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 136, condicionais 0, abertos 0; axiomas declarados 0
+
+== atk-navier-stokes-public/imports/navier-stokes-critical-barrier-audit/preservation/branch-snapshots/copilot_add-lre-ns-framework/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  OK
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 10
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/imports/navier-stokes-critical-barrier-audit/preservation/branch-snapshots/copilot_audit-search-terms/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  OK
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 10
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/imports/navier-stokes-critical-barrier-audit/preservation/branch-snapshots/copilot_claim-navier-stokes-git-evidence/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  OK
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 10
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/imports/navier-stokes-critical-barrier-audit/preservation/branch-snapshots/copilot_compare-mathematical-formulas/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  OK
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 10
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/imports/navier-stokes-critical-barrier-audit/preservation/branch-snapshots/copilot_execute-multi-agent-audit/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  OK
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 10
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/imports/navier-stokes-critical-barrier-audit/preservation/branch-snapshots/copilot_fix-doc-date-error/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  OK
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 10
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | file: CriticalBarrier.lean | error: build failed
+
+== atk-navier-stokes-public/imports/navier-stokes-critical-barrier-audit/preservation/branch-snapshots/copilot_navier-stokes-critical-barrier-audit/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  OK
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 10
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/imports/navier-stokes-critical-barrier-audit/preservation/branch-snapshots/copilot_navier-stokes-noncircular-implementation/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  OK
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 10
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/imports/navier-stokes-critical-barrier-audit/preservation/branch-snapshots/copilot_registro-git-navier-stokes/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  OK
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 10
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/imports/navier-stokes-critical-barrier-audit/preservation/branch-snapshots/copilot_revendo-arquivos-auditoria/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  OK
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 10
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/imports/navier-stokes-critical-barrier-audit/preservation/branch-snapshots/copilot_shanti-0-0-default-history/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  OK
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 10
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/imports/navier-stokes-critical-barrier-audit/preservation/branch-snapshots/copilot_shanti-auditoria-ns/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  OK
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 10
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/imports/navier-stokes-critical-barrier-audit/preservation/branch-snapshots/copilot_target-extractor/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  OK
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 10
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/imports/navier-stokes-critical-barrier-audit/preservation/branch-snapshots/copilot_task-219265797-1361927617-c6bfd6e0-3c0d-429b-a267-9cea34423468/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  OK
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 10
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/imports/navier-stokes-critical-barrier-audit/preservation/branch-snapshots/copilot_update-reference-section/formal/lean  [leanprover/lean4:stable -> leanprover/lean4:stable]  OK
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 10
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 8 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: CriticalBarrier: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
+
+== atk-navier-stokes-public/imports/navier-stokes-critical-barrier-audit/preservation/session-scratch-20260913  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
+   nota: leitura de axiomas: nenhum módulo compilado encontrado
+   erro: error: ././././MillenniumAudit/StabilizedHypothetical.lean:12:0: invalid 'import' command, it must be used in the beginning of the file | error: Lean exited with code 1 | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/atk_falsified-terminal-inhabitants-20260930  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 1829, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 102 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/atk_g21-final-integration-clean-20260930  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 1199, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: MANIFESTO RESOLVIDO: o lake-manifest.json não trazia o Mathlib; o MVEI rodou `lake update` na cópia de trabalho (o repositório não foi alterado). CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 92 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/atk_g21-same-input-core-close-20260930  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 569, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: MANIFESTO RESOLVIDO: o lake-manifest.json não trazia o Mathlib; o MVEI rodou `lake update` na cópia de trabalho (o repositório não foi alterado). CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 47 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/atk_hardened-final-boundary-20261001  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 628, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 52 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/atk_next-p01-integrated-machine-20260929  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 100, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 10 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/atk_next-pnp-finite-clock-explicit-coding-20260928  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 666, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: MANIFESTO RESOLVIDO: o lake-manifest.json não trazia o Mathlib; o MVEI rodou `lake update` na cópia de trabalho (o repositório não foi alterado). CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 61 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/atk_p01-exact-bounded-outcome-20260930  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 1952, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 113 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/atk_p01-exact-consumption-certificate-20260930  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 1847, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 103 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/atk_p01-exact-rebuild-clean-20260930  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 492, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 42 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/atk_p01-exact-runtime-v2-20260930  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 1952, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 114 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/atk_p01-post-mincut-advance-20261001  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 2830, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 180 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/atk_p01-preserving-input-reader-20260930  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 882, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 61 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/atk_p01-preserving-unary-read-20260930  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 882, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 61 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/atk_p01-real-neg-macro  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 1805, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 141 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/atk_p01-real-neg-macro/external/p02-kleene-adapter  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 2, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2.
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/atk_p01-seq-runbranches-20260929  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 99, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 11 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/atk_p01-successor-cycle-20261005  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 1288, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 84 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/atk_p01-terminal-promotion-candidate-20260930  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 1481, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: MANIFESTO RESOLVIDO: o lake-manifest.json não trazia o Mathlib; o MVEI rodou `lake update` na cópia de trabalho (o repositório não foi alterado). CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 161 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/atk_p01-verifier-decomposition-20261008  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 720, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 51 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/atk_p01-witness-prep-global-44e3327a  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 1178, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 83 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/atk_p02-a1-completeness-fast-20260925  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 2473, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: MANIFESTO RESOLVIDO: o lake-manifest.json não trazia o Mathlib; o MVEI rodou `lake update` na cópia de trabalho (o repositório não foi alterado). CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 216 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/atk_p02-lane4-terminal-densify-20261003  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 2512, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 160 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/atk_p02-only-20261001  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 2372, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: MANIFESTO RESOLVIDO: o lake-manifest.json não trazia o Mathlib; o MVEI rodou `lake update` na cópia de trabalho (o repositório não foi alterado). CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 149 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/atk_p03-closure-repair-20261025  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 4007, condicionais 3, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 383 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/atk_pnp-rigorous-terminal-decomposition-20261001  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 553, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 44 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/atk_shared-multistate-signature-20260926  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 32, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 2 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/atk_structural-fixed-point-20261006  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 2792, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 181 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/attack_g3-model-match-only-20260922  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 125, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 12 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/attack_material-orientation-clean-v2-20260921  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 928, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 59 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/audit_multistate-proof-refutation-v1  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 341, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 31 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/cert_p012-full-lemma-suite-54b42c0e-run35841388703  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 1159, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com MCore e o Mathlib v4.19.0 e compilou o que foi possível
+   erro: (configuração original) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/discovery_pnp-open-math-20261004  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 2524, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 252 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/k7-PNP  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 74, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 10 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/k7-preflight  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 76, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 10 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/meta_finalproof-frontier-map-v1  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 18, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com FinalProof e compilou o que foi possível
+   erro: (configuração original) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/red_C11-aa8b19a1  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 312, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 29 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/red_C8-3394f470  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 182, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 16 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/research_pure-math-final-proof-v1  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 325, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 31 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/work_C12-progress-coverage  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 361, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 30 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/work_C9-two-channel-bridge  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 294, condicionais 1, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 26 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-p-vs-np-public/branches/m-core-p-vs-np/work_pnp-minimal-sat-search-20261005  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 1224, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 78 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
 
 == atk-p-vs-np-public/imports/M-Core/imports/pnp/b406b806/lean/MCore/Real  [sem lean-toolchain -> padrão do elan]  FALHOU
    teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
@@ -45,24 +855,298 @@ Os logs completos de cada compilação no GitHub ficam na página da execução 
    teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
    nota: AVULSO: arquivos .lean sem lakefile; nenhum arquivo compilou
 
+== atk-p-vs-np-public/imports/m-core-p-vs-np  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 1590, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2. RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com C11Regression, C12Gen, C13BidirectionalProbe, MCore e o Mathlib v4.19.0 e compilou o que foi possível (erros restantes: error: ./././lean/MCore/ATK_HARD_PNP_NEXT.lean:5:7: unknown identifier 'hard_PvsNP_SAT_operational_forward' | error: ./././lean/MCore/ATK_HARD_PNP_NEXT.lean:6:7: unknown identifier 'hard_PvsNP_SAT_not_in_P_backward')
+
+== atk-p-vs-np-public/imports/m-core-p-vs-np/atk-kernel  [leanprover/lean4:v4.34.1 -> leanprover/lean4:v4.34.1]  OK
+   teoremas: fechados 2, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4): trocas de grafia com o mesmo nome e o mesmo enunciado em 2 arquivo(s): noncomputable 2.
+
+== atk-riemann-public/branches/m-core-riemann/atk-kernel-check/atk-kernel  [leanprover/lean4:v4.34.1 -> leanprover/lean4:v4.34.1]  OK
+   teoremas: fechados 13, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 1 arquivo(s): noncomputable 1, notacao 1; 1 prova(s) reescrita(s), conferidas no Lean do projeto: gram_residual_le. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 2 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: ATK: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
+
+== atk-riemann-public/branches/m-core-riemann/atk_cert-repair-rh-b8077235  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 33, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 1 arquivo(s): noncomputable 1, notacao 1; 1 prova(s) reescrita(s), conferidas no Lean do projeto: gram_residual_le. RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com MCore e o Mathlib v4.19.0 e compilou o que foi possível
+   erro: (configuração original) o download do Mathlib falhou: error: dependency 'plausible' of 'mathlib' not in manifest; this suggests that the manifest is corrupt; use `lake update` to generate a new, complete file (warning: this will update ALL workspace dependencies)
+
+== atk-riemann-public/branches/m-core-riemann/atk_euler-audit-20261016  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 1 arquivo(s): noncomputable 1, notacao 1; 1 prova(s) reescrita(s), conferidas no Lean do projeto: gram_residual_le. a configuração original não compila; o MVEI reconstruiu o lakefile com o Mathlib v4.19.0, mas o código também não compila: error: ././././ATK/EulerAudit20261016/ATK_TailLaws.lean:13:6: tactic 'rewrite' failed, motive is not type correct: | Error: application type mismatch
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-riemann-public/branches/m-core-riemann/atk_master-rh-gram-repair-20260930  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 1, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 1 arquivo(s): noncomputable 1, notacao 1; 1 prova(s) reescrita(s), conferidas no Lean do projeto: gram_residual_le. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 1 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-riemann-public/branches/m-core-riemann/atk_rh-log-majorant-split-20261001  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 83, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 1 arquivo(s): noncomputable 1, notacao 1; 1 prova(s) reescrita(s), conferidas no Lean do projeto: gram_residual_le. RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com MCore e o Mathlib v4.19.0 e compilou o que foi possível
+   erro: (configuração original) o download do Mathlib falhou: error: dependency 'plausible' of 'mathlib' not in manifest; this suggests that the manifest is corrupt; use `lake update` to generate a new, complete file (warning: this will update ALL workspace dependencies)
+
+== atk-riemann-public/branches/m-core-riemann/atk_rh-material-decision-objects-20261001  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 6, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 1 arquivo(s): noncomputable 1, notacao 1; 1 prova(s) reescrita(s), conferidas no Lean do projeto: gram_residual_le. RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com lean e o Mathlib v4.19.0 e compilou o que foi possível
+   erro: (configuração original) o download do Mathlib falhou: error: dependency 'plausible' of 'mathlib' not in manifest; this suggests that the manifest is corrupt; use `lake update` to generate a new, complete file (warning: this will update ALL workspace dependencies)
+
+== atk-riemann-public/branches/m-core-riemann/atk_rh-material-recovery-20261007  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 230, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 1 arquivo(s): noncomputable 1, notacao 1; 1 prova(s) reescrita(s), conferidas no Lean do projeto: gram_residual_le. RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com MCore e o Mathlib v4.19.0 e compilou o que foi possível (erros restantes: error: ./././lean/MCore/RH/R0/ChiNorm.lean:8:0: invalid 'import' command, it must be used in the beginning of the file | error: Lean exited with code 1)
+   erro: o download do Mathlib falhou: error: dependency 'plausible' of 'mathlib' not in manifest; this suggests that the manifest is corrupt; use `lake update` to generate a new, complete file (warning: this will update ALL workspace dependencies)
+
+== atk-riemann-public/branches/m-core-riemann/atk_rh-multistate-decay-hardening-20261001  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 94, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 1 arquivo(s): noncomputable 1, notacao 1; 1 prova(s) reescrita(s), conferidas no Lean do projeto: gram_residual_le. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 3 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-riemann-public/branches/m-core-riemann/atk_rh-rejection-zero-probe-20261006  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 190, condicionais 20, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 1 arquivo(s): noncomputable 1, notacao 1; 1 prova(s) reescrita(s), conferidas no Lean do projeto: gram_residual_le. RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com MCore e o Mathlib v4.19.0 e compilou o que foi possível (erros restantes: error: ./././lean/MCore/RH/P02CriticalReflectionSymmetry.lean:145:2: type mismatch, term | error: ./././lean/MCore/RH/P02CriticalReflectionSymmetry.lean:195:2: unknown identifier 'riemannZetaConjugationZeroSymmetry_of_completed')
+   erro: o download do Mathlib falhou: error: dependency 'plausible' of 'mathlib' not in manifest; this suggests that the manifest is corrupt; use `lake update` to generate a new, complete file (warning: this will update ALL workspace dependencies)
+
+== atk-riemann-public/branches/m-core-riemann/atk_rh-tristate-material-hardening-20261001  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 197, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 1 arquivo(s): noncomputable 1, notacao 1; 1 prova(s) reescrita(s), conferidas no Lean do projeto: gram_residual_le. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 26 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-riemann-public/branches/m-core-riemann/atk_rh-two-sided-resolution-20261001  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 74, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 1 arquivo(s): noncomputable 1, notacao 1; 1 prova(s) reescrita(s), conferidas no Lean do projeto: gram_residual_le. RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com MCore e o Mathlib v4.19.0 e compilou o que foi possível (erros restantes: error: ./././lean/MCore/RH/NB/TwoSidedResolution.lean:81:2: unknown identifier 'VanishingUpperBound' | error: ./././lean/MCore/RH/NB/TwoSidedResolution.lean:89:11: unknown identifier 'ConcretePositiveDNProducer')
+   erro: o download do Mathlib falhou: error: dependency 'plausible' of 'mathlib' not in manifest; this suggests that the manifest is corrupt; use `lake update` to generate a new, complete file (warning: this will update ALL workspace dependencies)
+
+== atk-riemann-public/branches/m-core-riemann/atk_riemann-indeterminate-transform-test-20261011/experiments/indeterminate-transform  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 14, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 1 arquivo(s): noncomputable 1, notacao 1; 1 prova(s) reescrita(s), conferidas no Lean do projeto: gram_residual_le. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 4 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-riemann-public/branches/m-core-riemann/atk_riemann-li-zeta-v435-20261025/experiments/li-criterion  [leanprover/lean4:v4.35.0 -> leanprover/lean4:v4.35.0]  OK
+   teoremas: fechados 40, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 1 arquivo(s): noncomputable 1, notacao 1; 1 prova(s) reescrita(s), conferidas no Lean do projeto: gram_residual_le. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 2 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: LiCriterion: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
+
+== atk-riemann-public/branches/m-core-riemann/atk_terminal-parameter-law-20261003  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 421, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 1 arquivo(s): noncomputable 1, notacao 1; 1 prova(s) reescrita(s), conferidas no Lean do projeto: gram_residual_le. RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com MCore e o Mathlib v4.19.0 e compilou o que foi possível (erros restantes: error: ./././lean/MCore/RH/Analytic/D3GaussianKernel.lean:48:6: unknown constant 'Real.fourierIntegral_const_smul' | error: ./././lean/MCore/RH/Analytic/D3GaussianKernel.lean:45:69: unsolved goals)
+   erro: o download do Mathlib falhou: error: dependency 'plausible' of 'mathlib' not in manifest; this suggests that the manifest is corrupt; use `lake update` to generate a new, complete file (warning: this will update ALL workspace dependencies)
+
+== atk-riemann-public/branches/m-core-riemann/attack_kfar-weighted-bilinear-decay-20260926  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 46, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 1 arquivo(s): noncomputable 1, notacao 1; 1 prova(s) reescrita(s), conferidas no Lean do projeto: gram_residual_le. RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com MCore e o Mathlib v4.19.0 e compilou o que foi possível (erros restantes: error: ./././lean/MCore/RH/NB/WeightedModularMultiStateGap.lean:52:4: failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Real.instDivInvMonoid', and it does not have executable code | error: ./././lean/MCore/RH/NB/WeightedModularMultiStateGap.lean:64:4: faile)
+   erro: o download do Mathlib falhou: error: dependency 'plausible' of 'mathlib' not in manifest; this suggests that the manifest is corrupt; use `lake update` to generate a new, complete file (warning: this will update ALL workspace dependencies)
+
+== atk-riemann-public/branches/m-core-riemann/attack_r01-quantitative-zero-criterion-20260921  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 39, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 1 arquivo(s): noncomputable 1, notacao 1; 1 prova(s) reescrita(s), conferidas no Lean do projeto: gram_residual_le. RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com MCore e o Mathlib v4.19.0 e compilou o que foi possível
+   erro: (configuração original) o download do Mathlib falhou: error: dependency 'plausible' of 'mathlib' not in manifest; this suggests that the manifest is corrupt; use `lake update` to generate a new, complete file (warning: this will update ALL workspace dependencies)
+
+== atk-riemann-public/branches/m-core-riemann/attack_r2-multistate-sn-gap  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 1 arquivo(s): noncomputable 1, notacao 1; 1 prova(s) reescrita(s), conferidas no Lean do projeto: gram_residual_le. a configuração original não compila; o MVEI reconstruiu o lakefile com o Mathlib v4.19.0, mas o código também não compila: error: ././././lean/MCore/RH/R2/MultiStateSNGap.lean:77:2: unknown constant 'Real.log' | error: Lean exited with code 1
+   erro: o download do Mathlib falhou: error: dependency 'plausible' of 'mathlib' not in manifest; this suggests that the manifest is corrupt; use `lake update` to generate a new, complete file (warning: this will update ALL workspace dependencies)
+
+== atk-riemann-public/branches/m-core-riemann/attack_rh-multistate-sn-gap-20260926  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 107, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 1 arquivo(s): noncomputable 1, notacao 1; 1 prova(s) reescrita(s), conferidas no Lean do projeto: gram_residual_le. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 2 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-riemann-public/branches/m-core-riemann/attack_typed-final-endpoint-v1  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 42, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 1 arquivo(s): noncomputable 1, notacao 1; 1 prova(s) reescrita(s), conferidas no Lean do projeto: gram_residual_le. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 4 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-riemann-public/branches/m-core-riemann/audit_multistate-proof-refutation-v1  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 91, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 1 arquivo(s): noncomputable 1, notacao 1; 1 prova(s) reescrita(s), conferidas no Lean do projeto: gram_residual_le. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 10 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-riemann-public/branches/m-core-riemann/audit_r0-4-chi-memlp  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 85, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 1 arquivo(s): noncomputable 1, notacao 1; 1 prova(s) reescrita(s), conferidas no Lean do projeto: gram_residual_le. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 11 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-riemann-public/branches/m-core-riemann/claude_atk-protocol-setup-wzeajl/atk-kernel  [leanprover/lean4:v4.34.1 -> leanprover/lean4:v4.34.1]  OK
+   teoremas: fechados 53, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 1 arquivo(s): noncomputable 1, notacao 1; 1 prova(s) reescrita(s), conferidas no Lean do projeto: gram_residual_le. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 11 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: ATK: some modules have bad imports or could not be read | error: no such file or directory (error code: 2) | error: build failed
+
+== atk-riemann-public/branches/m-core-riemann/k7-preflight_RH-OfficialSpec  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 82, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 1 arquivo(s): noncomputable 1, notacao 1; 1 prova(s) reescrita(s), conferidas no Lean do projeto: gram_residual_le. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 10 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-riemann-public/branches/m-core-riemann/open-math_rh-gap-20261004  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 135, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 1 arquivo(s): noncomputable 1, notacao 1; 1 prova(s) reescrita(s), conferidas no Lean do projeto: gram_residual_le. RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com MCore, RH e o Mathlib v4.19.0 e compilou o que foi possível
+   erro: (configuração original) o download do Mathlib falhou: error: dependency 'plausible' of 'mathlib' not in manifest; this suggests that the manifest is corrupt; use `lake update` to generate a new, complete file (warning: this will update ALL workspace dependencies)
+
+== atk-riemann-public/branches/m-core-riemann/research_nb-zero-limit-frontier  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 30, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 1 arquivo(s): noncomputable 1, notacao 1; 1 prova(s) reescrita(s), conferidas no Lean do projeto: gram_residual_le. RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com MCore e o Mathlib v4.19.0 e compilou o que foi possível
+   erro: (configuração original) o download do Mathlib falhou: error: dependency 'plausible' of 'mathlib' not in manifest; this suggests that the manifest is corrupt; use `lake update` to generate a new, complete file (warning: this will update ALL workspace dependencies)
+
+== atk-riemann-public/branches/m-core-riemann/research_pure-math-final-proof-v1  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 7, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 1 arquivo(s): noncomputable 1, notacao 1; 1 prova(s) reescrita(s), conferidas no Lean do projeto: gram_residual_le. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 1 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
 == atk-riemann-public/imports/lean/MCore/Material  [sem lean-toolchain -> padrão do elan]  FALHOU
    teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
    nota: AVULSO: arquivos .lean sem lakefile; nenhum arquivo compilou
+
+== atk-riemann-public/imports/m-core-riemann  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 177, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 1 arquivo(s): noncomputable 1, notacao 1; 1 prova(s) reescrita(s), conferidas no Lean do projeto: gram_residual_le. RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com MCore e o Mathlib v4.19.0 e compilou o que foi possível (erros restantes: error: ./././lean/MCore/Material/Closure.lean:5:14: failed to synthesize | error: ./././lean/MCore/Material/Closure.lean:5:14: failed to synthesize)
+
+== atk-riemann-public/imports/m-core-riemann/atk-kernel  [leanprover/lean4:v4.34.1 -> leanprover/lean4:v4.34.1]  FALHOU
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
+   correções do MVEI: vocabulario-lean4, z-provas-reparadas
+   nota: CORRIGIDO PELO MVEI (vocabulario-lean4, z-provas-reparadas): trocas de grafia com o mesmo nome e o mesmo enunciado em 1 arquivo(s): noncomputable 1, notacao 1; 1 prova(s) reescrita(s), conferidas no Lean do projeto: gram_residual_le. leitura de axiomas: nenhum módulo compilado encontrado
+   erro: error: ATK/Riemann.lean:52:20: Type mismatch | error: build failed
 
 == atk-riemann-public/imports/m-core-riemann/atk-kernel/ATK  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
    teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
    nota: AVULSO: arquivos .lean sem lakefile; a configuração original não compila; o MVEI reconstruiu o lakefile com o Mathlib v4.19.0, mas o código também não compila: error: ././././Riemann.lean:52:12: invalid field 'dotProduct_mulVec_nonneg', the environment does not contain 'Matrix.PosSemidef.dotProduct_mulVec_nonneg' | error: ././././Riemann.lean:52:12: invalid field 'dotProduct_mulVec_nonneg', the environment does not contain 'And.dotProduct_mulVec_nonneg'
 
-== atk-yang-mills-public/imports/lean/MCore/Material  [sem lean-toolchain -> v4.35.0 (stable)]  FALHOU
+== atk-yang-mills-public/branches/m-core-yang-mills/atk_b6-ym4-physical-harden  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 707, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 55 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-yang-mills-public/branches/m-core-yang-mills/atk_delta-habitants-finalize-20260927  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 710, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 65 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-yang-mills-public/branches/m-core-yang-mills/atk_first-real-open-math-20261005  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 58, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 6 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-yang-mills-public/branches/m-core-yang-mills/atk_proof-inventory-d8a5e95e  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 183, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 45 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-yang-mills-public/branches/m-core-yang-mills/atk_ym-b60-field-bundle-20261001  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 56, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 6 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-yang-mills-public/branches/m-core-yang-mills/atk_ym-material-promotion-v13-20261007  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 258, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 81 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-yang-mills-public/branches/m-core-yang-mills/attack_B6-k30-concrete-realization-v1  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 183, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 39 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-yang-mills-public/branches/m-core-yang-mills/audit_multistate-proof-refutation-v1  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 76, condicionais 0, abertos 0; axiomas declarados 0
+   nota: RECONSTRUÍDO: a configuração original não compila; o MVEI gerou um lakefile com MCore e o Mathlib v4.19.0 e compilou o que foi possível
+   erro: (configuração original) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-yang-mills-public/branches/m-core-yang-mills/frozen_first-real-open-math-green-1f0aa029  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
+   teoremas: fechados 183, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 40 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
+   erro: error: no such file or directory (error code: 2) | error: build failed
+
+== atk-yang-mills-public/branches/m-core-yang-mills/frozen_inhabitant-arsenal-v1-green-a1a04873  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 47, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 6 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-yang-mills-public/branches/m-core-yang-mills/k3-staging  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 67, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 7 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-yang-mills-public/branches/m-core-yang-mills/k7-preflight-officialspec  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 82, condicionais 0, abertos 0; axiomas declarados 0
+   nota: MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 10 arquivos .lean foram compilados como alvos de módulo, com o lakefile original
+   erro: (alvo padrão) error: no such file or directory (error code: 2) | error: build failed
+
+== atk-yang-mills-public/imports/lean/MCore/Material  [sem lean-toolchain -> padrão do elan]  FALHOU
    teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
    nota: AVULSO: arquivos .lean sem lakefile; nenhum arquivo compilou
+
+== atk-yang-mills-public/imports/m-core-yang-mills  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 85, condicionais 0, abertos 0; axiomas declarados 0
+
+== atk-yang-mills-public/imports/m-core-yang-mills/atk-kernel  [leanprover/lean4:v4.34.1 -> leanprover/lean4:v4.34.1]  OK
+   teoremas: fechados 2, condicionais 0, abertos 0; axiomas declarados 0
+
+== beal-proof/.  [leanprover/lean4:v4.36.0-rc2 -> leanprover/lean4:v4.36.0-rc2]  FALHOU
+   teoremas: fechados 0, condicionais 0, abertos 0; axiomas declarados 0
+   erro: rializing new dependency info: batteries: fetching revision 'd4c39b228d4a06f3b00748c2c445a7b9f056a6e3' from https://github.com/leanprover-community/batteries info: batteries: checking out revision 'd4c39b228d4a06f3b00748c2c445a7b9f056a6e3' info: Cli: materializing new dependency info: Cli: fetching revision 'c09cb1e4f1e6e1c231a1175a12b681b075054a1b' from https://github.com/leanprover/lean4-cli info: Cli: checking out revision 'c09cb1e4f1e6e1c231a1175a12b681b075054a1b' [tempo esgotado após 7200s]
+
+== beal-statement/.  [leanprover/lean4:v4.36.0-rc2 -> leanprover/lean4:v4.36.0-rc2]  OK
+   teoremas: fechados 1, condicionais 0, abertos 0; axiomas declarados 0
 
 == Beit-Hamikdash-iii/.  [leanprover/lean4:v4.35.0 -> leanprover/lean4:v4.35.0]  OK
    teoremas: fechados 194, condicionais 0, abertos 0; axiomas declarados 0
 
-== Elyon-Public-Proof/.  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  FALHOU
-   teoremas: fechados 870, condicionais 0, abertos 0; axiomas declarados 0
+== clay-bsd-proof/.  [leanprover/lean4:v4.36.0-rc2 -> leanprover/lean4:v4.36.0-rc2]  OK
+   teoremas: fechados 393, condicionais 0, abertos 0; axiomas declarados 0
+
+== clay-bsd-statement/.  [leanprover/lean4:v4.36.0-rc2 -> leanprover/lean4:v4.36.0-rc2]  OK
+   teoremas: fechados 1, condicionais 0, abertos 0; axiomas declarados 0
+
+== clay-navier-stokes-proof/.  [leanprover/lean4:v4.36.0-rc2 -> leanprover/lean4:v4.36.0-rc2]  OK
+   teoremas: fechados 41, condicionais 0, abertos 0; axiomas declarados 0
+
+== clay-navier-stokes-statement/.  [leanprover/lean4:v4.36.0-rc2 -> leanprover/lean4:v4.36.0-rc2]  OK
+   teoremas: fechados 14, condicionais 0, abertos 0; axiomas declarados 0
+
+== clay-p-vs-np-proof/.  [leanprover/lean4:v4.36.0-rc2 -> leanprover/lean4:v4.36.0-rc2]  OK
+   teoremas: fechados 1030, condicionais 0, abertos 0; axiomas declarados 0
+
+== clay-p-vs-np-statement/.  [leanprover/lean4:v4.36.0-rc2 -> leanprover/lean4:v4.36.0-rc2]  OK
+   teoremas: fechados 4, condicionais 0, abertos 0; axiomas declarados 0
+
+== clay-riemann-proof/.  [leanprover/lean4:v4.36.0-rc2 -> leanprover/lean4:v4.36.0-rc2]  FALHOU
+   teoremas: fechados 708, condicionais 0, abertos 0; axiomas declarados 0
+   erro: rializing new dependency info: batteries: fetching revision 'd4c39b228d4a06f3b00748c2c445a7b9f056a6e3' from https://github.com/leanprover-community/batteries info: batteries: checking out revision 'd4c39b228d4a06f3b00748c2c445a7b9f056a6e3' info: Cli: materializing new dependency info: Cli: fetching revision 'c09cb1e4f1e6e1c231a1175a12b681b075054a1b' from https://github.com/leanprover/lean4-cli info: Cli: checking out revision 'c09cb1e4f1e6e1c231a1175a12b681b075054a1b' [tempo esgotado após 7200s]
+
+== clay-riemann-statement/.  [leanprover/lean4:v4.36.0-rc2 -> leanprover/lean4:v4.36.0-rc2]  OK
+   teoremas: fechados 2, condicionais 0, abertos 0; axiomas declarados 0
+
+== Elyon-Public-Proof/.  [leanprover/lean4:v4.19.0 -> leanprover/lean4:v4.19.0]  OK
+   teoremas: fechados 579, condicionais 0, abertos 0; axiomas declarados 0
    correções do MVEI: imports-no-topo, tatica-encontrada, vocabulario-lean4, z-provas-reparadas
-   nota: CORRIGIDO PELO MVEI (imports-no-topo, tatica-encontrada, vocabulario-lean4, z-provas-reparadas): imports movidos para o início (antes de comentários de módulo ou de documentação) em 1 arquivo(s); 1 prova(s) trocada(s) pela tática que o MVEI achou para o mesmo enunciado (axiomas viram teoremas), em 1 arquivo(s); trocas de grafia com o mesmo nome e o mesmo enunciado em 55 arquivo(s): campos_multiplos 3, constant 1, lambda 2, nomes_mathlib 4, noncomputable 52, palavra_chave 1, repr 1, tatica_mathlib 1; 3 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos. MÓDULOS INDIVIDUAIS: o alvo padrão do lakefile não existe; os 73 arquivos .lean foram compilados como alvos de módulo, com o lakefile original (alguns com erro)
-   erro: error: no such file or directory (error code: 2) | error: build failed
+   nota: CORRIGIDO PELO MVEI (imports-no-topo, tatica-encontrada, vocabulario-lean4, z-provas-reparadas): imports movidos para o início (antes de comentários de módulo ou de documentação) em 1 arquivo(s); 1 prova(s) trocada(s) pela tática que o MVEI achou para o mesmo enunciado (axiomas viram teoremas), em 1 arquivo(s); trocas de grafia com o mesmo nome e o mesmo enunciado em 55 arquivo(s): campos_multiplos 3, constant 1, lambda 2, nomes_mathlib 4, noncomputable 52, palavra_chave 1, repr 1, tatica_mathlib 1; 4 prova(s) reescrita(s), conferidas no Lean do projeto: K0a_regularizedAmplitude_ge, differential_decay, shrinkingDefect_pos, classified_preserves_twoSided.
 
