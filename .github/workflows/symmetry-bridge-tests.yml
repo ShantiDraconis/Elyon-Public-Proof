@@ -1,0 +1,32 @@
+name: Symmetry bridge tests
+
+on:
+  pull_request:
+    paths:
+      - "lean/MCore/Research/**"
+      - ".github/workflows/symmetry-bridge-tests.yml"
+      - "lakefile.lean"
+      - "lean-toolchain"
+      - "lake-manifest.json"
+  push:
+    branches:
+      - main
+    paths:
+      - "lean/MCore/Research/**"
+      - ".github/workflows/symmetry-bridge-tests.yml"
+      - "lakefile.lean"
+      - "lean-toolchain"
+      - "lake-manifest.json"
+
+jobs:
+  lean-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          auto-config: false
+          build: false
+          use-mathlib-cache: true
+      - name: Typecheck symmetry bridge tests
+        run: lake env lean lean/MCore/Research/SymmetryBridgeTests.lean
