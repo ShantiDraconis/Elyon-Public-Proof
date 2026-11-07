@@ -1,0 +1,38 @@
+name: Symmetry bridge tests
+
+on:
+  pull_request:
+    paths:
+      - "lean/MCore/Research/**"
+      - ".github/workflows/symmetry-bridge-tests.yml"
+      - "lakefile.lean"
+      - "lean-toolchain"
+  push:
+    branches:
+      - main
+    paths:
+      - "lean/MCore/Research/**"
+      - ".github/workflows/symmetry-bridge-tests.yml"
+      - "lakefile.lean"
+      - "lean-toolchain"
+
+jobs:
+  lean-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install elan
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o /tmp/elan-init.sh
+          sh /tmp/elan-init.sh -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Install pinned Lean toolchain
+        run: |
+          elan toolchain install "$(cat lean-toolchain)"
+          elan default "$(cat lean-toolchain)"
+      - name: Resolve pinned Lake dependencies
+        run: lake update
+      - name: Fetch Mathlib cache
+        run: lake exe cache get
+      - name: Typecheck symmetry bridge tests
+        run: lake env lean lean/MCore/Research/SymmetryBridgeTests.lean
