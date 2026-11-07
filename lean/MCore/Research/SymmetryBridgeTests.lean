@@ -29,7 +29,7 @@ theorem mirrorAbout_fixed_iff (c : ℝ) (z : ℂ) :
     linarith
   · intro h
     apply Complex.ext
-    · simp [mirrorAbout, h]
+    · simp [mirrorAbout, h] <;> ring
     · simp [mirrorAbout]
 
 /-- Centering at c turns the reflection into w ↦ -conj(w). -/
