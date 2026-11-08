@@ -29,7 +29,7 @@ theorem mirrorAbout_fixed_iff (c : ℝ) (z : ℂ) :
     linarith
   · intro h
     apply Complex.ext
-    · simp [mirrorAbout, h] <;> ring
+    · simp [mirrorAbout, h]; ring
     · simp [mirrorAbout]
 
 /-- Translation carrying the vertical line through a to the line through b. -/
@@ -52,7 +52,7 @@ theorem recenterBetween_fixed_locus (a b : ℝ) (z : ℂ) :
       simpa [recenterBetween] using h
     linarith
   · intro h
-    simp [recenterBetween, h] <;> ring
+    simp [recenterBetween, h]
 
 /-- Recentering composes by adding the shifts. -/
 theorem recenterBetween_comp (a b c : ℝ) (z : ℂ) :
@@ -131,5 +131,68 @@ theorem boolComplement_involutive (b : Bool) :
 theorem boolComplement_has_no_fixed_point (b : Bool) :
     boolComplement b ≠ b := by
   cases b <;> decide
+
+
+/-- Exact center used for the Riemann zeta symmetry. -/
+noncomputable def zetaCenter : ℝ := 1 / 2
+
+/-- Exact center of the completed elliptic-curve L-function in the usual
+weight-two normalization. -/
+noncomputable def ellipticLCenter : ℝ := 1
+
+/-- Exact coordinate shift from the zeta center to the elliptic L-function center. -/
+noncomputable def zetaToEllipticShift : ℝ := ellipticLCenter - zetaCenter
+
+theorem zetaToEllipticShift_exact : zetaToEllipticShift = 1 / 2 := by
+  norm_num [zetaToEllipticShift, ellipticLCenter, zetaCenter]
+
+theorem zetaMirror_formula (z : ℂ) :
+    mirrorAbout zetaCenter z = 1 - star z := by
+  norm_num [mirrorAbout, zetaCenter]
+
+theorem ellipticLMirror_formula (z : ℂ) :
+    mirrorAbout ellipticLCenter z = 2 - star z := by
+  norm_num [mirrorAbout, ellipticLCenter]
+
+/-- A separate three-state model for the user's central-state convention.
+The center is indexed by 2; this is a discrete state model, not IEEE NaN and
+not an assertion that an indeterminate scalar belongs to ℝ or ℂ. -/
+inductive NanaPosition where
+  | left
+  | center
+  | right
+  deriving DecidableEq, Repr
+
+/-- Index the three states by 1, 2, 3, so the middle state has index 2. -/
+def nanaIndex : NanaPosition → ℕ
+  | .left => 1
+  | .center => 2
+  | .right => 3
+
+/-- Reflection of the three-state model about index 2. -/
+def nanaReflect : NanaPosition → NanaPosition
+  | .left => .right
+  | .center => .center
+  | .right => .left
+
+theorem nana_center_has_index_two : nanaIndex .center = 2 := rfl
+
+theorem nanaReflect_involutive (x : NanaPosition) :
+    nanaReflect (nanaReflect x) = x := by
+  cases x <;> rfl
+
+theorem nanaReflect_index (x : NanaPosition) :
+    nanaIndex (nanaReflect x) = 4 - nanaIndex x := by
+  cases x <;> norm_num [nanaIndex, nanaReflect]
+
+theorem nana_center_is_fixed : nanaReflect .center = .center := rfl
+
+
+/-- Multiplication by an integer n > 1 strictly increases a prime index p.
+This is an index-scaling fact, not a symmetry of the zeta zeros. -/
+theorem prime_index_scaling_strict {p n : ℕ} (hp : p.Prime) (hn : 1 < n) :
+    p < n * p := by
+  have hmul : 1 * p < n * p := Nat.mul_lt_mul_of_pos_right hn hp.pos
+  simpa using hmul
 
 end MCore.Research.SymmetryBridgeTests
