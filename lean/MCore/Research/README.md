@@ -47,3 +47,6 @@ Rounded reference values: \\(\\varphi\\approx1.61803398875\\), \\(1/\\sqrt5\\app
 The conditional zero-mirroring lemma in the Lean file assumes the functional equation and conjugation law as hypotheses. It does not instantiate those hypotheses for the raw zeta function or for a particular elliptic curve. For zeta, the relevant functional equation belongs to the completed/normalized function; the Euler product itself is only used in its half-plane of absolute convergence.
 
 The 3D/4D rotations and any common operators across unrelated Millennium problems remain unspecified here: no numerical parameters or cross-problem map are claimed without definitions and proof.
+
+
+For the earlier prime-index comparison, let (p) be prime and (ninmathbb N). The operation (pmapsto np) is ordinary index scaling: (n=1) leaves (p) unchanged, while (n>1) gives (np>p) (the latter is formalized in Lean). It is not an additional symmetry of (zeta). Also, (sum_p p^{-1/2}) diverges, so the Euler product has no absolute-convergence justification on the critical line.
