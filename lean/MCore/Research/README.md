@@ -25,3 +25,25 @@ The tests establish:
 The coordinate conjugacy does not identify zeta zeros with elliptic-curve
 L-function zeros. In particular, symmetry alone does not imply that every zero
 lies on the fixed locus.
+
+
+## Explicit value ledger and operator laws
+
+| Item | Exact value or law | Status |
+|---|---|---|
+| Riemann center | \\(c_\\zeta=1/2\\) | Exact coordinate |
+| Elliptic-curve (L)-function center (usual weight-two normalization) | \\(c_E=1\\) | Exact coordinate |
+| Shift between those centers | \\(c_E-c_\\zeta=1/2\\) | Proved in Lean in this module |
+| Reflections | \\(R_c(s)=2c-\\overline{s}\\) | Involution; fixed locus \\(\\Re(s)=c\\) |
+| Recentring | \\(T_{a,b}(s)=s+(b-a)\\) | \\(T_{a,b}R_a=R_bT_{a,b}\\) |
+| Fibonacci limit | \\(F_{n+1}/F_n\\to\\varphi=(1+\\sqrt5)/2\\) | Standard sequence limit |
+| Scaled Fibonacci error | \\(F_n^2\\lvert\\varphi-F_{n+1}/F_n\\rvert\\to1/\\sqrt5\\) | Exact limit; decimal below is rounded |
+| Prime expression | \\(F(p)=1/2-1/\\sqrt p\\) | For prime (p), nonzero; its positive-integer root is (p=4), which is not prime |
+| Euler product | \\(\\zeta(s)=\\prod_p(1-p^{-s})^{-1}\\) | Absolutely convergent for \\(\\Re(s)>1\\); this does not extend the product to \\(\\Re(s)=1/2\\) |
+| Central state | index (2), with states (1,2,3) reflected by (j\\mapsto4-j) | Separate finite-state model, not a real/complex indeterminate |
+
+Rounded reference values: \\(\\varphi\\approx1.61803398875\\), \\(1/\\sqrt5\\approx0.44721359550\\), and \\(1/\\varphi\\approx0.61803398875\\). Initial convergents for \\(F_{n+1}/F_n\\) are (2/1,3/2,5/3,8/5,13/8,21/13,34/21,55/34).
+
+The conditional zero-mirroring lemma in the Lean file assumes the functional equation and conjugation law as hypotheses. It does not instantiate those hypotheses for the raw zeta function or for a particular elliptic curve. For zeta, the relevant functional equation belongs to the completed/normalized function; the Euler product itself is only used in its half-plane of absolute convergence.
+
+The 3D/4D rotations and any common operators across unrelated Millennium problems remain unspecified here: no numerical parameters or cross-problem map are claimed without definitions and proof.
