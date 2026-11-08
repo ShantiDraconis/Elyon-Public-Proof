@@ -32,6 +32,41 @@ theorem mirrorAbout_fixed_iff (c : ℝ) (z : ℂ) :
     · simp [mirrorAbout, h] <;> ring
     · simp [mirrorAbout]
 
+/-- Translation carrying the vertical line through a to the line through b. -/
+def recenterBetween (a b : ℝ) (z : ℂ) : ℂ :=
+  z + ((b - a : ℝ) : ℂ)
+
+/-- Recentring intertwines the two reflections. -/
+theorem recenterBetween_intertwines (a b : ℝ) (z : ℂ) :
+    recenterBetween a b (mirrorAbout a z) =
+      mirrorAbout b (recenterBetween a b z) := by
+  simp [recenterBetween, mirrorAbout]
+  ring
+
+/-- The translation sends the fixed line at a exactly to the fixed line at b. -/
+theorem recenterBetween_fixed_locus (a b : ℝ) (z : ℂ) :
+    (recenterBetween a b z).re = b ↔ z.re = a := by
+  constructor
+  · intro h
+    have h' : z.re + (b - a) = b := by
+      simpa [recenterBetween] using h
+    linarith
+  · intro h
+    simp [recenterBetween, h] <;> ring
+
+/-- Recentering composes by adding the shifts. -/
+theorem recenterBetween_comp (a b c : ℝ) (z : ℂ) :
+    recenterBetween b c (recenterBetween a b z) =
+      recenterBetween a c z := by
+  simp [recenterBetween]
+  ring
+
+/-- The Riemann and BSD centers are conjugate by the translation z ↦ z + 1/2. -/
+example (z : ℂ) :
+    recenterBetween (1 / 2 : ℝ) 1 (mirrorAbout (1 / 2 : ℝ) z) =
+      mirrorAbout 1 (recenterBetween (1 / 2 : ℝ) 1 z) := by
+  simpa using recenterBetween_intertwines (1 / 2 : ℝ) 1 z
+
 /-- Centering at c turns the reflection into w ↦ -conj(w). -/
 def centeredCoordinate (c : ℝ) (z : ℂ) : ℂ :=
   z - (c : ℂ)
@@ -65,6 +100,18 @@ example (z : ℂ) :
 example (z : ℂ) :
     mirrorAbout (1 : ℝ) z = z ↔ z.re = 1 := by
   simpa using mirrorAbout_fixed_iff (1 : ℝ) z
+
+/-- A shift of coordinates alone does not identify zeros of unrelated functions. -/
+def toySource (z : ℂ) : ℂ := z
+
+def toyTarget (z : ℂ) : ℂ := z - 1
+
+theorem recenter_does_not_identify_arbitrary_zero_sets :
+    toySource 0 = 0 ∧
+      toyTarget (recenterBetween (1 / 2 : ℝ) 1 0) ≠ 0 := by
+  constructor
+  · simp [toySource]
+  · norm_num [toyTarget, recenterBetween]
 
 /-- A symmetric two-point set can consist entirely of non-fixed points:
 symmetry alone does not force an object onto the fixed locus. -/
