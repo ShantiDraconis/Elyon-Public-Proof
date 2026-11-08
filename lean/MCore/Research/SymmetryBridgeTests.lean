@@ -29,7 +29,7 @@ theorem mirrorAbout_fixed_iff (c : ℝ) (z : ℂ) :
     linarith
   · intro h
     apply Complex.ext
-    · simp [mirrorAbout, h] <;> ring
+    · simp [mirrorAbout, h]; ring
     · simp [mirrorAbout]
 
 /-- Translation carrying the vertical line through a to the line through b. -/
@@ -52,7 +52,7 @@ theorem recenterBetween_fixed_locus (a b : ℝ) (z : ℂ) :
       simpa [recenterBetween] using h
     linarith
   · intro h
-    simp [recenterBetween, h] <;> ring
+    simp [recenterBetween, h]
 
 /-- Recentering composes by adding the shifts. -/
 theorem recenterBetween_comp (a b c : ℝ) (z : ℂ) :
@@ -134,25 +134,25 @@ theorem boolComplement_has_no_fixed_point (b : Bool) :
 
 
 /-- Exact center used for the Riemann zeta symmetry. -/
-def zetaCenter : ℝ := 1 / 2
+noncomputable def zetaCenter : ℝ := 1 / 2
 
 /-- Exact center of the completed elliptic-curve L-function in the usual
 weight-two normalization. -/
-def ellipticLCenter : ℝ := 1
+noncomputable def ellipticLCenter : ℝ := 1
 
 /-- Exact coordinate shift from the zeta center to the elliptic L-function center. -/
-def zetaToEllipticShift : ℝ := ellipticLCenter - zetaCenter
+noncomputable def zetaToEllipticShift : ℝ := ellipticLCenter - zetaCenter
 
 theorem zetaToEllipticShift_exact : zetaToEllipticShift = 1 / 2 := by
   norm_num [zetaToEllipticShift, ellipticLCenter, zetaCenter]
 
 theorem zetaMirror_formula (z : ℂ) :
     mirrorAbout zetaCenter z = 1 - star z := by
-  simp [mirrorAbout, zetaCenter]
+  norm_num [mirrorAbout, zetaCenter]
 
 theorem ellipticLMirror_formula (z : ℂ) :
     mirrorAbout ellipticLCenter z = 2 - star z := by
-  simp [mirrorAbout, ellipticLCenter]
+  norm_num [mirrorAbout, ellipticLCenter]
 
 /-- A separate three-state model for the user's central-state convention.
 The center is indexed by 2; this is a discrete state model, not IEEE NaN and
