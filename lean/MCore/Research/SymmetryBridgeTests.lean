@@ -187,4 +187,12 @@ theorem nanaReflect_index (x : NanaPosition) :
 
 theorem nana_center_is_fixed : nanaReflect .center = .center := rfl
 
+
+/-- Multiplication by an integer n > 1 strictly increases a prime index p.
+This is an index-scaling fact, not a symmetry of the zeta zeros. -/
+theorem prime_index_scaling_strict {p n : ℕ} (hp : p.Prime) (hn : 1 < n) :
+    p < n * p := by
+  have hmul : 1 * p < n * p := Nat.mul_lt_mul_of_pos_right hn hp.pos
+  simpa using hmul
+
 end MCore.Research.SymmetryBridgeTests
