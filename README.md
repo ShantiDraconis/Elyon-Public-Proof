@@ -1,7 +1,5 @@
 # Elyon Public Proof
 
-Contact: fagliarit@gmail.com | MVEI
-
 Public, independently reviewable snapshot of the Elyon Claim1–Claim7 formal verification package.
 
 ## Verify in a clean environment
