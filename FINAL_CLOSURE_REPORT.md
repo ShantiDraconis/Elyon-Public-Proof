@@ -1,4 +1,6 @@
-# FINAL CLOSURE REPORT — CURRENT HONEST STATE
+# FINAL CLOSURE REPORT — HISTORICAL SNAPSHOT
+
+> **Status reconciliation (2026-11-22; source review only).** This document is a historical 2026-09-21 snapshot, not a live count. The seven repository-local Claim1–Claim7 certificates and the local `canonicalFinalProof` alias are distinct from external Millennium endpoints. The external bridges remain `OPEN_MATH`; no external `FINAL_PROOF` is certified by this audit. No Lean/CI rerun was performed. See [FINAL_ROOT.md](FINAL_ROOT.md) for the scoped status.
 
 Date: 2026-09-21
 
