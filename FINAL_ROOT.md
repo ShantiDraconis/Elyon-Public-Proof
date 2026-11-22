@@ -4,9 +4,11 @@ Audit update: 2026-11-22. This is a **source-level status reconciliation**, not 
 
 ## Repository-local seven-claim endpoint
 
-- INTERNAL_CLAIM1_TO7: PROVED_IN_SOURCE (seven claims at `canonicalSevenEndpoint`; prior GREEN runs are recorded below)
-- INTERNAL_FINAL_PROOF_ALIAS: PROVED_IN_SOURCE (Lean `canonicalFinalProof : FINAL_PROOF`, where `FINAL_PROOF := FINAL_ROOT := EXTERNAL_CERTIFICATE := Claim1To7Evidence canonicalSevenEndpoint`)
+- INTERNAL_CLAIM1_TO7: ISSUED_SEALED_PENDING_REVALIDATION (seven claims at `canonicalSevenEndpoint`; historical kernel SUCCESS run 36048534795)
+- INTERNAL_FINAL_PROOF_ALIAS: ISSUED_SEALED_PENDING_REVALIDATION (Lean `canonicalFinalProof : FINAL_PROOF`, where `FINAL_PROOF := FINAL_ROOT := EXTERNAL_CERTIFICATE := Claim1To7Evidence canonicalSevenEndpoint`)
+- INTERNAL_RELEASE_AUDIT: RECORDED_GREEN (release run 36050478168, audit run 36049892790; as recorded in `public/EXTERNAL_CERTIFICATE_COMPLETE.json`)
 - INTERNAL_LIVE_REBUILD: NOT_RUN_IN_THIS_AUDIT
+- INTERNAL_CERTIFICATE_SOURCE: `certs/elyon_claim1_7_only/FINAL_ISSUANCE.json`
 
 The alias is a repository-local proposition. It is **not** an assertion of any Millennium Prize Problem.
 
