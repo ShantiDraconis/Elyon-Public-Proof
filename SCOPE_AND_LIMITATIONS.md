@@ -32,3 +32,17 @@ External reviewers should separately verify:
 ## Publication language
 
 The package may accurately be described as a reproducible Lean-checked formal package submitted for independent review. It should not be described as independently validated, peer reviewed, journal accepted, or a settled resolution of P versus NP unless and until those separate external reviews occur.
+
+## Status names and evidence boundaries (2026-11-22)
+
+The source declaration `canonicalFinalProof : FINAL_PROOF` proves a **repository-local alias** for seven claims at the specific `canonicalSevenEndpoint`. It must not be displayed as an externally certified Millennium theorem. The canonical endpoint fixes `α = 1`, `β = 1`, and `deficitC = 0`, with example circuits and a constant family; this does not imply the universal external theorem without a separately checked semantic bridge.
+
+Use separate status namespaces:
+
+- `INTERNAL_PROVED_IN_SOURCE`: a Lean proof term is present for the local proposition; recheck with pinned toolchain before asserting fresh build success.
+- `EXTERNAL_OPEN_MATH`: the intended general external theorem or bridge remains unproved by this package.
+- `EXTERNAL_NOT_CERTIFIED`: no audited external final certificate has been issued.
+- `FINAL_FAIL`: may describe an audited failed proof attempt, **not** mathematical falsity of the theorem.
+- `INDETERMINATE`: symbolic mathematical state, not a certification failure.
+
+The 2026-11-22 audit inspected repository source but did not rerun Lean, independent comparators, or CI. Historical GREEN runs are references, not fresh validation.
